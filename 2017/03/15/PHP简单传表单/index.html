@@ -21,20 +21,20 @@
     <meta name="theme-color" content="#565656">
     
     
-    <meta name="keywords" content="">
-    <meta name="description" content="#PHP简单传表单
-####php代码中获取表单中单选按钮的值：单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。例：123456789&amp;lt;form name=&amp;quot;myform&amp;quot; action=&amp;quot;&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt; 性别:		&amp;lt;input">
+    <meta name="keywords" content="PHP">
+    <meta name="description" content="PHP简单传表单
+####php代码中获取表单中单选按钮的值：单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。例：123456789&amp;lt;form name=&amp;quot;myform&amp;quot; action=&amp;quot;&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt; 性别:		&amp;lt;input t">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP简单传表单">
 <meta property="og:url" content="http://fr1ee.github.io/2017/03/15/PHP简单传表单/index.html">
 <meta property="og:site_name" content="Keep Moving !">
-<meta property="og:description" content="#PHP简单传表单
-####php代码中获取表单中单选按钮的值：单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。例：123456789&amp;lt;form name=&amp;quot;myform&amp;quot; action=&amp;quot;&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt; 性别:		&amp;lt;input">
-<meta property="og:updated_time" content="2017-03-18T05:20:14.000Z">
+<meta property="og:description" content="PHP简单传表单
+####php代码中获取表单中单选按钮的值：单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。例：123456789&amp;lt;form name=&amp;quot;myform&amp;quot; action=&amp;quot;&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt; 性别:		&amp;lt;input t">
+<meta property="og:updated_time" content="2017-03-18T07:29:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP简单传表单">
-<meta name="twitter:description" content="#PHP简单传表单
-####php代码中获取表单中单选按钮的值：单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。例：123456789&amp;lt;form name=&amp;quot;myform&amp;quot; action=&amp;quot;&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt; 性别:		&amp;lt;input">
+<meta name="twitter:description" content="PHP简单传表单
+####php代码中获取表单中单选按钮的值：单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。例：123456789&amp;lt;form name=&amp;quot;myform&amp;quot; action=&amp;quot;&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt; 性别:		&amp;lt;input t">
     
         <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
     
@@ -155,6 +155,8 @@
 </time>
 
 
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/PHP/">PHP</a></li></ul>
+
             
         </h5>
     </div>
@@ -175,6 +177,8 @@
             <time class="post-time" title="2017年03月15日 11:21" datetime="2017-03-15T03:21:30.000Z"  itemprop="datePublished">2017-03-15</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/PHP/">PHP</a></li></ul>
+
 
 
             
@@ -187,7 +191,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>#PHP简单传表单</p>
+            <p>PHP简单传表单</p>
 <p>####php代码中获取表单中单选按钮的值：<br>单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;form name=&quot;myform&quot; action=&quot;&quot; method=&quot;post&quot;&gt; 性别:</div><div class="line">		&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;男&quot; checked /&gt;男</div><div class="line">		&lt;input name=&quot;sex&quot; type=&quot;radio&quot; value=&quot;女&quot; /&gt;女</div><div class="line">		&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;提交&quot; /&gt;</div><div class="line">	&lt;/form&gt;</div><div class="line">	&lt;?php</div><div class="line">		echo &quot;您的选择是：&quot;;</div><div class="line">		echo $_POST[&quot;sex&quot;];</div><div class="line">	?&gt;</div></pre></td></tr></table></figure></p>
 <p>如果你选择的是男，则出来的值就是“男”，要是你选择的是女，则出来的值就是“女”。</p>
 <p>####php代码中获取复选框的值：<br>复选框是能够让我们去多选的，他们同时存在，为了便于传值我们将name令为一个数组。<br>格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;chkbox[]&quot; value=&quot;chkbox1&quot; /&gt;</div></pre></td></tr></table></figure></p>
@@ -199,7 +203,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-18T05:20:14.000Z" itemprop="dateUpdated">2017年3月18日 13:20</time>
+    最后更新时间：<time datetime="2017-03-18T07:29:52.000Z" itemprop="dateUpdated">2017年3月18日 15:29</time>
 </span><br>
 
 
@@ -222,6 +226,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
 
             
 <div class="page-share-wrap">
