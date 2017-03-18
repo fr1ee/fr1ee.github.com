@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://fr1ee.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-03-18T05:37:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fr1ee.github.io/categories/index.html</loc>
+    
+    <lastmod>2017-03-18T05:37:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fr1ee.github.io/archives/index.html</loc>
+    
+    <lastmod>2017-03-18T05:36:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://fr1ee.github.io/2017/03/15/%E5%AE%89%E8%A3%85visual%20studio(vs)%E5%90%8E%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85SQLserver%E9%97%AE%E9%A2%98%E7%9A%84%E6%88%90%E5%8A%9F%E8%A7%A3%E5%86%B3/</loc>
     
     <lastmod>2017-03-18T05:22:50.000Z</lastmod>
@@ -173,27 +194,6 @@
     <loc>http://fr1ee.github.io/2017/03/15/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BD%91%E9%A1%B5%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%83%BD%E5%88%87%E5%BC%80/</loc>
     
     <lastmod>2017-03-18T05:15:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fr1ee.github.io/tags/index.html</loc>
-    
-    <lastmod>2017-03-18T05:13:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fr1ee.github.io/archives/index.html</loc>
-    
-    <lastmod>2017-03-18T05:12:46.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fr1ee.github.io/categories/index.html</loc>
-    
-    <lastmod>2017-03-18T05:12:43.000Z</lastmod>
     
   </url>
   
