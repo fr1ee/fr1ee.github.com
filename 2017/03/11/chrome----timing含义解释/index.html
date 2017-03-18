@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="fr1ee.github.io/2017/03/11/chrome----timing含义解释/">
+    
+    
+    <title>chrome timing | Keep Moving ! | 仅以此博客作为经验积累的日志</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#565656">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="这里写图片描述
+            
+
+Queueing请求文件顺序的的排序什么东西？浏览器有线程限制的，发请求也不能所有的请求同时发送，所以，队列喽。从添加到待处理队列到实际开始处理的时间间隔标示
+
+Stal">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chrome timing">
+<meta property="og:url" content="http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/index.html">
+<meta property="og:site_name" content="Keep Moving !">
+<meta property="og:description" content="这里写图片描述
+            
+
+Queueing请求文件顺序的的排序什么东西？浏览器有线程限制的，发请求也不能所有的请求同时发送，所以，队列喽。从添加到待处理队列到实际开始处理的时间间隔标示
+
+Stal">
+<meta property="og:image" content="http://img.blog.csdn.net/20170223215424954?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170223220531041?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-03-15T06:11:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="chrome timing">
+<meta name="twitter:description" content="这里写图片描述
+            
+
+Queueing请求文件顺序的的排序什么东西？浏览器有线程限制的，发请求也不能所有的请求同时发送，所以，队列喽。从添加到待处理队列到实际开始处理的时间间隔标示
+
+Stal">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170223215424954?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+    
+        <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FreeMing</h5>
+          <a href="mailto:wang.6688.cool@163.com" title="wang.6688.cool@163.com" class="mail">wang.6688.cool@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                足记
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fr1ee" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://git.oschina.net/953082389qq.com"  >
+                <i class="icon icon-lg icon-cloud"></i>
+                码云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/wechart"  >
+                <i class="icon icon-lg icon-comments"></i>
+                微信
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">chrome timing</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">chrome timing</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-11T14:56:34.000Z" itemprop="datePublished" class="page-time">
+  2017-03-11
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#官方解释"><span class="post-toc-number">1.</span> <span class="post-toc-text">官方解释</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-chrome----timing含义解释"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">chrome timing</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月11日 22:56" datetime="2017-03-11T14:56:34.000Z"  itemprop="datePublished">2017-03-11</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20170223215424954?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="">
+                </div>
+                <div class="image-caption">这里写图片描述</div>
+            </figure>
+<ol>
+<li><p>Queueing<br>请求文件顺序的的排序<br>什么东西？<br>浏览器有线程限制的，发请求也不能所有的请求同时发送，所以，队列喽。<br>从添加到待处理队列<br>到实际开始处理的时间间隔标示</p>
+</li>
+<li><p>Stalled<br>是浏览器得到要发出这个请求的指令到请求可以发出的等待时间，一般是代理协商、以及等待可复用的TCP连接释放的时间，不包括DNS查询、建立TCP连接等时间等</p>
+</li>
+<li><p>DNS Lookup<br>时间执行DNS查找。每个新域pagerequires DNS查找一个完整的往返。 DNS查询的时间，当本地DNS缓存没有的时候，这个时间可能是有一段长度的，但是比如你一旦在host中设置了DNS，或者第二次访问，由于浏览器的DNS缓存还在，这个时间就为0了。</p>
+</li>
+<li><p>Initial connection<br>建立TCP连接的时间，就相当于客户端从发请求开始到TCP握手结束这一段，包括DNS查询+Proxy时间+TCP握手时间。</p>
+</li>
+<li><p>Request sent<br>请求第一个字节发出前到最后一个字节发出后的时间，也就是上传时间</p>
+</li>
+<li><p>Waiting(TTFB)<br>请求发出后，到收到响应的第一个字节所花费的时间(Time To First Byte),发送请求完毕到接收请求开始的时间;这个时间段就代表服务器处理和返回数据网络延时时间了。服务器优化的目的就是要让这个时间段尽可能短。</p>
+</li>
+<li><p>Content Download<br>收到响应的第一个字节，到接受完最后一个字节的时间，就是下载时间</p>
+</li>
+</ol>
+<h3 id="官方解释"><a href="#官方解释" class="headerlink" title="官方解释"></a>官方解释</h3><p>######（免于大家翻墙了）</p>
+<p>####先说请求的生命周期：<br>The primary phases of the request lifecycle are:</p>
+<ul>
+<li>Redirect<br>Immediately begins startTime.<br>If a redirect is happening, redirectStart begins as well.<br>If a redirect is occurring at the end of this phase then redirectEnd will be taken.</li>
+<li>App Cache<br>If it’s application cache fulfilling the request, a fetchStart time will be taken.</li>
+<li>DNS<br>domainLookupStart time is taken at the beginning of the DNS request.<br>domainLookupEnd time is taken at the end of the DNS request.</li>
+<li>TCP<br>connectStart is taken when initially connecting to the server.<br>If TLS or SSL are in use then secureConnectionStart will start when the handshake begins for securing the connection.<br>connectEnd is taken when the connection to the server is complete.</li>
+<li>Request<br>requestStart is taken once the request for a resource has been sent to the server.</li>
+<li>Response<br>responseStart is the time when the server initially responds to the request.<br>responseEnd is the time when the request ends and the data is retrieved.</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170223220531041?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>####然后在理解那张timing图</p>
+<ul>
+<li>Queuing<br>A request being queued indicates that:<br>The request was postponed by the rendering engine because it’s considered lower priority than critical resources (such as scripts/styles). This often happens with images.<br>The request was put on hold to wait for an unavailable TCP socket that’s about to free up.<br>The request was put on hold because the browser only allows six TCP connections per origin on HTTP 1.<br>Time spent making disk cache entries (typically very quick.)</li>
+</ul>
+<ul>
+<li>Stalled/Blocking<br>Time the request spent waiting before it could be sent. It can be waiting for any of the reasons described for Queueing. Additionally, this time is inclusive of any time spent in proxy negotiation.<br>Proxy Negotiation<br>Time spent negotiating with a proxy server connection.</li>
+<li>DNS Lookup<br>Time spent performing the DNS lookup. Every new domain on a page requires a full roundtrip to do the DNS lookup.<br>Initial Connection / Connecting<br>Time it took to establish a connection, including TCP handshakes/retries and negotiating a SSL.</li>
+<li>SSL<br>Time spent completing a SSL handshake.<br>Request Sent / Sending<br>Time spent issuing the network request. Typically a fraction of a millisecond.</li>
+<li>Waiting (TTFB)<br>Time spent waiting for the initial response, also known as the Time To First Byte. This time captures the latency of a round trip to the server in addition to the time spent waiting for the server to deliver the response.<br>Content Download / Downloading<br>Time spent receiving the response data.</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-15T06:11:31.000Z" itemprop="dateUpdated">2017年3月15日 14:11</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/03/11/chrome----timing含义解释/" target="_blank" rel="external">http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/</a>
+    </div>
+    <footer>
+        <a href="http://fr1ee.github.io">
+            <img src="/img/avatar.jpg" alt="FreeMing">
+            FreeMing
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/&title=《chrome timing》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/&title=《chrome timing》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《chrome timing》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/11/angularjs2--tab页调用父页面的方法/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">angularjs2--tab页调用父页面的方法</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/11/angular2子组件的事件传递(任意组件事件传递)/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">angular2子组件的事件传递</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="chrome----timing含义解释" data-title="chrome timing" data-url="http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'freeming.duoshuo.com', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.10');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        多谢，祝君好~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechatpay.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by Hexo Theme indigo</span>
+            <span>Keep Moving ! &copy; 2014 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/&title=《chrome timing》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/&title=《chrome timing》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《chrome timing》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261473536&web_id=1261473536')
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.10" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

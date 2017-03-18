@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="fr1ee.github.io/2017/03/15/搜索引擎使用整理/">
+    
+    
+    <title>安装SQL2012 | Keep Moving ! | 仅以此博客作为经验积累的日志</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#565656">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="搜索引擎使用整理
+GOOGLE搜索技巧GOOGLE无需用明文的“+”来表示逻辑“与”操作，只要空格就可以了。GOOGLE用减号“-”表示逻辑“非”操作。注意：这里的“+”和“-”号，是英文字符。此外，操作符与作用的关键字之间，不能有空格。比如“易筋经– 吸星+++”，搜索引擎将视为逻辑“与”操作，中间的“-”被忽略。GOOGLE用大写的“OR”表示逻辑“或”操作。但是，关键字为中文的或查询似乎还有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装SQL2012">
+<meta property="og:url" content="http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/index.html">
+<meta property="og:site_name" content="Keep Moving !">
+<meta property="og:description" content="搜索引擎使用整理
+GOOGLE搜索技巧GOOGLE无需用明文的“+”来表示逻辑“与”操作，只要空格就可以了。GOOGLE用减号“-”表示逻辑“非”操作。注意：这里的“+”和“-”号，是英文字符。此外，操作符与作用的关键字之间，不能有空格。比如“易筋经– 吸星+++”，搜索引擎将视为逻辑“与”操作，中间的“-”被忽略。GOOGLE用大写的“OR”表示逻辑“或”操作。但是，关键字为中文的或查询似乎还有">
+<meta property="og:updated_time" content="2017-03-15T06:09:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安装SQL2012">
+<meta name="twitter:description" content="搜索引擎使用整理
+GOOGLE搜索技巧GOOGLE无需用明文的“+”来表示逻辑“与”操作，只要空格就可以了。GOOGLE用减号“-”表示逻辑“非”操作。注意：这里的“+”和“-”号，是英文字符。此外，操作符与作用的关键字之间，不能有空格。比如“易筋经– 吸星+++”，搜索引擎将视为逻辑“与”操作，中间的“-”被忽略。GOOGLE用大写的“OR”表示逻辑“或”操作。但是，关键字为中文的或查询似乎还有">
+    
+        <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FreeMing</h5>
+          <a href="mailto:wang.6688.cool@163.com" title="wang.6688.cool@163.com" class="mail">wang.6688.cool@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                足记
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fr1ee" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://git.oschina.net/953082389qq.com"  >
+                <i class="icon icon-lg icon-cloud"></i>
+                码云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/wechart"  >
+                <i class="icon icon-lg icon-comments"></i>
+                微信
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">安装SQL2012</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">安装SQL2012</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-15T03:23:11.000Z" itemprop="datePublished" class="page-time">
+  2017-03-15
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+<article id="post-搜索引擎使用整理"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">安装SQL2012</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月15日 11:23" datetime="2017-03-15T03:23:11.000Z"  itemprop="datePublished">2017-03-15</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>搜索引擎使用整理</p>
+<p>GOOGLE搜索技巧<br>GOOGLE无需用明文的“+”来表示逻辑“与”操作，只要空格就可以了。<br>GOOGLE用减号“-”表示逻辑“非”操作。<br>注意：这里的“+”和“-”号，是英文字符。此外，操作符与作用的关键字之间，不能有空格。比如“易筋经– 吸星+++”，搜索引擎将视为逻辑“与”操作，中间的“-”被忽略。<br>GOOGLE用大写的“OR”表示逻辑“或”操作。但是，关键字为中文的或查询似乎还有BUG，无法得到正确的查询结果。<br>注意：小写的“or”，在查询的时候将被忽略；<br>GOOGLE不支持通配符，如“<em>”、“?”等，只能做精确查询，关键字后面的“</em>”或者“?”会被忽略掉。<br>GOOGLE对英文字符大小写不敏感，“GOD”和“god”搜索的结果是一样的。<br>GOOGLE的关键字可以是词组（中间没有空格），也可以是句子（中间有空格），但是，用句子做关键字，必须加英文引号。<br>示例：搜索包含“long, long ago”字串的页面。<br>注意：和搜索英文关键字串不同的是，GOOGLE对中文字串的处理并不十分完善<br>GOOGLE对一些网路上出现频率极高的词（主要是英文单词），如“i”、“com”，以及一些符号如“*”、“.”等，作忽略处理，如果用户必须要求关键字中包含这些常用词，就要用强制语法“+”。<br>注意：英文符号（如问号，句号，逗号等）无法成为搜索关键字，加强制也不行。<br> “site”表示搜索结果局限于某个具体网站或者网站频道，如“sina.com.cn”、“edu.sina.com.cn”，或者是某个域名，如“com.cn”、“com”等等。如果是要排除某网站或者域名范围内的页面，只需用“-网站/域名”。<br>示例：搜索中文教育科研网站（edu.cn）上所有包含“金庸”的页面。<br>搜索：“金庸 site:edu.cn”<br>结果：已搜索有关金庸 site:edu.cn的中文(简体)网页。共约有2,680项查询结果，这是第1-10项。搜索用时0.31秒。<br>示例：搜索包含“金庸”和“古龙”的中文新浪网站页面，<br>搜索：“金庸 古龙site:sina.com.cn”<br>结果：已在sina.com.cn搜索有关金庸古龙的中文(简体)网页。共约有869项查询结果，这是第1-10项。搜索用时0.34秒。<br>注意：site后的冒号为英文字符，而且，冒号后不能有空格，否则，“site:”将被作为一个搜索的关键字。此外，网站域名不能有“http”以及“www”前缀，也不能有任何“/”的目录后缀；网站频道则只局限于“频道名.域名”方式，而不能是“域名/频道名”方式。诸如“金庸 site:edu.sina.com.cn/1/”的语法是错误的。<br>“link”语法返回所有链接到某个URL地址的网页。<br>示例：搜索所有含指向华军软件园“www.newhua.com”链接的网页。<br>搜索：“link:www.newhua.com”<br>结果：搜索有链接到www.newhua.com的网页。共约有695项查询结果，这是第1-10项。搜索用时0.23秒。<br>注意：“link”不能与其他语法相混合操作，所以“link:”后面即使有空格，也将被GOOGLE忽略。<br>inurl语法返回的网页链接中包含第一个关键字，后面的关键字则出现在链接中或者网页文档中。有很多网站把某一类具有相同属性的资源名称显示在目录名称或者网页名称中，比如“MP3”、“GALLARY”等，于是，就可以用INURL语法找到这些相关资源链接，然后，用第二个关键词确定是否有某项具体资料。INURL语法和基本搜索语法的最大区别在于，前者通常能提供非常精确的专题资料。<br>示例：查找MIDI曲“沧海一声笑”。<br>搜索：“inurl:midi 沧海一声笑”<br>结果：已搜索有关inurl:midi 沧海一声笑的中文(简体)网页。共约有14项查询结果，这是第1-10项。搜索用时0.01秒。<br>示例：查找微软网站上关于windows2000的安全课题资料。<br>搜索：“inurl:security windows2000 site:microsoft.com”<br>结果：已在microsoft.com内搜索有关 inurl:security windows2000的网页。共约有198项查询结果，这是第1-10项。搜索用时0.37秒。<br>注意：“inurl:”后面不能有空格，GOOGLE也不对URL符号如“/”进行搜索。GOOGLE对“cgi-bin/phf”中的“/”当成空格处理。<br>allinurl语法返回的网页的链接中包含所有查询关键字。这个查询的对象只集中于网页的链接字符串。<br>示例：查找可能具有PHF安全漏洞的公司网站。通常这些网站的CGI-BIN目录中含有PHF脚本程序（这个脚本是不安全的），表现在链接中就是“域名/cgi-bin/phf”。<br>语法：“allinurl:”cgi-bin” phf +com”<br>搜索：已向英特网搜索allinurl:”cgi-bin” phf +com. 共约有40项查询结果，这是第1-10项。搜索用时0.06秒。<br>allintitle和intitle的用法类似于上面的allinurl和inurl，只是后者对URL进行查询，而前者对网页的标题栏进行查询。网页标题，就是HTML标记语言title中之间的部分。网页设计的一个原则就是要把主页的关键内容用简洁的语言表示在网页标题中。因此，只查询标题栏，通常也可以找到高相关率的专题页面。<br>示例：查找日本明星藤原纪香的照片集。<br>搜索：“intitle:藤原纪香写真”<br>结果：已搜索有关intitle:藤原纪香写真的中文(简体)网页。共约有284项查询结果，这是第1-10项。搜索用时0.03秒。<br>GOOGLE的罕用高级搜索语法：related，cache，info<br>related用来搜索结构内容方面相似的网页。例：搜索所有与中文新浪网主页相似的页面（如网易首页，搜狐首页，中华网首页等），“related:www.sina.com.cn/index.shtml”。<br>cache用来搜索GOOGLE服务器上某页面的缓存，这个功能同“网页快照”，通常用于查找某些已经被删除的死链接网页，相当于使用普通搜索结果页面中的“网页快照”功能。<br>info用来显示与某链接相关的一系列搜索，提供cache、link、related和完全包含该链接的网页的功能。<br>示例：查找和新浪首页相关的一些资讯。<br>搜索：“info:www.sina.com.cn”<br>结果：有关www.sina.com.cn的网页信息。<br>北京站 上海站 广东站. … 游戏世界, |, 影音娱乐, |, Club缘, |, 男人女人, |, 论坛聊天, |, 时尚潮流, |, 文教育儿, |, 车行天下, |, 软件下载. … Google 提供这个网址的信息:<br>查看Google网页快照里www.sina.com.cn的存档<br>寻找和www.sina.com.cn类似的网页<br>寻找网页有链接到www.sina.com.cn<br>寻找网页包含有’www.sina.com.cn’</p>
+<p>其他常用搜索个案<br>例一：找人<br>分析：一个人在网上揭示的资料通常有：姓名，网名，性别，年龄，毕业学校，工作单位，外号，住址，电话，信箱，BP，手机号码，ICQ号，OICQ号等等。所以，如果你要了解一下你多年没见过的同学，那不妨用上述信息做关键字进行查询，也许会有大的收获。<br>例二：找软件<br>分析一：最简单的搜索当然就是直接以软件名称以及版本号为关键字查询。但是，仅仅有软件名称和目标网站，显然还不行，因为搜索到的可能是软件的相关新闻。应该再增加一个关键字。考虑到下载页面上常有“点击此处下载”或者“download”的提示语，因此，可以增加“下载”或者“download”为关键字。<br>搜索：“winzip 8.0 下载”<br>结果：已搜索有关winzip 8.0 下载的中文(简体)网页。共约有6,670项查询结果，这是第1-10项。搜索用时0.22秒。<br>分析二：很多网站设有专门的下载目录，而且就命名为“download”，因此，可以用INURL语法直接搜索这些下载目录。<br>搜索：“winzip 8.0 inurl:download”<br>结果：已搜索有关winzip 8.0 inurl:download的中文(简体)网页。共约有358项查询结果，这是第1-10项。搜索用时0.44秒。<br>在互联网上随意的下载软件是不安全的，因为供下载的软件有可能带有病毒或者捆绑了木马，所以，对下载网站作一个限定，是一个稳妥的思路。可以用SITE语法达到这个目的。<br>共享软件下载完之后，使用的时候，软件总跳出警示框，或者软件的功能受到一定限制。由于中国的网民多是穷棒子，所以应该再找一个注册码。找注册码，除了软件的名称和版本号外，还需要有诸如“serial number”、“sn”、“序列号”等关键字。现在，来搜索一下winzip8.0的注册码。<br>搜索：“winzip 8.0 sn”<br>结果：已向英特网搜索winzip 8.0 sn. 共约有777项查询结果，这是第1-10项。搜索用时0.30秒。<br>例三：找图片<br>除了GOOGLE提供的专门图片搜索功能，还可以组合使用一些搜索语法，达到图片搜索之目的。<br>分析一：专门的图片集合，提供图片的网站通常会把图片放在某个专门目录下，如“gallary”、“album”、“photo”、“image”等。这样就可以使用INURL语法迅速找到这类目录。现在，试着找找小甜甜布兰妮的照片集。<br>搜索：“”britney spears” inurl:photo”<br>结果：已向英特网搜索”britney spears” inurl:photo. 共约有2,720项查询结果，这是第1-10项。搜索用时0.23秒。<br>分析二：提供图片集合的网页，在标题栏内通常会注明，这是谁谁的图片集合。于是就可以用INTITLE语法找到这类网页。<br>搜索：“intitle:”britney spears” picture”<br>结果：已向英特网搜索intitle:”britney spears” picture. 共约有317项查询结果，这是第1-10项。搜索用时0.40秒。<br>分析三：明星的FANS通常会申请免费个人主页来存放他们偶像的靓照。于是用SITE语法指定某免费主页提供站点，是个迅速找到图片的好办法。<br>搜索：“”britney spears” site:geocities.com”<br>结果：已在geocities.com内搜索有关”britney spears”的网页。共约有5,020项查询结果，这是第1-10项。搜索用时0.47秒。<br>例四：找MP3<br>分析一：提供MP3的网站，通常会建立一个叫做MP3的目录，目录底下分门别类的存放各种MP3乐曲。所以，可以用INURL语法迅速找到这类目录。现在用这个办法找找老歌“say you say me”。<br>搜索：“”say you say me” inurl:mp3”<br>结果：已向英特网搜索inurl:mp3 “say you say me”. 共约有155项查询结果，这是第1-10项。搜索用时0.17秒。<br>分析二：也可以通过网页标题，找到这类提供MP3的网页。<br>搜索：“”say you say me” intitle:mp3”<br>结果：已向英特网搜索”say you say me” intitle:mp3. 共约有178项查询结果，这是第1-10项。搜索用时0.73秒。<br>当然，如果你知道某个网站的下载速度快，而且乐曲全，就可以用SITE语法先到该网站上看看有没有目标乐曲。<br>例五：找书<br>分析一：对我而言，常访问的电子图书馆类网站就那么几个，比如文艺类的“www.shuku.net”。于是可以用SITE语法很简单的找到某本书（如果该网站上有的话）。比如，“旧唐书 site:shuku.net”，就可以马上找到该书。如果没有，通常别的网站上也很难找到。因此，找书的关键，是你了解一大批著名的图书馆网站。<br>分析二：我上面介绍的第一项关键字选择技巧特定词法，对于迅速找到某书或者文章也是极其有用的，当然，这得建立在你已经读过该书，对书的内容有印象的基础上。比如如果了解堂吉诃德一书战风车的大致内容，就可以用“吉诃德风车 桑乔”迅速找到该书。<br> 百度搜索</p>
+<ol>
+<li>减除无关资料<br>有时候，排除含有某些词语的资料有利于缩小查询范围。<br>百度支持”-“功能，用于有目的地删除某些无关网页，但减号之前必须留一空格，语法是”A -B”。<br>例如，要搜寻关于”武侠小说”，但不含”古龙”的资料，可使用如下查询：<br>武侠小说 - 古龙</li>
+<li>并行搜索<br>使用”A | B”来搜索”或者包含关键词A，或者包含关键词B”的网页。<br>例如：您要查询”图片”或”写真”相关资料，无须分两次查询，只要输入 [图片 | 写真] 搜索即可。 百度会提供跟”|”前后任何关键词相关的网站和资料。</li>
+<li>在指定网站内搜索<br>在一个网址前加”site:”，可以限制只搜索某个具体网站、网站频道、或某域名内的网页。<br>例如，<br>[电话 site:www.baidu.com] 表示在www.baidu.com网站内搜索和”电话”相关的资料；<br>[竞价排名 site:baidu.com] 表示在baidu.com网站内搜索和”竞价排名”相关的资料； [intel site:com.cn] 表示在域名以”com.cn”结尾的网站内搜索和”intel”相关的资料；<br>[门户 .cn] 表示在域名以”cn”结尾的网站内搜索和”门户”相关的资料；<br>注意：搜索关键词在前，site:及网址在后；关键词与site:之间须留一空格隔开；site后的冒号”:”可以是半角”:”也可以是全角”：”，百度搜索引擎会自动辨认。”site:”后不能有”<a href="http://&quot;前缀或&quot;/&quot;后缀，网站频道只局限于&quot;频道名.域名&quot;方式，不能是&quot;域名/频道名&quot;方式。" target="_blank" rel="external">http://&quot;前缀或&quot;/&quot;后缀，网站频道只局限于&quot;频道名.域名&quot;方式，不能是&quot;域名/频道名&quot;方式。</a><br>4 在标题中搜索<br>在一个或几个关键词前加”intitle:”，可以限制只搜索网页标题中含有这些关键词的网页。<br>例如，<br>[intitle:南瓜饼] 表示搜索标题中含有关键词”南瓜饼”的网页；<br>[intitle:百度 互联网] 表示搜索标题中含有关键词”百度”和”互联网”的网页。</li>
+<li>在url中搜索<br>在”inurl: “后加url中的文字，可以限制只搜索url中含有这些文字的网页。<br>例如，<br>[inurl:mp3] 表示搜索url中含有”mp3”的网页；<br>[inurl:网页] 表示搜索url中含有”网页”的网页；<br>[inurl:china news] 表示搜索url中含有”china”和”news”的网页。<br>6.“——“精确匹配<br>如果输入的查询词很长，百度在经过分析后，给出的搜索结果中的查询词，可能是拆分的。如果您对这种情况不满意，可以尝试让百度不拆分查询词。给查询词加上双引号，就可以达到这种效果。如：“上海大学”，搜索结果中的上海大学四个字就不会是分开的。<br>7.“filetype:”——特定格式的文档检索<br>百度以”filetype:”来对搜索对象做限制，冒号后是文档格式，如PDF、DOC、XLS等。通过添加”filetype:”可以更方便有效的找到特定的信息，尤其是学术领域的一些信息。如：经济信息学 filetypeDF<br>8.《》——精确匹配/电影或小说<br>书名号是百度独有的一个特殊查询语法。在其他搜索引擎中，书名号会被忽略，而在百度，中文书名号是可被查询的。加上书名号的查询词，有两层特殊功能，一是书名号会出现在搜索结果中；二是被书名号扩起来的内容，不会被拆分。 书名号在某些情况下特别有效果，例如，查名字很通俗和常用的那些电影或者小说。比如，查电影“手机”，如果不加书名号，很多情况下出来的是通讯工具——手机，而加上书名号后，《手机》结果就都是关于电影方面的了。<br>9．“开始连接”、“正在连接”——搜索<strong><em><br>网络上有很多热心人提供</em></strong>的下载地址。为了表明真实可靠，把下载过程也同时附上。现在最流行的下载工具是flashget和迅雷。 Flashget下载开始就是“正在连接”，迅雷则是“开始连接”。所以，可以用想找的电影名字，加上“开始连接”或者“正在连接”，来寻找<em>*</em>。 检索式形式如：“电影名 开始连接”、电影名 正在连接”、“电影名 (开始连接 | 正在连接)” 。如：哈利波特4 开始连接 、倩女幽魂 正在连接 、史前一万年 (正在连接 | 开始连接) 。<br>10.『』——查找论坛版块<br>百度作为国人自己开发的搜索引擎，支持的中文标点符号最多。『』是直行双引号。 检索式形式如： 『论坛版块名称』 。如：『影视交流』。<br>PS：这个直行双引号怎么输入呢？调出中文输入法，选择“软键盘”——“标点符号”，就能找到。<br>11.“文本方式”——查找论坛内容<br>论坛是个宝库，资源丰富，人才荟萃。交流的气息浓，在反复的讨论和回帖中，可以获得相对真实的信息。如：文本方式 可口可乐 、文本方式 超级女声。<br>12.intitle:bookmarks——查询别人的收藏夹<br>IE 浏览器的收藏夹导出后，网页的标题（title）是bookmarks。百度的intitle语法可以把搜索范围限定在网页标题内。所以，用 intitle语法可以查询别人的收藏夹，结果应该都是精品，没有哪个人会把垃圾放到自己收藏夹的。如：小说 intitle:bookmarks \查找小说的精彩站点 语文 intitle:bookmarks \查找语文方面的精彩站点 。<br>13.利用后缀名来搜索电子书<br>网络资源丰富，有极多电子书。人们在提供电子书时，往往带上书的后缀名。因此，可以利用后缀名来搜索电子书。如：明朝那些事儿 txt<br>14.中英文混合搜索<br>想把某些汉语词句翻译成英语，可以中英文混合搜索。有一个经典例子，查找德语的“我爱你”。英语的我们知道，于是，可以混合搜索。如：”I Love You “ 德语 我爱你</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-15T06:09:41.000Z" itemprop="dateUpdated">2017年3月15日 14:09</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/03/15/搜索引擎使用整理/" target="_blank" rel="external">http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/</a>
+    </div>
+    <footer>
+        <a href="http://fr1ee.github.io">
+            <img src="/img/avatar.jpg" alt="FreeMing">
+            FreeMing
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/&title=《安装SQL2012》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/&title=《安装SQL2012》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《安装SQL2012》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/15/Apache引起的wampserver安装好第二次使用无法启动问题/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">No title</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/15/&你到底是什么/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">开发工具链（国内项目）</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="搜索引擎使用整理" data-title="安装SQL2012" data-url="http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'freeming.duoshuo.com', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.10');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        多谢，祝君好~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechatpay.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by Hexo Theme indigo</span>
+            <span>Keep Moving ! &copy; 2014 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/&title=《安装SQL2012》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/&title=《安装SQL2012》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《安装SQL2012》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261473536&web_id=1261473536')
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.10" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

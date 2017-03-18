@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="fr1ee.github.io/2017/03/15/MATLAB 基础/">
+    
+    
+    <title>No title | Keep Moving ! | 仅以此博客作为经验积累的日志</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#565656">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="title: 安装SQL2012MATLAB入门教程
+1．MATLAB的基本知识1-1、基本运算与函数在MATLAB下进行基本数学运算，只需将运算式直接打入提示号（&amp;gt;&amp;gt;）之後，并按入Enter键即可。例如：  
+
+
+(52+1.3-0.8)10/25ans =4.2000  
+
+
+MATLAB会将运算结果直接存入一变数ans，代表MATLAB运算後的答案（Answer）并显示其数值於">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="http://fr1ee.github.io/2017/03/15/MATLAB 基础/index.html">
+<meta property="og:site_name" content="Keep Moving !">
+<meta property="og:description" content="title: 安装SQL2012MATLAB入门教程
+1．MATLAB的基本知识1-1、基本运算与函数在MATLAB下进行基本数学运算，只需将运算式直接打入提示号（&amp;gt;&amp;gt;）之後，并按入Enter键即可。例如：  
+
+
+(52+1.3-0.8)10/25ans =4.2000  
+
+
+MATLAB会将运算结果直接存入一变数ans，代表MATLAB运算後的答案（Answer）并显示其数值於">
+<meta property="og:updated_time" content="2017-03-15T06:12:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="title: 安装SQL2012MATLAB入门教程
+1．MATLAB的基本知识1-1、基本运算与函数在MATLAB下进行基本数学运算，只需将运算式直接打入提示号（&amp;gt;&amp;gt;）之後，并按入Enter键即可。例如：  
+
+
+(52+1.3-0.8)10/25ans =4.2000  
+
+
+MATLAB会将运算结果直接存入一变数ans，代表MATLAB运算後的答案（Answer）并显示其数值於">
+    
+        <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FreeMing</h5>
+          <a href="mailto:wang.6688.cool@163.com" title="wang.6688.cool@163.com" class="mail">wang.6688.cool@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                足记
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fr1ee" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://git.oschina.net/953082389qq.com"  >
+                <i class="icon icon-lg icon-cloud"></i>
+                码云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/wechart"  >
+                <i class="icon icon-lg icon-comments"></i>
+                微信
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">No title</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">No title</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-15T03:31:21.000Z" itemprop="datePublished" class="page-time">
+  2017-03-15
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#title-安装SQL2012"><span class="post-toc-number">1.</span> <span class="post-toc-text">title: 安装SQL2012</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-MATLAB 基础"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">No title</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月15日 11:31" datetime="2017-03-15T03:31:21.000Z"  itemprop="datePublished">2017-03-15</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <hr>
+<h2 id="title-安装SQL2012"><a href="#title-安装SQL2012" class="headerlink" title="title: 安装SQL2012"></a>title: 安装SQL2012</h2><p>MATLAB入门教程</p>
+<p>1．MATLAB的基本知识<br>1-1、基本运算与函数<br>在MATLAB下进行基本数学运算，只需将运算式直接打入提示号（&gt;&gt;）之後，并按入Enter键即可。例如：  </p>
+<blockquote>
+<blockquote>
+<p>(5<em>2+1.3-0.8)</em>10/25<br>ans =4.2000  </p>
+</blockquote>
+</blockquote>
+<p>MATLAB会将运算结果直接存入一变数ans，代表MATLAB运算後的答案（Answer）并显示其数值於萤幕上。<br>小提示： “&gt;&gt;”是MATLAB的提示符号（Prompt），但在PC中文视窗系统下，由於编码方式不同，此提示符号常会消失不见，但这并不会影响到MATLAB的运算结果。<br>我们也可将上述运算式的结果设定给另一个变数x：<br>x = (5<em>2+1.3-0.8)</em>10^2/25<br>x = 42<br>此时MATLAB会直接显示x的值。由上例可知，MATLAB认识所有一般常用到的加（+）、减（-）、乘（<em>）、除（/）的数学运算符号，以及幂次运算（^）。<br>小提示： MATLAB将所有变数均存成double的形式，所以不需经过变数宣告（Variabledeclaration）。MATLAB同时也会自动进行记忆体的使用和回收，而不必像C语言,必须由使用者一一指定.这些功能使的MATLAB易学易用，使用者可专心致力於撰写程式，而不必被软体枝节问题所干扰。<br>若不想让MATLAB每次都显示运算结果，只需在运算式最後加上分号（；）即可，如下例：<br>y = sin(10)</em>exp(-0.3*4^2);<br>若要显示变数y的值，直接键入y即可：  </p>
+<blockquote>
+<blockquote>
+<p>y<br>y =-0.0045  </p>
+</blockquote>
+</blockquote>
+<p>在上例中，sin是正弦函数，exp是指数函数，这些都是MATLAB常用到的数学函数。<br>下表即为MATLAB常用的基本数学函数及三角函数：<br>小整理：MATLAB常用的基本数学函数<br>abs(x)：纯量的绝对值或向量的长度<br>angle(z)：复 数z的相角(Phase angle)<br>sqrt(x)：开平方<br>real(z)：复数z的实部<br>imag(z)：复数z的虚 部<br>conj(z)：复数z的共轭复数<br>round(x)：四舍五入至最近整数<br>fix(x)：无论正负，舍去小数至最近整数<br>floor(x)：地板函数，即舍去正小数至最近整数<br>ceil(x)：天花板函数，即加入正小数至最近整数<br>rat(x)：将实数x化为分数表示<br>rats(x)：将实数x化为多项分数展开<br>sign(x)：符号函数 (Signum function)。<br>当x<0时，sign(x)=-1； 当x="0时，sign(x)=0;">0时，sign(x)=1。  </0时，sign(x)=-1；></p>
+<blockquote>
+<p>小整理：MATLAB常用的三角函数<br>sin(x)：正弦函数<br>cos(x)：馀弦函数<br>tan(x)：正切函数<br>asin(x)：反正弦函数<br>acos(x)：反馀弦函数<br>atan(x)：反正切函数<br>atan2(x,y)：四象限的反正切函数<br>sinh(x)：超越正弦函数<br>cosh(x)：超越馀弦函数<br>tanh(x)：超越正切函数<br>asinh(x)：反超越正弦函数<br>acosh(x)：反超越馀弦函数<br>atanh(x)：反超越正切函数<br>变数也可用来存放向量或矩阵，并进行各种运算，如下例的列向量（Row vector）运算：<br>x = [1 3 5 2];<br>y = 2<em>x+1<br>y = 3 7 11 5<br>小提示：变数命名的规则<br>1.第一个字母必须是英文字母 2.字母间不可留空格 3.最多只能有19个字母，MATLAB会忽略多馀字母<br>我们可以随意更改、增加或删除向量的元素：<br>y(3) = 2 % 更改第三个元素<br>y =3 7 2 5<br>y(6) = 10 % 加入第六个元素<br>y = 3 7 2 5 0 10<br>y(4) = [] % 删除第四个元素，<br>y = 3 7 2 0 10<br>在上例中，MATLAB会忽略所有在百分比符号（%）之後的文字，因此百分比之後的文字均可视为程式的注解（Comments）。MATLAB亦可取出向量的一个元素或一部份来做运算：<br>x(2)</em>3+y(4) % 取出x的第二个元素和y的第四个元素来做运算<br>ans = 9<br>y(2:4)-1 % 取出y的第二至第四个元素来做运算<br>ans = 6 1 -1<br>在上例中，2:4代表一个由2、3、4组成的向量</p>
+</blockquote>
+<p>若对MATLAB函数用法有疑问，可随时使用help来寻求线上支援（on-line help）：helplinspace<br>小整理：MATLAB的查询命令<br>help：用来查询已知命令的用法。例如已知inv是用来计算反矩阵，键入help inv即可得知有关inv命令的用法。（键入help help则显示help的用法，请试看看！） lookfor：用来寻找未知的命令。例如要寻找计算反矩阵的命令，可键入 lookfor inverse，MATLAB即会列出所有和关键字inverse相关的指令。找到所需的命令後 ，即可用help进一步找出其用法。（lookfor事实上是对所有在搜寻路径下的M档案进行关键字对第一注解行的比对，详见後叙。）<br>将列向量转置（Transpose）後，即可得到行向量（Column vector）：<br>z = x’<br>z = 4.0000<br>   5.2000<br>   6.4000<br>   7.6000<br>   8.8000<br>   10.0000<br>不论是行向量或列向量，我们均可用相同的函数找出其元素个数、最大值、最小值等：<br>length(z) % z的元素个数<br>ans = 6<br>max(z) % z的最大值<br>ans = 10<br>min(z) % z的最小值<br>ans =   4<br>小整理：适用於向量的常用函数有：<br>min(x): 向量x的元素的最小值<br>max(x): 向量x的元素的最大值<br>mean(x): 向量x的元素的平均值<br>median(x): 向量x的元素的中位数<br>std(x): 向量x的元素的标准差<br>diff(x): 向量x的相邻元素的差<br>sort(x): 对向量x的元素进行排序（Sorting）<br>length(x): 向量x的元素个数<br>norm(x): 向量x的欧氏（Euclidean）长度<br>sum(x): 向量x的元素总和<br>prod(x): 向量x的元素总乘积<br>cumsum(x): 向量x的累计元素总和<br>cumprod(x): 向量x的累计元素总乘积<br>dot(x, y): 向量x和y的内 积<br>cross(x, y): 向量x和y的外积 （大部份的向量函数也可适用於矩阵，详见下述。） </p>
+<p>若要输入矩阵，则必须在每一列结尾加上分号（；），如下例：<br>A = [1 2 3 4; 5 6 7 8; 9 1011 12];<br>A =<br>1  2  3 4<br>5  6  7 8<br>9  10 11  12<br>同样地，我们可以对矩阵进行各种处理：<br>A(2,3) = 5 % 改变位於第二列，第三行的元素值<br>A =<br>1  2  3 4<br>5  6  5 8<br>9  10 11  12<br>B = A(2,1:3) % 取出部份矩阵B<br>B = 5 6 5<br>A = [A B’] % 将B转置後以行向量并入A<br>A =<br>1  2  3  4  5<br>5  6  5  8  6<br>9  10 11  12 5<br>A(:, 2) = [] % 删除第二行（：代表所有列）<br>A =<br>1  3  4 5<br>5  5  8 6<br>9  11 12  5<br>A = [A; 4 3 2 1] % 加入第四列<br>A =<br>1  3   4  5<br>5  5   8  6<br>9  11  12 5<br>4  3   2  1<br>A([1 4], :) = [] % 删除第一和第四列（：代表所有行）<br>A =<br>5  5   8  6<br>9  11  12 5<br>这几种矩阵处理的方式可以相互叠代运用，产生各种意想不到的效果，就看各位的巧思和创意。<br>小提示：在MATLAB的内部资料结构中,每一个矩阵都是一个以行为主（Column-oriented ）的阵列（Array）因此对於矩阵元素的存取，我们可用一维或二维的索引（Index）来定址。举例来说，在上述矩阵A中，位於第二列、第三行的元素可写为A(2,3) （二维索引）或A(6)（一维索引，即将所有直行进行堆叠後的第六个元素）。<br>此外，若要重新安排矩阵的形状，可用reshape命令：<br>B = reshape(A, 4, 2) % 4是新矩阵的列数，2是新矩阵的行数<br>B =<br>5   8<br>9   12<br>5   6<br>11  5<br>小提示： A(:)就是将矩阵A每一列堆叠起来，成为一个行向量，而这也是MATLAB变数的内部储存方式。以前例而言，reshape(A, 8, 1)和A(:)同样都会产生一个8x1的矩阵。<br>MATLAB可在同时执行数个命令，只要以逗号或分号将命令隔开：<br>x = sin(pi/3); y = x^2; z = y<em>10,<br>z =<br>7.5000<br>若一个数学运算是太长，可用三个句点将其延伸到下一行：<br>z = 10</em>sin(pi/3)* …<br>sin(pi/3);<br>若要检视现存於工作空间（Workspace）的变数，可键入who：<br>who<br>Your variables are:<br>testfile x<br>这些是由使用者定义的变数。若要知道这些变数的详细资料，可键入：<br>whos<br>Name Size Bytes Class<br>A 2x4 64 double array<br>B 4x2 64 double array<br>ans 1x1 8 double array<br>x 1x1 8 double array<br>y 1x1 8 double array<br>z 1x1 8 double array<br>Grand total is 20 elements using 160 bytes<br>使用clear可以删除工作空间的变数：<br>clear A<br>A<br>??? Undefined function or variable ‘A’.<br>另外MATLAB有些永久常数（Permanent constants），虽然在工作空间中看不 到，但使用者可直接取用，例如：<br>pi<br>ans = 3.1416<br>下表即为MATLAB常用到的永久常数。<br>小整理：MATLAB的永久常数 i或j：基本虚数单位<br>eps：系统的浮点（Floating-point）精确度<br>inf：无限大， 例如1/0 nan或NaN：非数值（Not a number） ，例如0/0<br>pi：圆周率 p（= 3.1415926…）<br>realmax：系统所能表示的最大数值<br>realmin：系统所能表示的最小数值<br>nargin: 函数的输入引数个数<br>nargin: 函数的输出引数个数<br> 1-2、重复命令<br>最简单的重复命令是for圈（for-loop），其基本形式为：<br>for 变数 = 矩阵；<br>运算式；<br>end<br>其中变数的值会被依次设定为矩阵的每一行，来执行介於for和end之间的运算式。因此,若无意外情况，运算式执行的次数会等於矩阵的行数。<br>举例来说，下列命令会产生一个长度为6的调和数列（Harmonic sequence）：<br>x = zeros(1,6); % x是一个16的零矩阵<br>for i = 1:6,<br>x(i) = 1/i;<br>end<br>在上例中，矩阵x最初是一个16的零矩阵，在for圈中，变数i的值依次是1到6，因此矩阵x的第i个元素的值依次被设为1/i。我们可用分数来显示此数列：<br>format rat % 使用分数来表示数值<br>disp(x)<br>1 1/2 1/3 1/4 1/5 1/6<br>for圈可以是多层的，下例产生一个16的Hilbert矩阵h，其中为於第i列、第j行的元素为<br>h = zeros(6);<br>for i = 1:6,<br>for j = 1:6,<br>h(i,j) = 1/(i+j-1);<br>end<br>end<br>disp(h)<br>1 1/2 1/3 1/4 1/5 1/6<br>1/2 1/3 1/4 1/5 1/6 1/7<br>1/3 1/4 1/5 1/6 1/7 1/8<br>1/4 1/5 1/6 1/7 1/8 1/9<br>1/5 1/6 1/7 1/8 1/9 1/10<br>1/6 1/7 1/8 1/9 1/10 1/11<br>小提示：预先配置矩阵 在上面的例子，我们使用zeros来预先配置（Allocate）了一个适当大小的矩阵。若不预先配置矩阵，程式仍可执行，但此时MATLAB需要动态地增加（或减小）矩阵的大小，因而降低程式的执行效率。所以在使用一个矩阵时，若能在事前知道其大小，则最好先使用zeros或ones等命令来预先配置所需的记忆体（即矩阵）大小。  </p>
+<p>在下例中，for圈列出先前产生的Hilbert矩阵的每一行的平方和：<br>for i = h,<br>disp(norm(i)^2); % 印出每一行的平方和<br>end  </p>
+<p>1299/871<br>282/551<br>650/2343<br>524/2933<br>559/4431<br>831/8801<br>在上例中，每一次i的值就是矩阵h的一行，所以写出来的命令特别简洁。<br>令一个常用到的重复命令是while圈，其基本形式为：<br>while 条件式；<br>运算式；<br>end<br>也就是说，只要条件示成立，运算式就会一再被执行。例如先前产生调和数列的例子，我们可用while圈改写如下：<br>x = zeros(1,6); % x是一个16的零矩阵<br>i = 1;<br>while i &lt;= 6,<br>x(i) = 1/i;<br>i = i+1;<br>end<br>format short</p>
+<p>1-3、逻辑命令<br>最简单的逻辑命令是if, …, end，其基本形式为：<br>if 条件式；<br>运算式；<br>end<br>if rand(1,1) &gt; 0.5,<br>disp(‘Given random number is greater than 0.5.’);<br>end<br>Given random number is greater than 0.5.</p>
+<p>1-4、集合多个命令於一个M档案<br>若要一次执行大量的MATLAB命令，可将这些命令存放於一个副档名为m的档案，并在 MATLAB提示号下键入此档案的主档名即可。此种包含MATLAB命令的档案都以m为副档名，因此通称M档案（M-files）。例如一个名为test.m的M档案，包含一连串的MATLAB命令，那麽只要直接键入test，即可执行其所包含的命令：<br>pwd % 显示现在的目录<br>ans =<br>D:\MATLAB5\bin<br>cd c:\data\mlbook % 进入test.m所在的目录<br>type test.m % 显示test.m的内容<br>% This is my first test M-file.<br>% Roger Jang, March 3, 1997<br>fprintf(‘Start of test.m!\n’);<br>for i = 1:3,<br>fprintf(‘i = %d —&gt; i^3 = %d\n’, i, i^3);<br>end<br>fprintf(‘End of test.m!\n’);<br>test % 执行test.m<br>Start of test.m!<br>i = 1 —&gt; i^3 = 1<br>i = 2 —&gt; i^3 = 8<br>i = 3 —&gt; i^3 = 27<br>End of test.m!<br>小提示：第一注解行（H1 help line） test.m的前两行是注解，可以使程式易於了解与管理。特别要说明的是，第一注解行通常用来简短说明此M档案的功能，以便lookfor能以关键字比对的方式来找出此M档案。举例来说，test.m的第一注解行包含test这个字，因此如果键入lookfor test，MATLAB即可列出所有在第一注解行包含test的M档案，因而test.m也会被列名在内。<br>严格来说，M档案可再细分为命令集（Scripts）及函数（Functions）。前述的test.m即为命令集，其效用和将命令逐一输入完全一样，因此若在命令集可以直接使用工作空间的变数，而且在命令集中设定的变数，也都在工作空间中看得到。函数则需要用到输入引数（Input arguments）和输出引数（Output arguments）来传递资讯，这就像是C语言的函数,或是FORTRAN语言的副程序（Subroutines）。举例来说，若要计算一个正整数的阶乘 （Factorial），我们可以写一个如下的MATLAB函数并将之存档於fact.m：<br>function output = fact(n)<br>% FACT Calculate factorial of a given positive integer.<br>output = 1;<br>for i = 1:n,<br>output = output<em>i;<br>end<br>其中fact是函数名，n是输入引数，output是输出引数，而i则是此函数用到的暂时变数。要使用此函数，直接键入函数名及适当输入引数值即可：<br>y = fact(5)<br>y = 120<br>（当然，在执行fact之前，你必须先进入fact.m所在的目录。）在执行fact(5)时，<br>MATLAB会跳入一个下层的暂时工作空间（Temperary workspace），将变数n的值设定为5，然後进行各项函数的内部运算，所有内部运算所产生的变数（包含输入引数n、暂时变数i，以及输出引数output）都存在此暂时工作空间中。运算完毕後，MATLAB会将最後输出引数output的值设定给上层的变数y，并将清除此暂时工作空间及其所含的所有变数。换句话说，在呼叫函数时，你只能经由输入引数来控制函数的输入，经由输出引数来得到函数的输出，但所有的暂时变数都会随着函数的结束而消失，你并无法得到它们的值。<br>小提示：有关阶乘函数 前面（及後面）用到的阶乘函数只是纯粹用来说明MATLAB的函数观念。若实际要计算一个正整数n的阶乘（即n!）时，可直接写成prod(1:n)，或是直接呼叫gamma函数：gamma(n-1)。<br>MATLAB的函数也可以是递式的（Recursive），也就是说，一个函数可以呼叫它本身。<br>举例来说，n! = n</em>(n-1)!，因此前面的阶乘函数可以改成递式的写法：<br>function output = fact(n)<br>% FACT Calculate factorial of a given positive integerrecursively.<br>if n == 1, % Terminating condition<br>output = 1;<br>return;<br>end<br>output = n*fact(n-1);<br>在写一个递函数时，一定要包含结束条件（Terminating condition），否则此函数将会一再呼叫自己，永远不会停止，直到电脑的记忆体被耗尽为止。以上例而言，n==1即满足结束条件，此时我们直接将output设为1，而不再呼叫此函数本身。  </p>
+<p>1-5、搜寻路径<br>在前一节中，test.m所在的目录是d:\mlbook。如果不先进入这个目录，MATLAB就找不到你要执行的M档案。如果希望MATLAB不论在何处都能执行test.m，那麽就必须将d:\mlbook加入MATLAB的搜寻路径（Search path）上。要检视MATLAB的搜寻路径，键入path即可：<br>path<br>MATLABPATH<br>d:\matlab5\toolbox\matlab\general<br>d:\matlab5\toolbox\matlab\ops<br>d:\matlab5\toolbox\matlab\lang<br>d:\matlab5\toolbox\matlab\elmat<br>d:\matlab5\toolbox\matlab\elfun<br>d:\matlab5\toolbox\matlab\specfun<br>d:\matlab5\toolbox\matlab\matfun<br>d:\matlab5\toolbox\matlab\datafun<br>d:\matlab5\toolbox\matlab\polyfun<br>d:\matlab5\toolbox\matlab\funfun<br>d:\matlab5\toolbox\matlab\sparfun<br>d:\matlab5\toolbox\matlab\graph2d<br>d:\matlab5\toolbox\matlab\graph3d<br>d:\matlab5\toolbox\matlab\specgraph<br>d:\matlab5\toolbox\matlab\graphics<br>d:\matlab5\toolbox\matlab\uitools<br>d:\matlab5\toolbox\matlab\strfun<br>d:\matlab5\toolbox\matlab\iofun<br>d:\matlab5\toolbox\matlab\timefun<br>d:\matlab5\toolbox\matlab\datatypes<br>d:\matlab5\toolbox\matlab\dde<br>d:\matlab5\toolbox\matlab\demos<br>d:\matlab5\toolbox\tour<br>d:\matlab5\toolbox\simulink\simulink<br>d:\matlab5\toolbox\simulink\blocks<br>d:\matlab5\toolbox\simulink\simdemos<br>d:\matlab5\toolbox\simulink\dee<br>d:\matlab5\toolbox\local<br>此搜寻路径会依已安装的工具箱（Toolboxes）不同而有所不同。要查询某一命令是在搜寻路径的何处，可用which命令：<br>which expo<br>d:\matlab5\toolbox\matlab\demos\expo.m<br>很显然c:\data\mlbook并不在MATLAB的搜寻路径中，因此MATLAB找不到test.m这个M档案：<br>which test<br>c:\data\mlbook\test.m<br>要将d:\mlbook加入MATLAB的搜寻路径，还是使用path命令：<br>path(path, ‘c:\data\mlbook’);<br>此时d:\mlbook已加入MATLAB搜寻路径（键入path试看看），因此MATLAB已经”看”得到<br>test.m:<br>which test<br>c:\data\mlbook\test.m<br>现在我们就可以直接键入test，而不必先进入test.m所在的目录。<br>小提示：如何在其启动MATLAB时，自动设定所需的搜寻路径？ 如果在每一次启动MATLAB後都要设定所需的搜寻路径，将是一件很麻烦的事。有两种方法，可以使MATLAB启动後 ，即可载入使用者定义的搜寻路径：<br>1.MATLAB的预设搜寻路径是定义在matlabrc.m（在c:\matlab之下，或是其他安装MATLAB 的主目录下），MATLAB每次启动後，即自动执行此档案。因此你可以直接修改matlabrc.m ，以加入新的目录於搜寻路径之中。<br>2.MATLAB在执行matlabrc.m时，同时也会在预设搜寻路径中寻找startup.m，若此档案存在，则执行其所含的命令。因此我们可将所有在MATLAB启动时必须执行的命令（包含更改搜寻路径的命令），放在此档案中。<br>每次MATLAB遇到一个命令（例如test）时，其处置程序为：<br>1.将test视为使用者定义的变数。<br>2.若test不是使用者定义的变数，将其视为永久常数 。<br>3.若test不是永久常数，检查其是否为目前工作目录下的M档案。<br>4.若不是，则由搜寻路径寻找是否有test.m的档案。<br>5.若在搜寻路径中找不到，则MATLAB会发出哔哔声并印出错误讯息。<br>以下介绍与MATLAB搜寻路径相关的各项命令。  </p>
+<p>1-6、资料的储存与载入<br>有些计算旷日废时，那麽我们通常希望能将计算所得的储存在档案中，以便将来可进行其他处理。MATLAB储存变数的基本命令是save，在不加任何选项（Options）时，save会将变数以二进制（Binary）的方式储存至副档名为mat的档案，如下述：<br>save：将工作空间的所有变数储存到名为matlab.mat的二进制档案。<br>save filename：将工作空间的所有变数储存到名为filename.mat的二进制档案。 save filename x y z ：将变数x、y、z储存到名为filename.mat的二进制档案。<br>以下为使用save命令的一个简例：<br>who % 列出工作空间的变数<br>Your variables are:<br>B h j y<br>ans i x z<br>save test B y % 将变数B与y储存至test.mat<br>dir % 列出现在目录中的档案<br>. 2plotxy.doc fact.m simulink.doc test.m ~$1basic.doc<br>.. 3plotxyz.doc first.doc temp.doc test.mat<br>1basic.doc book.dot go.m template.doc testfile.dat<br>delete test.mat % 删除test.mat<br>以二进制的方式储存变数，通常档案会比较小，而且在载入时速度较快，但是就无法用普通的文书软体（例如pe2或记事本）看到档案内容。若想看到档案内容，则必须加上-ascii选项，详见下述：<br>save filename x -ascii：将变数x以八位数存到名为filename的ASCII档案。<br>Save filename x -ascii -double：将变数x以十六位数存到名为filename的ASCII档案。<br>另一个选项是-tab，可将同一列相邻的数目以定位键（Tab）隔开。<br>小提示：二进制和ASCII档案的比较 在save命令使用-ascii选项後，会有下列现象:save命令就不会在档案名称後加上mat的副档名。<br>因此以副档名mat结尾的档案通常是MATLAB的二进位资料档。<br>若非有特殊需要，我们应该尽量以二进制方式储存资料。<br>load命令可将档案载入以取得储存之变数：<br>load filename：load会寻找名称为filename.mat的档案，并以二进制格式载入。若找不到filename.mat，则寻找名称为filename的档案，并以ASCII格式载入。load filename-ascii：load会寻找名称为filename的档案，并以ASCII格式载入。<br>若以ASCII格式载入，则变数名称即为档案名称（但不包含副档名）。若以二进制载入，则可保留原有的变数名称，如下例：<br>clear all; % 清除工作空间中的变数<br>x = 1:10;<br>save testfile.dat x -ascii % 将x以ASCII格式存至名为testfile.dat的档案<br>load testfile.dat % 载入testfile.dat<br>who % 列出工作空间中的变数<br>Your variables are:<br>testfile x<br>注意在上述过程中，由於是以ASCII格式储存与载入，所以产生了一个与档案名称相同的变数testfile，此变数的值和原变数x完全相同。<br>1-7、结束MATLAB<br>有三种方法可以结束MATLAB：<br>1.键入exit<br>2.键入quit<br>3.直接关闭MATLAB的命令视窗（Command window）  </p>
+<p>2．数值分析<br>2．1微分<br>diff函数用以演算一函数的微分项，相关的函数语法有下列4个：<br>diff(f) 传回f对预设独立变数的一次微分值<br>diff(f,’t’) 传回f对独立变数t的一次微分值<br>diff(f,n) 传回f对预设独立变数的n次微分值<br>diff(f,’t’,n) 传回f对独立变数t的n次微分值<br>    数值微分函数也是用diff，因此这个函数是靠输入的引数决定是以数值或是符号微分，如果引数为向量则执行数值微分，如果引数为符号表示式则执行符号微分。<br>    先定义下列三个方程式，接著再演算其微分项：  </p>
+<blockquote>
+<blockquote>
+<p>S1 = ‘6<em>x^3-4</em>x^2+b<em>x-5’;<br>S2 = ‘sin(a)’;<br>S3 = ‘(1 - t^3)/(1 + t^4)’;<br>diff(S1)<br>ans=18</em>x^2-8<em>x+b<br>diff(S1,2)<br>ans= 36</em>x-8<br>diff(S1,’b’)<br>ans= x<br>diff(S2)<br>ans=<br>cos(a)<br>diff(S3)<br>ans=-3<em>t^2/(1+t^4)-4</em>(1-t^3)/(1+t^4)^2<em>t^3<br>simplify(diff(S3))<br>ans= t^2</em>(-3+t^4-4<em>t)/(1+t^4)^2<br>2．2积分<br> int函数用以演算一函数的积分项， 这个函数要找出一符号式 F 使得diff(F)=f。如果积<br>分式的解析式(analytical form, closed form) 不存在的话或是MATLAB无法找到，则int 传回原输入的符号式。相关的函数语法有下列 4个：<br>int(f) 传回f对预设独立变数的积分值<br>int(f,’t’) 传回f对独立变数t的积分值<br>int(f,a,b) 传回f对预设独立变数的积分值，积分区间为[a,b]，a和b为数值式<br>int(f,’t’,a,b) 传回f对独立变数t的积分值，积分区间为[a,b]，a和b为数值式<br>int(f,’m’,’n’) 传回f对预设变数的积分值，积分区间为[m,n]，m和n为符号式<br>我们示范几个例子：<br>S1 = ‘6</em>x^3-4<em>x^2+b</em>x-5’;<br>S2 = ‘sin(a)’;<br>S3 = ‘sqrt(x)’;<br>int(S1)<br>ans= 3/2<em>x^4-4/3</em>x^3+1/2<em>b</em>x^2-5<em>x<br>int(S2)<br>ans= -cos(a)<br>int(S3)<br>ans= 2/3</em>x^(3/2)<br>int(S3,’a’,’b’)<br>ans= 2/3<em>b^(3/2)- 2/3</em>a^(3/2)<br>int(S3,0.5,0.6)<br>ans= 2/25<em>15^(1/2)-1/6</em>2^(1/2)<br>numeric(int(S3,0.5,0.6)) % 使用numeric函数可以计算积分的数值<br>ans= 0.0741<br>2．3求解常微分方程式<br>  MATLAB解常微分方程式的语法是dsolve(‘equation’,’condition’)，其中equation代表常微分方程式即y’=g(x,y)，且须以Dy代表一阶微分项y’　D2y代表二阶微分项y’’　，<br>condition则为初始条件。<br>假设有以下三个一阶常微分方程式和其初始条件<br>y’=3x2, y(2)=0.5<br>y’=2.x.cos(y)2, y(0)=0.25<br>y’=3y+exp(2x), y(0)=3<br>对应上述常微分方程式的符号运算式为：<br>soln_1 = dsolve(‘Dy =3<em>x^2’,’y(2)=0.5’)<br>ans= x^3-7.500000000000000<br>ezplot(soln_1,[2,4]) % 看看这个函数的长相<br>soln_2 = dsolve(‘Dy =2</em>x<em>cos(y)^2’,’y(0) = pi/4’)<br>ans= atan(x^2+1)<br>soln_3 = dsolve(‘Dy = 3</em>y +exp(2<em>x)’,’ y(0) = 3’)<br>ans= -exp(2</em>x)+4<em>exp(3</em>x)<br>2．4非线性方程式的实根<br>    要求任一方程式的根有三步骤：<br>    先定义方程式。要注意必须将方程式安排成 f(x)=0 的形态，例如一方程式为sin(x)=3，<br>则该方程式应表示为f(x)=sin(x)-3。可以 m-file 定义方程式。<br>    代入适当范围的 x, y(x) 值，将该函数的分布图画出，藉以了解该方程式的「长相」。<br>    由图中决定y(x)在何处附近(x0)与 x 轴相交，以fzero的语法fzero(‘function’,x0)即可求出在 x0附近的根，其中 function 是先前已定义的函数名称。如果从函数分布图看出根不只一个，则须再代入另一个在根附近的 x0，再求出下一个根。<br>    以下分别介绍几数个方程式，来说明如何求解它们的根。<br>    例一、方程式为<br>   sin(x)=0<br>    我们知道上式的根有 ，求根方式如下：<br>r=fzero(‘sin’,3) % 因为sin(x)是内建函数，其名称为sin，因此无须定义它,选择 x=3 附近求根<br> r=3.1416<br>r=fzero(‘sin’,6) % 选择 x=6 附近求根<br>r = 6.2832<br>    例二、方程式为MATLAB 内建函数 humps，我们不须要知道这个方程式的形态为何，不过我们可以将它划出来，再找出根的位置。求根方式如下：<br>x=linspace(-2,3);<br>y=humps(x);<br>plot(x,y), grid % 由图中可看出在0和1附近有二个根</p>
+<p>r=fzero(‘humps’,1.2)<br>r = 1.2995<br>例三、方程式为y=x.^3-2<em>x-5<br>    这个方程式其实是个多项式，我们说明除了用 roots 函数找出它的根外，也可以用这节介绍的方法求根，注意二者的解法及结果有所不同。求根方式如下：<br>% m-function, f_1.m<br>function y=f_1(x) % 定义 f_1.m 函数<br>y=x.^3-2</em>x-5;<br>x=linspace(-2,3);<br>y=f_1(x);<br>plot(x,y), grid % 由图中可看出在2和-1附近有二个根 </p>
+<p>r=fzero(‘f_1’,2); % 决定在2附近的根<br>r = 2.0946<br>p=[1 0 -2 -5]<br>r=roots(p) % 以求解多项式根方式验证<br>r =<br>2.0946<br>-1.0473 + 1.1359i<br>-1.0473 - 1.1359i<br>2．5线性代数方程（组）求解<br>    我们习惯将上组方程式以矩阵方式表示如下<br>    AX=B<br>其中 A 为等式左边各方程式的系数项，X 为欲求解的未知项，B 代表等式右边之已知项<br>要解上述的联立方程式，我们可以利用矩阵左除 \ 做运算，即是 X=A\B。<br>    如果将原方程式改写成 XA=B<br>其中 A 为等式左边各方程式的系数项，X 为欲求解的未知项，B 代表等式右边之已知项<br>    注意上式的 X, B 已改写成列向量，A其实是前一个方程式中 A 的转置矩阵。上式的 X 可以矩阵右除 / 求解，即是 X=B/A。<br>    若以反矩阵运算求解 AX=B, X=B，即是 X=inv(A)<em>B，或是改写成 XA=B, X=B，即是X=B</em>inv(A)。<br>    我们直接以下面的例子来说明这三个运算的用法：<br>A=[3 2-1; -1 3 2; 1 -1 -1]; % 将等式的左边系数键入<br>B=[10 5 -1]’; % 将等式右边之已知项键入，B要做转置<br>X=A\B % 先以左除运算求解<br>X = % 注意X为行向量<br>-2<br>5<br>6<br>C=A*X % 验算解是否正确<br>C = % C=B  </p>
+</blockquote>
+</blockquote>
+<p>10<br>5<br>-1 </p>
+<blockquote>
+<blockquote>
+<p>A=A’; % 将A先做转置<br>B=[10 5 -1];<br>X=B/A % 以右除运算求解的结果亦同<br>X = % 注意X为列向量<br>10 5  -1<br>X=B*inv(A); % 也可以反矩阵运算求解 </p>
+</blockquote>
+</blockquote>
+<p>3.基本xy平面绘图命令<br>    MATLAB不但擅长於矩阵相关的数值运算，也适合用在各种科学目视表示（Scientificvisualization）。<br>    本节将介绍MATLAB基本xy平面及xyz空间的各项绘图命令，包含一维曲线及二维曲面的绘制、列印及存档。<br>    plot是绘制一维曲线的基本函数，但在使用此函数之前，我们需先定义曲线上每一点的x 及y座标。<br>下例可画出一条正弦曲线：<br>close all;<br>x=linspace(0, 2*pi, 100); % 100个点的x座标<br>y=sin(x); % 对应的y座标<br>plot(x,y);  </p>
+<p>小整理：MATLAB基本绘图函数<br>plot: x轴和y轴均为线性刻度（Linear scale）<br>loglog: x轴和y轴均为对数刻度（Logarithmic scale）<br>semilogx: x轴为对数刻度，y轴为线性刻度<br>semilogy: x轴为线性刻度，y轴为对数刻度<br>若要画出多条曲线，只需将座标对依次放入plot函数即可：<br>plot(x, sin(x), x, cos(x));  </p>
+<p>若要改变颜色，在座标对後面加上相关字串即可：<br>plot(x, sin(x), ‘c’, x, cos(x), ‘g’);  </p>
+<p>若要同时改变颜色及图线型态（Line style），也是在座标对後面加上相关字串即可：<br>plot(x, sin(x), ‘co’, x, cos(x), ‘g*’);  </p>
+<p>小整理：plot绘图函数的叁数 字元 颜色字元 图线型态y 黄色. 点k 黑色o 圆w 白色x  xb 蓝色+ +g 绿色<em> </em>r 红色- 实线c 亮青色: 点线m 锰紫色-. 点虚线– 虚线<br>图形完成後，我们可用axis([xmin,xmax,ymin,ymax])函数来调整图轴的范围：<br>axis([0, 6, -1.2, 1.2]); </p>
+<p>此外，MATLAB也可对图形加上各种注解与处理：<br>xlabel(‘Input Value’); % x轴注解<br>ylabel(‘Function Value’); % y轴注解<br>title(‘Two Trigonometric Functions’); % 图形标题<br>legend(‘y = sin(x)’,’y = cos(x)’); % 图形注解<br>grid on; % 显示格线  </p>
+<p>我们可用subplot来同时画出数个小图形於同一个视窗之中：<br>subplot(2,2,1); plot(x, sin(x));<br>subplot(2,2,2); plot(x, cos(x));<br>subplot(2,2,3); plot(x, sinh(x));<br>subplot(2,2,4); plot(x, cosh(x));  </p>
+<p>MATLAB还有其他各种二维绘图函数，以适合不同的应用，详见下表。<br>小整理：其他各种二维绘图函数<br>bar 长条图<br>errorbar 图形加上误差范围<br>fplot 较精确的函数图形<br>polar 极座标图<br>hist 累计图<br>rose 极座标累计图<br>stairs 阶梯图<br>stem 针状图<br>fill 实心图<br>feather 羽毛图<br>compass 罗盘图<br>quiver 向量场图<br>以下我们针对每个函数举例。<br>当资料点数量不多时，长条图是很适合的表示方式：<br>close all; % 关闭所有的图形视窗<br>x=1:10;<br>y=rand(size(x));<br>bar(x,y);  </p>
+<p>如果已知资料的误差量，就可用errorbar来表示。下例以单位标准差来做资的误差量：<br>x = linspace(0,2<em>pi,30);<br>y = sin(x);<br>e = std(y)</em>ones(size(x));<br>errorbar(x,y,e)  </p>
+<p>对於变化剧烈的函数，可用fplot来进行较精确的绘图，会对剧烈变化处进行较密集的取样，如下例：<br>fplot(‘sin(1/x)’, [0.02 0.2]); % [0.02 0.2]是绘图范围  </p>
+<p>若要产生极座标图形，可用polar：<br>theta=linspace(0, 2<em>pi);<br>r=cos(4</em>theta);<br>polar(theta, r);  </p>
+<p>对於大量的资料，我们可用hist来显示资料的分　情况和统计特性。下面几个命令可用来验证randn产生的高斯乱数分　：<br>x=randn(5000, 1); % 产生5000个 m=0，s=1 的高斯乱数<br>hist(x,20); % 20代表长条的个数  </p>
+<p>rose和hist很接近，只不过是将资料大小视为角度，资料个数视为距离，并用极座标绘制<br>表示：<br>x=randn(1000, 1);<br>rose(x);  </p>
+<p>stairs可画出阶梯图：<br>x=linspace(0,10,50);<br>y=sin(x).*exp(-x/3);<br>stairs(x,y);  </p>
+<p>stems可产生针状图，常被用来绘制数位讯号：<br>x=linspace(0,10,50);<br>y=sin(x).*exp(-x/3);<br>stem(x,y);  </p>
+<p>stairs将资料点视为多边行顶点，并将此多边行涂上颜色：<br>x=linspace(0,10,50);<br>y=sin(x).*exp(-x/3);<br>fill(x,y,’b’); % ‘b’为蓝色  </p>
+<p>feather将每一个资料点视复数，并以箭号画出：<br>theta=linspace(0, 2<em>pi, 20);<br>z = cos(theta)+i</em>sin(theta);<br>feather(z);  </p>
+<p>compass和feather很接近，只是每个箭号的起点都在圆点：<br>theta=linspace(0, 2<em>pi, 20);<br>z = cos(theta)+i</em>sin(theta);<br>compass(z);  </p>
+<p>4．基本XYZ立体绘图命令<br>在科学目视表示（Scientific visualization）中，三度空间的立体图是一个非常重要的技巧。本章将介绍MATLAB基本XYZ三度空间的各项绘图命令。<br>mesh和plot是三度空间立体绘图的基本命令，mesh可画出立体网状图，plot则可画出立体曲面图，两者产生的图形都会依高度而有不同颜色。<br>下列命令可画出由函数&lt;图片&gt;形成的立体网状图:<br>x=linspace(-2, 2, 25); % 在x轴上取25点<br>y=linspace(-2, 2, 25); % 在y轴上取25点<br>[xx,yy]=meshgrid(x, y); % xx和yy都是21x21的矩阵<br>zz=xx.*exp(-xx.^2-yy.^2); % 计算函数值，zz也是21x21的矩阵<br>mesh(xx, yy, zz); % 画出立体网状图  </p>
+<p>surf和mesh的用法类似：<br>x=linspace(-2, 2, 25); % 在x轴上取25点<br>y=linspace(-2, 2, 25); % 在y轴上取25点<br>[xx,yy]=meshgrid(x, y); % xx和yy都是21x21的矩阵<br>zz=xx.*exp(-xx.^2-yy.^2); % 计算函数值，zz也是21x21的矩阵<br>surf(xx, yy, zz); % 画出立体曲面图  </p>
+<p>为了方便测试立体绘图，MATLAB提供了一个peaks函数，可产生一个凹凸有致的曲面，包含了三个局部极大点及三个局部极小点<br>要画出此函数的最快方法即是直接键入peaks：<br>peaks  </p>
+<p>z = 3<em>(1-x).^2.</em>exp(-(x.^2) - (y+1).^2) …  </p>
+<ul>
+<li>10<em>(x/5 - x.^3 - y.^5).</em>exp(-x.^2-y.^2) …  </li>
+<li>1/3*exp(-(x+1).^2 - y.^2)<br>我们亦可对peaks函数取点，再以各种不同方法进行绘图。<br>meshz可将曲面加上围裙：<br>[x,y,z]=peaks;<br>meshz(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </li>
+</ul>
+<p>waterfall可在x方向或y方向产生水流效果：<br>[x,y,z]=peaks;<br>waterfall(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>下列命令产生在y方向的水流效果：<br>[x,y,z]=peaks;<br>waterfall(x’,y’,z’);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>meshc同时画出网状图与等高线：<br>[x,y,z]=peaks;<br>meshc(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>surfc同时画出曲面图与等高线：<br>[x,y,z]=peaks;<br>surfc(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>contour3画出曲面在三度空间中的等高线：<br>contour3(peaks, 20);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>contour画出曲面等高线在XY平面的投影：<br>contour(peaks, 20);  </p>
+<p>plot3可画出三度空间中的曲线：<br>t=linspace(0,20<em>pi, 501);<br>plot3(t.</em>sin(t), t.*cos(t), t);  </p>
+<p>亦可同时画出两条三度空间中的曲线：<br>t=linspace(0, 10<em>pi, 501);<br>plot3(t.</em>sin(t), t.<em>cos(t), t, t.</em>sin(t), t.*cos(t), -t);  </p>
+<p>4.三维网图的高级处理</p>
+<ol>
+<li>消隐处理<br>例.比较网图消隐前后的图形<br>z=peaks(50);<br>subplot(2,1,1);<br>mesh(z);<br>title(‘消隐前的网图’)<br>hidden off<br>subplot(2,1,2)<br>mesh(z);<br>title(‘消隐后的网图’)<br>hidden on<br>colormap([0 0 1])</li>
+</ol>
+<ol>
+<li>裁剪处理<br>利用不定数NaN的特点,可以对网图进行裁剪处理<br>例.图形裁剪处理<br>P=peaks(30);<br>subplot(2,1,1);<br>mesh(P);<br>title(‘裁剪前的网图’)<br>subplot(2,1,2);<br>P(20:23,9:15)=NaN*ones(4,7);       %剪孔<br>meshz(P)                        %垂帘网线图<br>title(‘裁剪后的网图’)<br>colormap([0 0 1])                  %蓝色网线</li>
+</ol>
+<p>注意裁剪时矩阵的对应关系,即大小一定要相同.</p>
+<ol>
+<li>三维旋转体的绘制<br>为了一些专业用户可以更方便地绘制出三维旋转体,MATLAB专门提供了2个函数:柱面函数cylinder和球面函数sphere<br>(1)   柱面图<br>柱面图绘制由函数cylinder实现.<br>[X,Y,Z]=cylinder(R,N)  此函数以母线向量R生成单位柱面.母线向量R是在单位高度里等分刻度上定义的半径向量.N为旋转圆周上的分格线的条数.可以用surf(X,Y,Z)来表示此柱面.<br>[X,Y,Z]=cylinder(R)或[X,Y,Z]=cylinder此形式为默认N=20且R=[1 1]</li>
+</ol>
+<p>例.柱面函数演示举例<br>x=0:pi/20:pi*3;<br>r=5+cos(x);<br>[a,b,c]=cylinder(r,30);<br>mesh(a,b,c)</p>
+<p>例.旋转柱面图.<br>r=abs(exp(-0.25<em>t).</em>sin(t));<br>t=0:pi/12:3<em>pi;<br>r=abs(exp(-0.25</em>t).*sin(t));<br>[X,Y,Z]=cylinder(r,30);<br>mesh(X,Y,Z)<br>colormap([1 0 0])</p>
+<p>(2).球面图<br>球面图绘制由函数sphere来实现<br>[X,Y,Z]=sphere(N)             此函数生成3个(N+1)*(N+1)的矩阵,利用函数        surf(X,Y,Z) 可产生单位球面.<br>[X,Y,Z]=sphere         此形式使用了默认值N=20.<br>Sphere(N)             只是绘制了球面图而不返回任何值.<br>例.绘制地球表面的气温分布示意图.<br>[a,b,c]=sphere(40);<br>t=abs(c);<br>surf(a,b,c,t);<br>axis(‘equal’)   %此两句控制坐标轴的大小相同.<br>axis(‘square’)<br>colormap(‘hot’)</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-15T06:12:26.000Z" itemprop="dateUpdated">2017年3月15日 14:12</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/03/15/MATLAB 基础/" target="_blank" rel="external">http://fr1ee.github.io/2017/03/15/MATLAB 基础/</a>
+    </div>
+    <footer>
+        <a href="http://fr1ee.github.io">
+            <img src="/img/avatar.jpg" alt="FreeMing">
+            FreeMing
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/&title=《No title》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/&title=《No title》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/MATLAB 基础/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/15/impress.js/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">安装SQL2012</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/15/Apache引起的wampserver安装好第二次使用无法启动问题/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">No title</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="MATLAB 基础" data-title="No title" data-url="http://fr1ee.github.io/2017/03/15/MATLAB 基础/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'freeming.duoshuo.com', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.10');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        多谢，祝君好~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechatpay.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by Hexo Theme indigo</span>
+            <span>Keep Moving ! &copy; 2014 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/&title=《No title》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/&title=《No title》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/MATLAB 基础/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/MATLAB 基础/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://fr1ee.github.io/2017/03/15/MATLAB 基础/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261473536&web_id=1261473536')
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.10" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

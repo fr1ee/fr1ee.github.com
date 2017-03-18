@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="fr1ee.github.io/2017/03/15/平衡二叉树/">
+    
+    
+    <title>安装SQL2012 | Keep Moving ! | 仅以此博客作为经验积累的日志</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#565656">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装SQL2012">
+<meta property="og:url" content="http://fr1ee.github.io/2017/03/15/平衡二叉树/index.html">
+<meta property="og:site_name" content="Keep Moving !">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:updated_time" content="2017-03-15T06:09:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安装SQL2012">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+    
+        <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FreeMing</h5>
+          <a href="mailto:wang.6688.cool@163.com" title="wang.6688.cool@163.com" class="mail">wang.6688.cool@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                足记
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fr1ee" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://git.oschina.net/953082389qq.com"  >
+                <i class="icon icon-lg icon-cloud"></i>
+                码云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/wechart"  >
+                <i class="icon icon-lg icon-comments"></i>
+                微信
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">安装SQL2012</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">安装SQL2012</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-15T03:20:27.000Z" itemprop="datePublished" class="page-time">
+  2017-03-15
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+<article id="post-平衡二叉树"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">安装SQL2012</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月15日 11:20" datetime="2017-03-15T03:20:27.000Z"  itemprop="datePublished">2017-03-15</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div></pre></td><td class="code"><pre><div class="line">#include&lt;stdio.h&gt;</div><div class="line">#include&lt;stdlib.h&gt;</div><div class="line">#include&lt;string.h&gt;</div><div class="line">#define TRUE 1</div><div class="line">#define FALSE 0</div><div class="line">#define OK 1</div><div class="line">#define ERROR 0</div><div class="line">#define LH +1 </div><div class="line">#define EH 0 </div><div class="line">#define RH -1</div><div class="line">typedef int Status;</div><div class="line">typedef int ElemType;</div><div class="line">typedef struct BSTNode&#123;</div><div class="line">ElemType data;</div><div class="line">int bf;</div><div class="line">struct BSTNode *lchild ,*rchild;</div><div class="line">&#125; BSTNode,* BSTree; </div><div class="line">/*</div><div class="line">查找算法</div><div class="line">*/</div><div class="line">Status SearchBST(BSTree T,ElemType e);//查找</div><div class="line">void R_Rotate(BSTree &amp;p);//右旋</div><div class="line">void L_Rotate(BSTree &amp;p);//左旋</div><div class="line">void LeftBalance(BSTree &amp;T);//插入平衡调整</div><div class="line">void RightBalance(BSTree &amp;T);//插入平衡调整</div><div class="line">Status InsertAVL(BSTree &amp;T,ElemType e,int &amp;taller);//插入</div><div class="line">void DELeftBalance(BSTree &amp;T);//删除平衡调整</div><div class="line">void DERightBalance(BSTree &amp;T);//删除平衡调整</div><div class="line">Status Delete(BSTree &amp;T,int &amp;shorter);//删除操作</div><div class="line">Status DeleteAVL(BSTree &amp;T,ElemType e,int &amp;shorter);//删除操作</div><div class="line">void PrintBSTree(BSTree &amp;T,int lev);//凹入表显示</div><div class="line"></div><div class="line">Status SearchBST(BSTree T,ElemType e)&#123;</div><div class="line">if(!T)&#123;</div><div class="line">return FALSE; //查找失败</div><div class="line">&#125;</div><div class="line">else if(e == T-&gt;data )&#123;</div><div class="line">return TRUE; //查找成功</div><div class="line">&#125;</div><div class="line">else if (e &lt; T-&gt;data)&#123;</div><div class="line">return SearchBST(T-&gt;lchild,e);  //递归调用</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">return SearchBST(T-&gt;rchild,e);  //递归调用</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">//右旋</div><div class="line">void R_Rotate(BSTree &amp;p)&#123;</div><div class="line">BSTree lc;                         </div><div class="line">lc = p-&gt;lchild;</div><div class="line">p-&gt;lchild = lc-&gt;rchild;</div><div class="line">lc-&gt;rchild = p;</div><div class="line">p = lc;</div><div class="line"></div><div class="line">&#125;</div><div class="line">//左旋</div><div class="line">void L_Rotate(BSTree &amp;p)&#123;</div><div class="line">BSTree rc;</div><div class="line">rc = p-&gt;rchild;</div><div class="line">p-&gt;rchild = rc-&gt;lchild; </div><div class="line">rc-&gt;lchild = p;</div><div class="line">p = rc;</div><div class="line">&#125;</div><div class="line"> //左插入平衡调整</div><div class="line">void LeftBalance(BSTree &amp;T)&#123;</div><div class="line">BSTree lc,rd; </div><div class="line">lc=T-&gt;lchild;</div><div class="line">switch(lc-&gt;bf)&#123; </div><div class="line">case LH:                      </div><div class="line">T-&gt;bf = lc-&gt;bf=EH; </div><div class="line">R_Rotate(T);</div><div class="line">break; </div><div class="line">case RH:           </div><div class="line">rd=lc-&gt;rchild; </div><div class="line">switch(rd-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case RH: T-&gt;bf=EH; lc-&gt;bf=LH; </div><div class="line">break; </div><div class="line">&#125; </div><div class="line">rd-&gt;bf=EH; </div><div class="line">L_Rotate(T-&gt;lchild); </div><div class="line">R_Rotate(T);</div><div class="line">&#125; </div><div class="line">&#125;</div><div class="line">//  右插入平衡调整</div><div class="line">void RightBalance(BSTree &amp;T) </div><div class="line">&#123; </div><div class="line">BSTree rc,ld; </div><div class="line">rc=T-&gt;rchild; </div><div class="line">switch(rc-&gt;bf)&#123; </div><div class="line">case RH:                      //左旋</div><div class="line">T-&gt;bf= rc-&gt;bf=EH; </div><div class="line">L_Rotate(T); </div><div class="line">break; </div><div class="line">case LH:                    //</div><div class="line">ld=rc-&gt;lchild; </div><div class="line">switch(ld-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; rc-&gt;bf=EH; //插入结点无兄弟结点，且新节点从他的左边</div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=rc-&gt;bf=EH;   //插入结点有兄弟结点</div><div class="line">break; </div><div class="line">case RH: T-&gt;bf = EH; rc-&gt;bf=LH; //插入结点无兄弟结点，且新节点从他的右边</div><div class="line">break; </div><div class="line">&#125; </div><div class="line">ld-&gt;bf=EH; </div><div class="line">R_Rotate(T-&gt;rchild); </div><div class="line">L_Rotate(T); </div><div class="line">&#125; </div><div class="line">&#125; </div><div class="line">//插入结点</div><div class="line">Status InsertAVL(BSTree &amp;T,ElemType e,int &amp;taller)&#123;</div><div class="line">if(!T)&#123;</div><div class="line">T= (BSTree) malloc (sizeof(BSTNode));</div><div class="line">T-&gt;data = e;</div><div class="line">T-&gt;lchild = T-&gt;rchild = NULL;</div><div class="line">T-&gt;bf = EH;</div><div class="line">taller = 1;      // taller表示树是否&quot;长高&quot;</div><div class="line">&#125;</div><div class="line"> else&#123;</div><div class="line">if(e == T-&gt;data)&#123;</div><div class="line">taller = 0;</div><div class="line">printf(&quot;请插入不同的数值\n&quot;);</div><div class="line">return ERROR;</div><div class="line">&#125;</div><div class="line">if(e &lt; T-&gt;data)&#123;</div><div class="line">   if(!InsertAVL(T-&gt;lchild,e,taller))//递归调用 找到父节点，判断左孩子是否为空</div><div class="line">   return ERROR;</div><div class="line">   if(taller)</div><div class="line">   switch(T-&gt;bf)&#123;</div><div class="line">   case LH:</div><div class="line">   LeftBalance(T);</div><div class="line">   taller = 0;</div><div class="line">   break;</div><div class="line">   case EH :</div><div class="line">   T-&gt;bf = LH;</div><div class="line">   taller = TRUE;</div><div class="line">   break;</div><div class="line">   case RH:</div><div class="line">   T-&gt;bf = EH;</div><div class="line">   taller = FALSE;</div><div class="line">   break;</div><div class="line">   &#125;</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">	if (!InsertAVL(T-&gt;rchild,e,taller))&#123;     // 递归调用 找到父节点，判断右孩子是否为空</div><div class="line">return ERROR;</div><div class="line">&#125;</div><div class="line">if(taller)</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case LH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">taller = FALSE;</div><div class="line">break;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = RH;</div><div class="line">taller = TRUE;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">RightBalance(T);   //右平衡调整</div><div class="line">taller = FALSE;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">return 1;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//删除左子树结点平衡调整      左右</div><div class="line">void DELeftBalance(BSTree &amp;T)&#123;</div><div class="line">BSTree lc,rd;   </div><div class="line">lc=T-&gt;lchild;</div><div class="line">switch(lc-&gt;bf)&#123; </div><div class="line">case LH: </div><div class="line">T-&gt;bf = EH; </div><div class="line">//lc-&gt;bf= EH;</div><div class="line">R_Rotate(T);</div><div class="line">break; </div><div class="line">case EH: </div><div class="line">T-&gt;bf = EH; </div><div class="line">lc-&gt;bf= EH;</div><div class="line">R_Rotate(T);</div><div class="line">break; </div><div class="line">case RH: </div><div class="line">rd=lc-&gt;rchild; </div><div class="line">switch(rd-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case RH: T-&gt;bf=EH; lc-&gt;bf=LH; </div><div class="line">break; </div><div class="line">&#125; </div><div class="line">rd-&gt;bf=EH; </div><div class="line">L_Rotate(T-&gt;lchild); </div><div class="line">R_Rotate(T);</div><div class="line">&#125; </div><div class="line">&#125;</div><div class="line">//删除右子树结点平衡调整   </div><div class="line">void DERightBalance(BSTree &amp;T) </div><div class="line">&#123; </div><div class="line">BSTree rc,ld; </div><div class="line">rc=T-&gt;rchild; </div><div class="line">switch(rc-&gt;bf)&#123; </div><div class="line">case RH: </div><div class="line">T-&gt;bf= EH; </div><div class="line">//rc-&gt;bf= EH;</div><div class="line">L_Rotate(T); </div><div class="line">break;</div><div class="line">case EH:</div><div class="line">T-&gt;bf= EH; </div><div class="line">//rc-&gt;bf= EH;</div><div class="line">L_Rotate(T); </div><div class="line">break;</div><div class="line">case LH: </div><div class="line">ld=rc-&gt;lchild; </div><div class="line">switch(ld-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; rc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=rc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case RH: T-&gt;bf = EH; rc-&gt;bf=LH; </div><div class="line">break; </div><div class="line">&#125; </div><div class="line">ld-&gt;bf=EH; </div><div class="line">R_Rotate(T-&gt;rchild); </div><div class="line">L_Rotate(T); </div><div class="line">&#125; </div><div class="line">&#125; </div><div class="line"></div><div class="line">//被删的节点既有左子树又有右子树</div><div class="line">void SDelete(BSTree &amp;T,BSTree &amp;q,BSTree &amp;s,int &amp;shorter)&#123;</div><div class="line">	if(s-&gt;rchild)&#123;    </div><div class="line">SDelete(T,s,s-&gt;rchild,shorter);  //被删除结点最右边结点</div><div class="line"></div><div class="line">if(shorter)</div><div class="line">switch(s-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">s-&gt;bf = LH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">s-&gt;bf = EH;</div><div class="line">shorter = 1;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">DELeftBalance(s);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">return;</div><div class="line">&#125;</div><div class="line"></div><div class="line">T-&gt;data = s-&gt;data;</div><div class="line">if(q != T)</div><div class="line">q-&gt;rchild = s-&gt;lchild;</div><div class="line">else</div><div class="line">q-&gt;lchild = s-&gt;lchild;</div><div class="line">shorter = 1;</div><div class="line"></div><div class="line">&#125;</div><div class="line"> </div><div class="line">//删除结点</div><div class="line">Status Delete(BSTree &amp;T,int &amp;shorter)&#123;</div><div class="line">BSTree q;</div><div class="line">if(!T-&gt;rchild)&#123;       //被删的节点只有左子树，其父节点直接指向左孩子  叶子节点也是这</div><div class="line">                      </div><div class="line"></div><div class="line">q = T;</div><div class="line">T = T-&gt;lchild;</div><div class="line">free(q);</div><div class="line">shorter = 1;   </div><div class="line">&#125;</div><div class="line">else if(!T-&gt;lchild)&#123;       //被删的节点只有右子树，其父节点直接指向右孩子 叶子节点也是这</div><div class="line">q = T;</div><div class="line">T= T-&gt;rchild;</div><div class="line">free(q);</div><div class="line">shorter = 1;</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">SDelete(T,T,T-&gt;lchild,shorter);    //被删的节点有左右子树</div><div class="line">if(shorter)                        //进行平衡调整</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = RH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">shorter = 1;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">DERightBalance(T);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">return TRUE;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">//删除操作  找结点</div><div class="line">Status DeleteAVL(BSTree &amp;T,ElemType e,int &amp;shorter)&#123;</div><div class="line">int sign = 0;</div><div class="line">if (!T)&#123;</div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">if(e == T-&gt;data)&#123;</div><div class="line">sign = Delete(T,shorter);</div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line"></div><div class="line">else if(e &lt; T-&gt;data)&#123;            //向左查找</div><div class="line">sign = DeleteAVL(T-&gt;lchild,e,shorter);</div><div class="line">if(shorter)         //通过shorter回溯</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = RH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">shorter = 1;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">DERightBalance(T);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line"></div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line">else&#123;                                //向右查找</div><div class="line">sign = DeleteAVL(T-&gt;rchild,e,shorter);</div><div class="line">if(shorter)     //通过shorter回溯</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = LH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">DELeftBalance(T);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">//构建</div><div class="line">void CreatBSTree(BSTree &amp;T)&#123;</div><div class="line">FILE *fp;</div><div class="line">	</div><div class="line">	if((fp=fopen(&quot;a.txt&quot;, &quot;r&quot;))==NULL)</div><div class="line">	&#123;</div><div class="line">		printf(&quot;can&apos;t open the file!\n&quot;);</div><div class="line">		exit(0);	</div><div class="line">	&#125; </div><div class="line">	</div><div class="line">int e,taller = 0;</div><div class="line">//printf(&quot;输入结点个数:&quot;);</div><div class="line">//scanf(&quot;%d&quot;,&amp;num);</div><div class="line">//printf(&quot;请顺序输入结点值:\n&quot;);</div><div class="line">//for(i = 0 ;i &lt; num;i++)&#123;</div><div class="line">//printf(&quot;第%d个结点的值:&quot;,i+1);</div><div class="line">while(feof(fp)==0)&#123;</div><div class="line">	fscanf(fp,&quot;%d&quot;,&amp;e);</div><div class="line">	InsertAVL(T,e,taller) ;</div><div class="line">&#125;</div><div class="line">//scanf(&quot;%d&quot;,&amp;e);</div><div class="line"> </div><div class="line">//&#125;</div><div class="line">printf(&quot;构建成功，输入任意字符返回\n&quot;);</div><div class="line">getchar();</div><div class="line">getchar();</div><div class="line">fclose(fp);</div><div class="line">&#125;</div><div class="line">//凹入表形式显示方法</div><div class="line">void PrintBSTree(BSTree &amp;T,int lev)&#123;</div><div class="line">int i;</div><div class="line">if(T-&gt;rchild)</div><div class="line">PrintBSTree(T-&gt;rchild,lev+1);</div><div class="line">for(i = 0;i &lt; lev;i++)</div><div class="line">printf(&quot; &quot;);</div><div class="line">printf(&quot;%d\n&quot;,T-&gt;data);</div><div class="line">if(T-&gt;lchild)</div><div class="line">PrintBSTree(T-&gt;lchild,lev+1);</div><div class="line">&#125;</div><div class="line"></div><div class="line">void main()&#123;</div><div class="line"></div><div class="line">BSTree T1 = NULL;</div><div class="line">int cho,taller,e,k;</div><div class="line">taller = 0;</div><div class="line">k = 0;</div><div class="line">while(1)&#123;</div><div class="line">printf(&quot; 平衡二叉树操作的演示\n&quot;);</div><div class="line">printf(&quot;******************************************************************************/n&quot;);</div><div class="line">printf(&quot; 平衡二叉树显示区 \n&quot;);</div><div class="line">printf(&quot;T1树\n&quot;);</div><div class="line">if(!T1 )</div><div class="line">printf(&quot; 当前为空树\n&quot;);</div><div class="line">else&#123;</div><div class="line">PrintBSTree(T1,1);</div><div class="line">&#125;</div><div class="line">printf(&quot;******************************************************************************\n&quot;);</div><div class="line">printf(&quot;T1操作：1.创建 2.插入 3.查找 4.删除 \n&quot;);</div><div class="line">printf(&quot;0.退出\n&quot;);</div><div class="line">printf(&quot;******************************************************************************\n&quot;);</div><div class="line">printf(&quot;输入你要进行的操作：&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;cho);</div><div class="line">switch(cho)&#123;</div><div class="line">case 1: </div><div class="line">	CreatBSTree(T1);	</div><div class="line">break;</div><div class="line">case 2:</div><div class="line">printf(&quot;请输入要插入关键字的值&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;e);</div><div class="line">InsertAVL(T1,e,taller) ;</div><div class="line">break;</div><div class="line">case 3:</div><div class="line">printf(&quot;请输入要查找关键字的值&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;e);</div><div class="line"></div><div class="line">if(SearchBST(T1,e))</div><div class="line">printf(&quot;查找成功！\n&quot;);</div><div class="line">else</div><div class="line">printf(&quot;查找失败！\n&quot;);</div><div class="line">printf(&quot;按任意键返回&quot;);</div><div class="line">getchar();</div><div class="line">getchar();</div><div class="line">break;</div><div class="line"></div><div class="line">case 4:</div><div class="line">printf(&quot;请输入要删除关键字的值&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;e);</div><div class="line">if(DeleteAVL(T1,e,k))</div><div class="line">printf(&quot;删除成功！\n&quot;);</div><div class="line">else</div><div class="line">printf(&quot;删除失败！\n&quot;);</div><div class="line">printf(&quot;按任意键返回&quot;);</div><div class="line">getchar();</div><div class="line">getchar();</div><div class="line">break;</div><div class="line">case 0:</div><div class="line">//system(&quot;cls&quot;);</div><div class="line">exit(0);</div><div class="line">&#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div><div class="line">460</div><div class="line">461</div><div class="line">462</div><div class="line">463</div><div class="line">464</div><div class="line">465</div><div class="line">466</div><div class="line">467</div><div class="line">468</div><div class="line">469</div><div class="line">470</div><div class="line">471</div><div class="line">472</div><div class="line">473</div><div class="line">474</div><div class="line">475</div><div class="line">476</div><div class="line">477</div><div class="line">478</div><div class="line">479</div><div class="line">480</div><div class="line">481</div><div class="line">482</div><div class="line">483</div><div class="line">484</div><div class="line">485</div><div class="line">486</div><div class="line">487</div><div class="line">488</div><div class="line">489</div><div class="line">490</div><div class="line">491</div><div class="line">492</div><div class="line">493</div><div class="line">494</div><div class="line">495</div><div class="line">496</div><div class="line">497</div><div class="line">498</div><div class="line">499</div><div class="line">500</div><div class="line">501</div><div class="line">502</div><div class="line">503</div><div class="line">504</div><div class="line">505</div><div class="line">506</div><div class="line">507</div><div class="line">508</div><div class="line">509</div><div class="line">510</div><div class="line">511</div><div class="line">512</div><div class="line">513</div><div class="line">514</div><div class="line">515</div><div class="line">516</div><div class="line">517</div><div class="line">518</div><div class="line">519</div><div class="line">520</div><div class="line">521</div><div class="line">522</div><div class="line">523</div><div class="line">524</div><div class="line">525</div><div class="line">526</div><div class="line">527</div><div class="line">528</div><div class="line">529</div><div class="line">530</div><div class="line">531</div><div class="line">532</div><div class="line">533</div><div class="line">534</div><div class="line">535</div><div class="line">536</div><div class="line">537</div><div class="line">538</div><div class="line">539</div><div class="line">540</div><div class="line">541</div><div class="line">542</div><div class="line">543</div><div class="line">544</div><div class="line">545</div><div class="line">546</div><div class="line">547</div><div class="line">548</div><div class="line">549</div><div class="line">550</div><div class="line">551</div><div class="line">552</div><div class="line">553</div><div class="line">554</div><div class="line">555</div><div class="line">556</div><div class="line">557</div><div class="line">558</div><div class="line">559</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;fstream&gt;</div><div class="line">#include&lt;malloc.h&gt;//malloc()</div><div class="line">using namespace std;</div><div class="line">#define  LH 1//左高</div><div class="line">#define  EH 0//等高</div><div class="line">#define  RH -1//右高</div><div class="line">typedef struct TreeNode</div><div class="line">&#123;</div><div class="line">    int m_nValue;//学号，检测该学号的学生是不是存在</div><div class="line">    int BF;//平衡因子</div><div class="line">    TreeNode *lchild;</div><div class="line">    TreeNode *rchild;</div><div class="line">&#125;*PBSTree;</div><div class="line">class AVLTree</div><div class="line">&#123;</div><div class="line"></div><div class="line">protected:</div><div class="line">    int len;//树高，GetHeight</div><div class="line">    int BF;//平衡因子</div><div class="line">    TreeNode *lc,*rd;</div><div class="line">    PBSTree rc,ld;</div><div class="line">    TreeNode *p;</div><div class="line">    PBSTree q;</div><div class="line">public:</div><div class="line">    PBSTree root;</div><div class="line"></div><div class="line">    AVLTree()</div><div class="line">    &#123;</div><div class="line">        PBSTree root=NULL;</div><div class="line">    &#125;;</div><div class="line">    ~AVLTree() &#123;&#125;;</div><div class="line">    void Instree(PBSTree root,int m_nValue);//插入节点</div><div class="line">    void PreTraver(PBSTree root);//先序遍历</div><div class="line">    void InorderTra(PBSTree root);//中序遍历</div><div class="line">    void RR_Rotate(PBSTree r);//右旋转处理</div><div class="line">    int GetHeight(PBSTree root);//获得树的高度</div><div class="line">    int GetBF(PBSTree root);//获得树的平衡因子</div><div class="line">    void LL_Rotate(PBSTree r);//左旋转处理</div><div class="line">    void RL_Rotate(PBSTree r);//先右旋转，再左旋转</div><div class="line">    void LR_Rotate(PBSTree r);//先左旋转，再右旋转</div><div class="line">    void LeftBalance(PBSTree T);//左平衡处理</div><div class="line">    void RightBalance(PBSTree T);//右平衡处理</div><div class="line">    bool FindNode(PBSTree T,int e);//查找节点</div><div class="line">    void DELeftBalance(PBSTree T);//删除平衡 左</div><div class="line">    void DERightBalance(PBSTree T);//删除平衡  右</div><div class="line">    void SDelete(PBSTree T,PBSTree q,PBSTree s,int shorter);//被删的节点有左右子树</div><div class="line">    int Delete(PBSTree T,int shorter);//执行删除</div><div class="line">    int DeleteAVL(PBSTree T,int e,int shorter);//删除操作入口函数，为了找到要删的节点</div><div class="line">&#125;;</div><div class="line">int Max(int a,int b)</div><div class="line">&#123;</div><div class="line">    if(a&gt;b)return a;</div><div class="line">    else return b;</div><div class="line">&#125;</div><div class="line">int AVLTree::GetHeight(PBSTree root)</div><div class="line">&#123;</div><div class="line">    if(root==NULL)len=0;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        len=Max(GetHeight(root-&gt;lchild),GetHeight(root-&gt;rchild))+1;</div><div class="line">    &#125;</div><div class="line">    return len;</div><div class="line">&#125;</div><div class="line">void AVLTree::InorderTra(PBSTree root)//中序遍历</div><div class="line">&#123;</div><div class="line">    if(root-&gt;lchild)</div><div class="line">        InorderTra(root-&gt;lchild);</div><div class="line">    printf(&quot;%d &quot;,root-&gt;m_nValue);</div><div class="line">    if(root-&gt;rchild)</div><div class="line">        InorderTra(root-&gt;rchild);</div><div class="line">&#125;</div><div class="line">int AVLTree::GetBF(PBSTree root)</div><div class="line">&#123;</div><div class="line"></div><div class="line">    BF=GetHeight(root-&gt;lchild)-GetHeight(root-&gt;rchild);</div><div class="line">    return BF;</div><div class="line">&#125;</div><div class="line">void AVLTree::Instree(PBSTree root,int m_nValue)</div><div class="line">&#123;</div><div class="line">    if(root==NULL)</div><div class="line">    &#123;</div><div class="line">        root=(TreeNode*)malloc(sizeof(TreeNode));</div><div class="line">        root-&gt;m_nValue=m_nValue;</div><div class="line">        root-&gt;lchild=NULL;</div><div class="line">        root-&gt;rchild=NULL;</div><div class="line">        root-&gt;BF=EH;//初始叶子结点的平衡因子为等高</div><div class="line">    &#125;</div><div class="line">    else if(m_nValue&lt;root-&gt;m_nValue)</div><div class="line">    &#123;</div><div class="line">        Instree(root-&gt;lchild,m_nValue);</div><div class="line">        switch(root-&gt;BF)//检查root的平衡度</div><div class="line">        &#123;</div><div class="line">        case LH://原来树root的左子树比右子树高，现在左子树更高</div><div class="line">            LeftBalance(root);//对树进行左平衡处理</div><div class="line">            break;</div><div class="line">        case EH://原来树root的左右子树等高，现在左子树高</div><div class="line">            root-&gt;BF=LH;//root的平衡因子由0变为1</div><div class="line">            break;</div><div class="line">        case RH://原来树root的右子树比左子树高，现在左右子树等高</div><div class="line">            root-&gt;BF=EH;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    else if(m_nValue&gt;root-&gt;m_nValue)</div><div class="line">    &#123;</div><div class="line">        Instree(root-&gt;rchild,m_nValue);</div><div class="line">        switch(root-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH:</div><div class="line">            root-&gt;BF=EH;//原来树root的左子树比右子树高，现在root的左右子树等高</div><div class="line">            break;</div><div class="line">        case EH://原来树root的左右子树等高，现在root的右子树更高</div><div class="line">            root-&gt;BF=RH;</div><div class="line">            break;</div><div class="line">        case RH://原来右子树比左子树高，现在root右子树高</div><div class="line">            RightBalance(root);//对树root作右平衡处理</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">void AVLTree::PreTraver(PBSTree root)</div><div class="line">&#123;</div><div class="line">    if(root)</div><div class="line">    &#123;</div><div class="line">        cout.width(3);</div><div class="line">        cout&lt;&lt;root-&gt;m_nValue;</div><div class="line">    &#125;</div><div class="line">    if(root-&gt;lchild)</div><div class="line">        PreTraver(root-&gt;lchild);</div><div class="line">    if(root-&gt;rchild)</div><div class="line">        PreTraver(root-&gt;rchild);</div><div class="line">&#125;</div><div class="line">void AVLTree::LL_Rotate(PBSTree r)//插入位置为右子树右孩子，要进行左旋转</div><div class="line">&#123;</div><div class="line">    //TreeNode *p;</div><div class="line">    p=r-&gt;rchild;//p指向r的右孩子结点</div><div class="line">    r-&gt;rchild=p-&gt;lchild;//r结点左旋转成为p的左子树，p原来的左子树成为r的右子树</div><div class="line">    p-&gt;lchild=r;//r成为p的左孩子</div><div class="line">    r=p;</div><div class="line">&#125;</div><div class="line">void AVLTree::RR_Rotate(PBSTree r)//插入位置为左子树左孩子，进行右旋转</div><div class="line">&#123;</div><div class="line">    //TreeNode *p;</div><div class="line">    p=r-&gt;lchild;</div><div class="line">    r-&gt;lchild=p-&gt;rchild;</div><div class="line">    p-&gt;rchild=r;</div><div class="line">    r=p;</div><div class="line">&#125;</div><div class="line">void AVLTree::RL_Rotate(PBSTree r)//插入位置为右子树左孩子，先进行右旋转，再进行左旋转</div><div class="line">&#123;</div><div class="line">    // TreeNode *p;</div><div class="line">    p=r-&gt;rchild;</div><div class="line">    RR_Rotate(p);//最小失衡树的根结点的右子树根结点进行右旋转</div><div class="line">    r-&gt;rchild=p;//更新最小失衡树根结点的右孩子</div><div class="line">    LL_Rotate(r);//最小失衡树的根结点进行左旋转</div><div class="line"></div><div class="line">&#125;</div><div class="line">void AVLTree::LR_Rotate(PBSTree r)//插入位置为左子树右孩子，先进行左旋转，再进行右旋转</div><div class="line">&#123;</div><div class="line">    // TreeNode *p;</div><div class="line">    p=r-&gt;lchild;</div><div class="line">    LL_Rotate(p);//最小失衡树根结点的左子树根结点进行左旋转</div><div class="line">    r-&gt;lchild=p;//更新最小失衡树根结点的左孩子</div><div class="line">    RR_Rotate(r);//最小失衡树根结点进行右旋转</div><div class="line">&#125;</div><div class="line">void AVLTree::LeftBalance(PBSTree T)//左平衡处理</div><div class="line">&#123;</div><div class="line">    //初始条件：原来平衡的二叉排序树T的左子树比右子树高(T-&gt;BF=1)</div><div class="line">//          又在左子树中插入了结点，并导致左子树更高，破坏了树T的平衡性</div><div class="line">//操作结果：对不平衡的树T作左平衡旋转处理，使树T的重心右移实现 新的平衡</div><div class="line">    //TreeNode *lc,*rd;</div><div class="line">    lc=T-&gt;lchild;//lc指向T的左孩子结点</div><div class="line">    switch(lc-&gt;BF)//检查T左子树的平衡因子</div><div class="line">    &#123;</div><div class="line">    case LH://新结点插入在T的左孩子的左子树上，导致左子树的平衡因子为左高，进行右旋转处理</div><div class="line">        RR_Rotate(T);//右旋转处理</div><div class="line">        T-&gt;BF=lc-&gt;BF=EH;//旋转后，原根结点和左孩子结点平衡因子都 为0</div><div class="line">        break;</div><div class="line">    case RH://新结点插入在T的左孩子的右子树上，导致左子树的平衡因子为右高，进行LR处理</div><div class="line">        rd=lc-&gt;rchild;</div><div class="line">        switch(rd-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH://新结点插入在T的左孩子的右子树的左子树上</div><div class="line">            T-&gt;BF=RH;//旋转后，原根结点的平衡因子为右高</div><div class="line">            lc-&gt;BF=EH;//旋转后，原根结点的左孩子结点平衡因子为等高</div><div class="line">            break;</div><div class="line">        case EH://新结点插入到T的左孩子的右孩子（叶子）</div><div class="line">            T-&gt;BF=lc-&gt;BF=EH;//旋转后，原根和左孩子结点的平衡因子都为等高</div><div class="line">            break;</div><div class="line">        case RH://新结点插入在T的左孩子的右子树的右子树上</div><div class="line">            T-&gt;BF=EH;//旋转后，原根结点的平衡因子为等高</div><div class="line">            lc-&gt;BF=LH;//旋转后，原根结点的左孩子结点平衡因子为左高</div><div class="line">        &#125;</div><div class="line">        rd-&gt;BF=EH;//旋转后的新结点的平衡因子为等高</div><div class="line">        //双旋转处理</div><div class="line">        LL_Rotate(T-&gt;lchild);//对T的左子树左旋转处理</div><div class="line">        RR_Rotate(T);//对T作右旋转处理</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">void AVLTree::RightBalance(PBSTree T)//右平衡处理</div><div class="line">&#123;</div><div class="line">    //初始条件：原来平衡二叉排序树T的右子树比左子树高，又在右子树中插入结点，导致右子树更高</div><div class="line">//操作结果：对不平衡的树T作右平衡旋转处理</div><div class="line">    //TreeNode *rc,*ld;</div><div class="line">    rc=T-&gt;rchild;</div><div class="line"></div><div class="line">    switch(rc-&gt;BF)</div><div class="line">    &#123;</div><div class="line">    case RH://新结点插入在T的右孩子的右子树上，导致右子平衡因子为右高,进行左旋转处理</div><div class="line">        T-&gt;BF=rc-&gt;BF=EH;//旋转后，原根结点和右孩子结点的平衡因子均为0</div><div class="line">        LL_Rotate(T);</div><div class="line">        break;</div><div class="line">    case LH://新结点插入在T的右孩子的左子树上，导致右子树的平衡因子为左高，进行双旋处理</div><div class="line">        ld=rc-&gt;lchild;</div><div class="line">        switch(ld-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case RH://新结点插入在T的右孩子的左子树的右子树上</div><div class="line">            T-&gt;BF=LH;//旋转后，原根结点的平衡因子为左高</div><div class="line">            rc-&gt;BF=EH;//旋转后，原根结点的右孩子结点平衡因子为等高</div><div class="line">            break;</div><div class="line">        case EH://新结点插入到T的右孩子的左孩子（叶子）</div><div class="line">            T-&gt;BF=rc-&gt;BF=EH;//旋转后，原根和右孩子结点的平衡因子等高</div><div class="line">            break;</div><div class="line">        case LH://新结点插入到T的右孩子的左子树的左子树</div><div class="line">            T-&gt;BF=EH;//旋转后，原根结点的平衡因子等高</div><div class="line">            rc-&gt;BF=RH;//旋转后，原根结点的右孩子结点的平衡因子为右高</div><div class="line">        &#125;</div><div class="line">        ld-&gt;BF=EH;//旋转后的新根结点的平衡因子为等高</div><div class="line">        //双旋转处理</div><div class="line">        RR_Rotate(T-&gt;rchild);//对T的右子树作右旋转处理</div><div class="line">        LL_Rotate(T);//对T作左旋转处理</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">bool AVLTree::FindNode(PBSTree T,int e)</div><div class="line">//查找节点</div><div class="line">&#123;</div><div class="line">    //右旋</div><div class="line">    if(!T)</div><div class="line">    &#123;</div><div class="line">        return 0; //查找失败</div><div class="line">    &#125;</div><div class="line">    else if(e == T-&gt;m_nValue )</div><div class="line">    &#123;</div><div class="line">        return 1; //查找成功</div><div class="line">    &#125;</div><div class="line">    else if (e &lt; T-&gt;m_nValue)</div><div class="line">    &#123;</div><div class="line">        return FindNode(T-&gt;lchild,e);  //递归调用</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        return FindNode(T-&gt;rchild,e);  //递归调用</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//删除左子树结点平衡调整      左右</div><div class="line">void AVLTree::DELeftBalance(PBSTree T)</div><div class="line">&#123;</div><div class="line">    //PBSTree lc,rd;</div><div class="line">    lc=T-&gt;lchild;</div><div class="line">    switch(lc-&gt;BF)</div><div class="line">    &#123;</div><div class="line">    case LH:</div><div class="line">        T-&gt;BF= EH;</div><div class="line">//lc-&gt;BF= EH;</div><div class="line">        RR_Rotate(T);</div><div class="line">        break;</div><div class="line">    case EH:</div><div class="line">        T-&gt;BF = EH;</div><div class="line">        lc-&gt;BF= EH;</div><div class="line">        RR_Rotate(T);</div><div class="line">        break;</div><div class="line">    case RH:</div><div class="line">        rd=lc-&gt;rchild;</div><div class="line">        switch(rd-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH:</div><div class="line">            T-&gt;BF=RH;</div><div class="line">            lc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case EH:</div><div class="line">            T-&gt;BF=lc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case RH:</div><div class="line">            T-&gt;BF=EH;</div><div class="line">            lc-&gt;BF=LH;</div><div class="line">            break;</div><div class="line">        &#125;</div><div class="line">        rd-&gt;BF=EH;</div><div class="line">        LL_Rotate(T-&gt;lchild);</div><div class="line">        RR_Rotate(T);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//删除右子树结点平衡调整</div><div class="line">void AVLTree::DERightBalance(PBSTree T)</div><div class="line">&#123;</div><div class="line">    //PBSTree rc,ld;</div><div class="line">    rc=T-&gt;rchild;</div><div class="line">    switch(rc-&gt;BF)</div><div class="line">    &#123;</div><div class="line">    case RH:</div><div class="line">        T-&gt;BF= EH;</div><div class="line">//rc-&gt;BF= EH;</div><div class="line">        LL_Rotate(T);</div><div class="line">        break;</div><div class="line">    case EH:</div><div class="line">        T-&gt;BF= EH;</div><div class="line">//rc-&gt;BF= EH;</div><div class="line">        LL_Rotate(T);</div><div class="line">        break;</div><div class="line">    case LH:</div><div class="line">        ld=rc-&gt;lchild;</div><div class="line">        switch(ld-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH:</div><div class="line">            T-&gt;BF=RH;</div><div class="line">            rc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case EH:</div><div class="line">            T-&gt;BF=rc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case RH:</div><div class="line">            T-&gt;BF = EH;</div><div class="line">            rc-&gt;BF=LH;</div><div class="line">            break;</div><div class="line">        &#125;</div><div class="line">        ld-&gt;BF=EH;</div><div class="line">        RR_Rotate(T-&gt;rchild);</div><div class="line">        LL_Rotate(T);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//被删的节点既有左子树又有右子树</div><div class="line">void AVLTree::SDelete(PBSTree T,PBSTree q,PBSTree s,int shorter)</div><div class="line">&#123;</div><div class="line">    if(s-&gt;rchild)</div><div class="line">    &#123;</div><div class="line">        SDelete(T,s,s-&gt;rchild,shorter);  //被删除结点最右边结点</div><div class="line"></div><div class="line">        if(shorter)</div><div class="line">            switch(s-&gt;BF)</div><div class="line">            &#123;</div><div class="line">            case EH:</div><div class="line">                s-&gt;BF = LH;</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            case RH:</div><div class="line">                s-&gt;BF = EH;</div><div class="line">                shorter = 1;</div><div class="line">                break;</div><div class="line">            case LH:</div><div class="line">                DELeftBalance(s);</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    T-&gt;m_nValue = s-&gt;m_nValue;</div><div class="line">    if(q != T)</div><div class="line">        q-&gt;rchild = s-&gt;lchild;</div><div class="line">    else</div><div class="line">        q-&gt;lchild = s-&gt;lchild;</div><div class="line">    shorter = 1;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">//删除结点</div><div class="line">int AVLTree::Delete(PBSTree T,int shorter)</div><div class="line">&#123;</div><div class="line">    //PBSTree q;</div><div class="line">    if(!T-&gt;rchild)        //被删的节点只有左子树，其父节点直接指向左孩子  叶子节点也是这</div><div class="line">    &#123;</div><div class="line"></div><div class="line"></div><div class="line">        q = T;</div><div class="line">        T = T-&gt;lchild;</div><div class="line">        free(q);</div><div class="line">        shorter = 1;</div><div class="line">    &#125;</div><div class="line">    else if(!T-&gt;lchild)        //被删的节点只有右子树，其父节点直接指向右孩子 叶子节点也是这</div><div class="line">    &#123;</div><div class="line">        q = T;</div><div class="line">        T= T-&gt;rchild;</div><div class="line">        free(q);</div><div class="line">        shorter = 1;</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        SDelete(T,T,T-&gt;lchild,shorter);    //被删的节点有左右子树</div><div class="line">        if(shorter)                        //进行平衡调整</div><div class="line">            switch(T-&gt;BF)</div><div class="line">            &#123;</div><div class="line">            case EH:</div><div class="line">                T-&gt;BF = RH;</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            case LH:</div><div class="line">                T-&gt;BF = EH;</div><div class="line">                shorter = 1;</div><div class="line">                break;</div><div class="line">            case RH:</div><div class="line">                DERightBalance(T);</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">    &#125;</div><div class="line">    return 1;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">//删除操作时寻找结点</div><div class="line">int AVLTree::DeleteAVL(PBSTree T,int e,int shorter)</div><div class="line">&#123;</div><div class="line">    int sign = 0;</div><div class="line">    if (!T)</div><div class="line">    &#123;</div><div class="line">        return sign;</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        if(e == T-&gt;m_nValue)//如果找到就执行删除</div><div class="line">        &#123;</div><div class="line">            sign = Delete(T,shorter);//如果找到就执行删除</div><div class="line">            return sign;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        else if(e &lt; T-&gt;m_nValue)             //向左查找</div><div class="line">        &#123;</div><div class="line">            sign = DeleteAVL(T-&gt;lchild,e,shorter);</div><div class="line">            if(shorter)         //通过shorter回溯</div><div class="line">                switch(T-&gt;BF)</div><div class="line">                &#123;</div><div class="line">                case EH:</div><div class="line">                    T-&gt;BF = RH;</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                case LH:</div><div class="line">                    T-&gt;BF = EH;</div><div class="line">                    shorter = 1;</div><div class="line">                    break;</div><div class="line">                case RH:</div><div class="line">                    DERightBalance(T);</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                &#125;</div><div class="line"></div><div class="line">            return sign;</div><div class="line">        &#125;</div><div class="line">        else                                 //向右查找</div><div class="line">        &#123;</div><div class="line">            sign = DeleteAVL(T-&gt;rchild,e,shorter);</div><div class="line">            if(shorter)     //通过shorter回溯</div><div class="line">                switch(T-&gt;BF)</div><div class="line">                &#123;</div><div class="line">                case EH:</div><div class="line">                    T-&gt;BF = LH;</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                case RH:</div><div class="line">                    T-&gt;BF = EH;</div><div class="line">                    break;</div><div class="line">                case LH:</div><div class="line">                    DELeftBalance(T);</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                &#125;</div><div class="line">            return sign;</div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//void AVLTree::AVLTree()&#123;</div><div class="line">// TreeNode *root=NULL;</div><div class="line">//&#125;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    AVLTree AVL=AVLTree();</div><div class="line">    AVL.root=NULL;</div><div class="line">    int taller,e,k;</div><div class="line">    char cho;</div><div class="line">    taller = 0;</div><div class="line">    k = 0;</div><div class="line">    while(1)</div><div class="line">    &#123;</div><div class="line">        printf(&quot;操作：1.创建 2.插入 3.查找 4.删除 5.遍历 0.退出\n&quot;);</div><div class="line">        printf(&quot;输入你要进行的操作：&quot;);</div><div class="line">        scanf(&quot;%c&quot;,&amp;cho);</div><div class="line">        switch(cho)</div><div class="line">        &#123;</div><div class="line">        case &apos;1&apos;:</div><div class="line">        &#123;</div><div class="line">            FILE *fp;</div><div class="line">            if((fp=fopen(&quot;te.txt&quot;, &quot;r&quot;))==NULL)</div><div class="line">            &#123;</div><div class="line">                printf(&quot;文件打开失败\n&quot;);</div><div class="line">                exit(0);</div><div class="line">            &#125;</div><div class="line">            int e = 0;</div><div class="line">            while(feof(fp)==0)</div><div class="line">            &#123;</div><div class="line">                fscanf(fp,&quot;%d&quot;,&amp;e);</div><div class="line">                AVL.Instree(AVL.root,e);</div><div class="line">            &#125;</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">        &#125;</div><div class="line">        getchar();</div><div class="line">        break;</div><div class="line">        case &apos;2&apos;:</div><div class="line">        &#123;</div><div class="line">            printf(&quot;请输入要插入关键字的值&quot;);</div><div class="line">            scanf(&quot;%d&quot;,&amp;e);</div><div class="line">            AVL.Instree(AVL.root,e);</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">        &#125;</div><div class="line">        getchar();</div><div class="line">        break;</div><div class="line">        case &apos;3&apos;:</div><div class="line">        &#123;</div><div class="line">            printf(&quot;请输入要查找关键字的值&quot;);</div><div class="line">            scanf(&quot;%d&quot;,&amp;e);</div><div class="line">            if(AVL.FindNode(AVL.root,9))</div><div class="line">                printf(&quot;\n找到\n&quot;);</div><div class="line">            else</div><div class="line">                printf(&quot;\n没有找到\n&quot;);</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">            getchar();</div><div class="line">        &#125;</div><div class="line">        break;</div><div class="line">        case &apos;4&apos;:</div><div class="line">            printf(&quot;请输入要删除关键字的值&quot;);</div><div class="line">            scanf(&quot;%d&quot;,&amp;e);</div><div class="line">            if(AVL.DeleteAVL(AVL.root,e,k))</div><div class="line">                printf(&quot;删除成功！\n&quot;);</div><div class="line">            else</div><div class="line">                printf(&quot;删除失败！\n&quot;);</div><div class="line">            getchar();</div><div class="line">            break;</div><div class="line">        case &apos;5&apos;:</div><div class="line">            printf(&quot;中序遍历：&quot;);</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">            printf(&quot;前序遍历：&quot;);</div><div class="line">            AVL.PreTraver(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">            getchar();</div><div class="line">            break;</div><div class="line">        case &apos;0&apos;:</div><div class="line">            exit(0);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">    return 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-15T06:09:15.000Z" itemprop="dateUpdated">2017年3月15日 14:09</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/03/15/平衡二叉树/" target="_blank" rel="external">http://fr1ee.github.io/2017/03/15/平衡二叉树/</a>
+    </div>
+    <footer>
+        <a href="http://fr1ee.github.io">
+            <img src="/img/avatar.jpg" alt="FreeMing">
+            FreeMing
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/平衡二叉树/&title=《安装SQL2012》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/平衡二叉树/&title=《安装SQL2012》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/平衡二叉树/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《安装SQL2012》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/平衡二叉树/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/平衡二叉树/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/15/为什么网页背景图片都切开/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">安装SQL2012</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/15/python之print实践/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">安装SQL2012</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="平衡二叉树" data-title="安装SQL2012" data-url="http://fr1ee.github.io/2017/03/15/平衡二叉树/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'freeming.duoshuo.com', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.10');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        多谢，祝君好~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechatpay.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by Hexo Theme indigo</span>
+            <span>Keep Moving ! &copy; 2014 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/平衡二叉树/&title=《安装SQL2012》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/平衡二叉树/&title=《安装SQL2012》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/平衡二叉树/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《安装SQL2012》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/平衡二叉树/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/平衡二叉树/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://fr1ee.github.io/2017/03/15/平衡二叉树/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261473536&web_id=1261473536')
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.10" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

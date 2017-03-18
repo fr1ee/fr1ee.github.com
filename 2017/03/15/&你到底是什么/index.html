@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="fr1ee.github.io/2017/03/15/&你到底是什么/">
+    
+    
+    <title>开发工具链（国内项目） | Keep Moving ! | 仅以此博客作为经验积累的日志</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#565656">
+    
+    
+    <meta name="keywords" content="C,C++">
+    <meta name="description" content="&amp;amp;你到底是什么？前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么渣，怎么当程序员。。。问题：函数声明中参数用“&amp;amp;”是什么用法？我蒙了，我说这个函数是我copy的，我认为用&amp;amp;和用*都可以实现功能。老师告诉我他只想考我一下基础知识，这个叫“引用”。//此处前提是我们在讨论C语言的程序我蒙了，引用？找找资料自己脑补吧！在C语言中，&amp;amp;有三种作用，分别如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发工具链（国内项目）">
+<meta property="og:url" content="http://fr1ee.github.io/2017/03/15/&你到底是什么/index.html">
+<meta property="og:site_name" content="Keep Moving !">
+<meta property="og:description" content="&amp;amp;你到底是什么？前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么渣，怎么当程序员。。。问题：函数声明中参数用“&amp;amp;”是什么用法？我蒙了，我说这个函数是我copy的，我认为用&amp;amp;和用*都可以实现功能。老师告诉我他只想考我一下基础知识，这个叫“引用”。//此处前提是我们在讨论C语言的程序我蒙了，引用？找找资料自己脑补吧！在C语言中，&amp;amp;有三种作用，分别如下：">
+<meta property="og:updated_time" content="2017-03-15T05:57:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="开发工具链（国内项目）">
+<meta name="twitter:description" content="&amp;amp;你到底是什么？前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么渣，怎么当程序员。。。问题：函数声明中参数用“&amp;amp;”是什么用法？我蒙了，我说这个函数是我copy的，我认为用&amp;amp;和用*都可以实现功能。老师告诉我他只想考我一下基础知识，这个叫“引用”。//此处前提是我们在讨论C语言的程序我蒙了，引用？找找资料自己脑补吧！在C语言中，&amp;amp;有三种作用，分别如下：">
+    
+        <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FreeMing</h5>
+          <a href="mailto:wang.6688.cool@163.com" title="wang.6688.cool@163.com" class="mail">wang.6688.cool@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                足记
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fr1ee" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://git.oschina.net/953082389qq.com"  >
+                <i class="icon icon-lg icon-cloud"></i>
+                码云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/wechart"  >
+                <i class="icon icon-lg icon-comments"></i>
+                微信
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">开发工具链（国内项目）</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">开发工具链（国内项目）</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-15T03:22:22.000Z" itemprop="datePublished" class="page-time">
+  2017-03-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/C/">C</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#amp-你到底是什么？"><span class="post-toc-number">1.</span> <span class="post-toc-text">&你到底是什么？</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-&amp;你到底是什么"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">开发工具链（国内项目）</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月15日 11:22" datetime="2017-03-15T03:22:22.000Z"  itemprop="datePublished">2017-03-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/C/">C</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h4 id="amp-你到底是什么？"><a href="#amp-你到底是什么？" class="headerlink" title="&amp;你到底是什么？"></a>&amp;你到底是什么？</h4><p>前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么渣，怎么当程序员。。。<br>问题：函数声明中参数用“&amp;”是什么用法？<br>我蒙了，我说这个函数是我copy的，我认为用&amp;和用*都可以实现功能。<br>老师告诉我他只想考我一下基础知识，这个叫“引用”。//此处前提是我们在讨论C语言的程序<br>我蒙了，引用？找找资料自己脑补吧！<br>在C语言中，&amp;有三种作用，分别如下：</p>
+<ol>
+<li>取地址。单目运算符。用来取一个变量的地址。<br>比如<br>int i, *p;<br>p = &i;//这里的&amp;作用是取变量i的地址。<br>最常用的是scanf（）中，<br>int a;<br>scanf(“%d”,&amp;a);//取地址</li>
+<li>位操作中的与操作运算符。<br>也就是常说的and操作，双目运算符。<br>计算的时候按位计算，&amp;两边操作数对应位上全为1时，结果的该位值为1。否则该位值为0<br>比如<br>0x12&amp;0x23 转为二进制为:<br>B00010010&amp;B00100011，<br>按位计算结果为B00000010，<br>即结果为0x02。</li>
+<li>当两个&amp;&amp;一起用的时候，表示为逻辑运算中的与运算。<br>逻辑运算结果只有0和1两种结果。<br>一般在&amp;&amp;两边是两个逻辑表达式。<br>当两个表达式值均为1时，&amp;&amp;运算结果为1，否则为0。<br>比如<br>2&gt;1 &amp;&amp; 0<1 1="" 这个的值为1&&1="1。">2 &amp;&amp; 2&gt;0 这个值为0&amp;&amp;1 = 0。<br>1&gt;2 &amp;&amp; 2&gt;3 这个值为0&amp;&amp;0=0。<br>在C++中呢？<br>除了C中的功能多加了一个“引用”，这个才是———-引用<br>有人要问了，我用C语音写的使用了引用的用法，怎么也行？<br>你的编译器在”捣鬼”，C和C++编译器可能在一起，它能够允许你使用C++的用法。<br>（下面这段转自h.t.t.p://w.w.w.cnblogs.com/Mr-xu/archive/2012/08/07/2626973.html）<br>一、引用简介</1></li>
+</ol>
+<p>　　引用就是某一变量（目标）的一个别名，对引用的操作与对变量直接操作完全一样。</p>
+<p>　　引用的声明方法：类型标识符 &amp;引用名=目标变量名；</p>
+<p>　　【例1】：int a; int &amp;ra=a; //定义引用ra,它是变量a的引用，即别名</p>
+<p>　　说明：</p>
+<p>　　（1）&amp;在此不是求地址运算，而是起标识作用。</p>
+<p>　　（2）类型标识符是指目标变量的类型。</p>
+<p>　　（3）声明引用时，必须同时对其进行初始化。</p>
+<p>　　（4）引用声明完毕后，相当于目标变量名有两个名称，即该目标原名称和引用名，且不能再把该引用名作为其他变量名的别名。</p>
+<p>　　 ra=1; 等价于 a=1;</p>
+<p>　　（5）声明一个引用，不是新定义了一个变量，它只表示该引用名是目标变量名的一个别名，它本身不是一种数据类型，因此引用本身不占存储单元，系统也不给引用分配存储单元。故：对引用求地址，就是对目标变量求地址。&amp;ra与&amp;a相等。</p>
+<p>　　（6）不能建立数组的引用。因为数组是一个由若干个元素所组成的集合，所以无法建立一个数组的别名。</p>
+<p>　　二、引用应用</p>
+<p>　　1、引用作为参数</p>
+<p>　　引用的一个重要作用就是作为函数的参数。以前的C语言中函数参数传递是值传递，如果有大块数据作为参数传递的时候，采用的方案往往是指针，因为 这样可以避免将整块数据全部压栈，可以提高程序的效率。但是现在（C++中）又增加了一种同样有效率的选择（在某些特殊情况下又是必须的选择），就是引 用。</p>
+<p>　　【例2】：</p>
+<p>void swap(int &amp;p1, int &amp;p2) //此处函数的形参p1, p2都是引用<br>{ int p; p=p1; p1=p2; p2=p; }</p>
+<p>　　为在程序中调用该函数，则相应的主调函数的调用点处，直接以变量作为实参进行调用即可，而不需要实参变量有任何的特殊要求。如：对应上面定义的swap函数，相应的主调函数可写为：</p>
+<p>main( )<br>{<br>　int a,b;<br>　cin&gt;&gt;a&gt;&gt;b; //输入a,b两变量的值<br>　swap(a,b); //直接以变量a和b作为实参调用swap函数<br>　cout&lt;&lt;a&lt;&lt; ‘ ‘ &lt;&lt;b; //输出结果<br>}</p>
+<p>　　上述程序运行时，如果输入数据10 20并回车后，则输出结果为20 10。</p>
+<p>　　由【例2】可看出：</p>
+<p>　　（1）传递引用给函数与传递指针的效果是一样的。这时，被调函数的形参就成为原来主调函数中的实参变量或对象的一个别名来使用，所以在被调函数中对形参变量的操作就是对其相应的目标对象（在主调函数中）的操作。</p>
+<p>　　（2）使用引用传递函数的参数，在内存中并没有产生实参的副本，它是直接对实参操作；而使用一般变量传递函数的参数，当发生函数调用时，需要给 形参分配存储单元，形参变量是实参变量的副本；如果传递的是对象，还将调用拷贝构造函数。因此，当参数传递的数据较大时，用引用比用一般变量传递参数的效 率和所占空间都好。</p>
+<p>　　（3）使用指针作为函数的参数虽然也能达到与使用引用的效果，但是，在被调函数中同样要给形参分配存储单元，且需要重复使用”*指针变量名”的 形式进行运算，这很容易产生错误且程序的阅读性较差；另一方面，在主调函数的调用点处，必须用变量的地址作为实参。而引用更容易使用，更清晰。</p>
+<p>　　如果既要利用引用提高程序的效率，又要保护传递给函数的数据不在函数中被改变，就应使用常引用。</p>
+<p>　　2、常引用</p>
+<p>　　常引用声明方式：const 类型标识符 &amp;引用名=目标变量名；</p>
+<p>　　用这种方式声明的引用，不能通过引用对目标变量的值进行修改,从而使引用的目标成为const，达到了引用的安全性。</p>
+<p>　　【例3】：</p>
+<p>int a ;<br>const int &amp;ra=a;<br>ra=1; //错误<br>a=1; //正确</p>
+<p>　　这不光是让代码更健壮，也有些其它方面的需要。</p>
+<p>　　【例4】：假设有如下函数声明：</p>
+<p>string foo( );<br>void bar(string &amp; s);</p>
+<p>　　那么下面的表达式将是非法的：</p>
+<p>bar(foo( ));<br>bar(“hello world”);</p>
+<p>　　原因在于foo( )和”hello world”串都会产生一个临时对象，而在C++中，这些临时对象都是const类型的。因此上面的表达式就是试图将一个const类型的对象转换为非const类型，这是非法的。</p>
+<p>　　引用型参数应该在能被定义为const的情况下，尽量定义为const 。</p>
+<p>　　3、引用作为返回值</p>
+<p>　　要以引用返回函数值，则函数定义时要按以下格式：</p>
+<p>类型标识符 &amp;函数名（形参列表及类型说明）<br>{函数体}</p>
+<p>　　说明：</p>
+<p>　　（1）以引用返回函数值，定义函数时需要在函数名前加&amp;</p>
+<p>　　（2）用引用返回一个函数值的最大好处是，在内存中不产生被返回值的副本。</p>
+<p>　　【例5】以下程序中定义了一个普通的函数fn1（它用返回值的方法返回函数值），另外一个函数fn2，它以引用的方法返回函数值。</p>
+<p>#include <iostream.h><br>float temp; //定义全局变量temp<br>float fn1(float r); //声明函数fn1<br>float &amp;fn2(float r); //声明函数fn2<br>float fn1(float r) //定义函数fn1，它以返回值的方法返回函数值<br>{<br>　temp=(float)(r<em>r</em>3.14);<br>　return temp;<br>}<br>float &amp;fn2(float r) //定义函数fn2，它以引用方式返回函数值<br>{<br>　temp=(float)(r<em>r</em>3.14);<br>　return temp;<br>}<br>void main() //主函数<br>{<br>　float a=fn1(10.0); //第1种情况，系统生成要返回值的副本（即临时变量）<br>　float &amp;b=fn1(10.0); //第2种情况，可能会出错（不同 C++系统有不同规定）<br>　//不能从被调函数中返回一个临时变量或局部变量的引用<br>　float c=fn2(10.0); //第3种情况，系统不生成返回值的副本<br>　//可以从被调函数中返回一个全局变量的引用<br>　float &amp;d=fn2(10.0); //第4种情况，系统不生成返回值的副本<br>　//可以从被调函数中返回一个全局变量的引用<br>　cout&lt;&lt;a&lt;&lt;c&lt;&lt;d;<br>}</iostream.h></p>
+<p>　　引用作为返回值，必须遵守以下规则：</p>
+<p>　　（1）不能返回局部变量的引用。这条可以参照Effective C++[1]的Item 31。主要原因是局部变量会在函数返回后被销毁，因此被返回的引用就成为了”无所指”的引用，程序会进入未知状态。</p>
+<p>　　（2）不能返回函数内部new分配的内存的引用。这条可以参照Effective C++[1]的Item 31。虽然不存在局部变量的被动销毁问题，可对于这种情况（返回函数内部new分配内存的引用），又面临其它尴尬局面。例如，被函数返回的引用只是作为一 个临时变量出现，而没有被赋予一个实际的变量，那么这个引用所指向的空间（由new分配）就无法释放，造成memory leak。</p>
+<p>　　（3）可以返回类成员的引用，但最好是const。这条原则可以参照Effective C++[1]的Item 30。主要原因是当对象的属性是与某种业务规则（business rule）相关联的时候，其赋值常常与某些其它属性或者对象的状态有关，因此有必要将赋值操作封装在一个业务规则当中。如果其它对象可以获得该属性的非常 量引用（或指针），那么对该属性的单纯赋值就会破坏业务规则的完整性。</p>
+<p>　　（4）引用与一些操作符的重载：</p>
+<p>　　流操作符&lt;&lt;和&gt;&gt;，这两个操作符常常希望被连续使用，例如：cout &lt;&lt; “hello” &lt;&lt; endl;　因此这两个操作符的返回值应该是一个仍然支持这两个操作符的流引用。可选的其它方案包括：返回一个流对象和返回一个流对象指针。但是对于返回 一个流对象，程序必须重新（拷贝）构造一个新的流对象，也就是说，连续的两个&lt;&lt;操作符实际上是针对不同对象的！这无法让人接受。对于返回一 个流指针则不能连续使用&lt;&lt;操作符。因此，返回一个流对象引用是惟一选择。这个唯一选择很关键，它说明了引用的重要性以及无可替代性，也许这 就是C++语言中引入引用这个概念的原因吧。 赋值操作符=。这个操作符象流操作符一样，是可以连续使用的，例如：x = j = 10;或者(x=10)=100;赋值操作符的返回值必须是一个左值，以便可以被继续赋值。因此引用成了这个操作符的惟一返回值选择。</p>
+<p>　　【例6】 测试用返回引用的函数值作为赋值表达式的左值。</p>
+<p>#include <iostream.h><br>int &amp;put(int n);<br>int vals[10];<br>int error=-1;<br>void main()<br>{<br>put(0)=10; //以put(0)函数值作为左值，等价于vals[0]=10;<br>put(9)=20; //以put(9)函数值作为左值，等价于vals[9]=20;<br>cout&lt;<vals[0]; cout<<vals[9];="" }="" int="" &put(int="" n)="" {="" if="" (n="">=0 &amp;&amp; n&lt;=9 ) return vals[n];<br>else { cout&lt;&lt;”subscript error”; return error; }<br>}</vals[0];></iostream.h></p>
+<p>　　（5）在另外的一些操作符中，却千万不能返回引用：+-*/ 四则运算符。它们不能返回引用，Effective C++[1]的Item23详细的讨论了这个问题。主要原因是这四个操作符没有side effect，因此，它们必须构造一个对象作为返回值，可选的方案包括：返回一个对象、返回一个局部变量的引用，返回一个new分配的对象的引用、返回一 个静态对象引用。根据前面提到的引用作为返回值的三个规则，第2、3两个方案都被否决了。静态对象的引用又因为((a+b) == (c+d))会永远为true而导致错误。所以可选的只剩下返回一个对象了。</p>
+<p>　　4、引用和多态</p>
+<p>　　引用是除指针外另一个可以产生多态效果的手段。这意味着，一个基类的引用可以指向它的派生类实例。</p>
+<p>　　【例7】：</p>
+<p>class 　A;<br>class 　B：public A{……};<br>B 　b;<br>A 　&amp;Ref = b; // 用派生类对象初始化基类对象的引用</p>
+<p>　　Ref 只能用来访问派生类对象中从基类继承下来的成员，是基类引用指向派生类。如果A类中定义有虚函数，并且在B类中重写了这个虚函数，就可以通过Ref产生多态效果。</p>
+<p>　　三、引用总结</p>
+<p>　　（1）在引用的使用中，单纯给某个变量取个别名是毫无意义的，引用的目的主要用于在函数参数传递中，解决大块数据或对象的传递效率和空间不如意的问题。</p>
+<p>　　（2）用引用传递函数的参数，能保证参数传递中不产生副本，提高传递的效率，且通过const的使用，保证了引用传递的安全性。</p>
+<p>　　（3）引用与指针的区别是，指针通过某个指针变量指向一个对象后，对它所指向的变量间接操作。程序中使用指针，程序的可读性差；而引用本身就是目标变量的别名，对引用的操作就是对目标变量的操作。</p>
+<p>　　（4）使用引用的时机。流操作符&lt;&lt;和&gt;&gt;、赋值操作符=的返回值、拷贝构造函数的参数、赋值操作符=的参数、其它情况都推荐使用引用。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-15T05:57:33.000Z" itemprop="dateUpdated">2017年3月15日 13:57</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/03/15/&amp;你到底是什么/" target="_blank" rel="external">http://fr1ee.github.io/2017/03/15/&amp;你到底是什么/</a>
+    </div>
+    <footer>
+        <a href="http://fr1ee.github.io">
+            <img src="/img/avatar.jpg" alt="FreeMing">
+            FreeMing
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/&你到底是什么/&title=《开发工具链（国内项目）》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/&你到底是什么/&title=《开发工具链（国内项目）》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/&你到底是什么/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《开发工具链（国内项目）》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/&你到底是什么/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/&你到底是什么/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/15/搜索引擎使用整理/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">安装SQL2012</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/15/PHP简单传表单/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">安装SQL2012</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="&你到底是什么" data-title="开发工具链（国内项目）" data-url="http://fr1ee.github.io/2017/03/15/&你到底是什么/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'freeming.duoshuo.com', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.10');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        多谢，祝君好~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechatpay.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by Hexo Theme indigo</span>
+            <span>Keep Moving ! &copy; 2014 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/15/&你到底是什么/&title=《开发工具链（国内项目）》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/15/&你到底是什么/&title=《开发工具链（国内项目）》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/15/&你到底是什么/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《开发工具链（国内项目）》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/15/&你到底是什么/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/15/&你到底是什么/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://fr1ee.github.io/2017/03/15/&你到底是什么/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261473536&web_id=1261473536')
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.10" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

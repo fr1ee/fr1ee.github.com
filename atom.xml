@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Keep Moving !</title>
+  <subtitle>仅以此博客作为经验积累的日志</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://fr1ee.github.io/"/>
+  <updated>2017-03-15T06:11:56.000Z</updated>
+  <id>http://fr1ee.github.io/</id>
+  
+  <author>
+    <name>FreeMing</name>
+    <email>wang.6688.cool@163.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/impress.js/"/>
+    <id>http://fr1ee.github.io/2017/03/15/impress.js/</id>
+    <published>2017-03-15T03:32:00.000Z</published>
+    <updated>2017-03-15T06:11:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>impress.js</p>
+<p>今天我有幸接触了impress.js，先是被他绚丽的外表所吸引，相信很多人也一样。<br>HTML+CSS+js对于一个未来码农还是能理解的，有点意思，关键是它给了 我们一个简单的思路或是说框架也好，我们可以自己发挥想象，创造力才是程序员的灵魂啊!<br>先付个网址impreess源码地址：https : //github.com/bartaz/impress. js    官方demo地址：<a href="http://bartaz.github.com/impress.js。" target="_blank" rel="external">http://bartaz.github.com/impress.js。</a><br>首先看看demo，培养一下感情。<br>然后直接下载Zip压缩包到自己电脑上，打开它。我们熟悉的index.htm。<br>懂下面一些参数基本就能套用了。但是，最好在自己已经在纸上设计好整个页面的情况下，在自己写代码<br>1.配置：标准的Html5页面<br>&lt;!doctype html&gt;</p>
+<html lang="en"><br><head><br>    <meta charset="utf-8"><br>    <title>impress.js</title><br>    <link href="css/impress-demo.css" rel="stylesheet"><br></head><br><body><br><div id="impress" class="impress-not-supported"><br></div><br><script src="js/impress.js"></script><br><script>impress();</script><br></body><br></html>
+
+<p>2.每个幻灯片是一个<div>元素，其class名称叫做’step’。</div></p>
+<div class="step"><br>    My first slide<br></div>
+
+<p>3.数据说明<br>data-x = 幻灯片的x坐标<br>data-y = 幻灯片的y坐标<br>data-scale = 通过指定一个值来进行缩放，data-scale为5则将会在你幻灯片原始尺寸基础放大5倍<br>data-rotate = 通过一个数字度数来确定旋转你的幻灯片<br>data-rotate-x = 为3D用，这个数字度数是它应该相对x轴旋转多少度。（前倾/后仰）<br>data-rotate-y = 为3D用，这个数字度数是它应该相对y轴旋转多少度。 （左摆/右摆）<br>data-rotate-z = 为3D用，这个数字度数是它应该相对z轴旋转多少度。<br>4.使用impress.js提供的api来控制幻灯片的显示。<br>    var api = impress();<br>    <code>api.next()</code> - 跳到下一张幻灯片,<br>    <code>api.prev()</code> - 跳到上一张幻灯片<br>    `api.goto(stepElement) - 跳到制定的幻灯片</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;impress.js&lt;/p&gt;
+&lt;p&gt;今天我有幸接触了impress.js，先是被他绚丽的外表所吸引，相信很多人也一样。&lt;br&gt;HTML+CSS+js对于一个未来码农还是能理解的，有点意思，关键是它给了 我们一个简单的思路或是说框架也好，我们可以自己发挥想象，创造力才是程序员
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://fr1ee.github.io/2017/03/15/MATLAB%C2%A0%E5%9F%BA%E7%A1%80/"/>
+    <id>http://fr1ee.github.io/2017/03/15/MATLAB 基础/</id>
+    <published>2017-03-15T03:31:21.000Z</published>
+    <updated>2017-03-15T06:12:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="title-安装SQL2012"><a href="#title-安装SQL2012" class="headerlink" title="title: 安装SQL2012"></a>title: 安装SQL2012</h2><p>MATLAB入门教程</p>
+<p>1．MATLAB的基本知识<br>1-1、基本运算与函数<br>在MATLAB下进行基本数学运算，只需将运算式直接打入提示号（&gt;&gt;）之後，并按入Enter键即可。例如：  </p>
+<blockquote>
+<blockquote>
+<p>(5<em>2+1.3-0.8)</em>10/25<br>ans =4.2000  </p>
+</blockquote>
+</blockquote>
+<p>MATLAB会将运算结果直接存入一变数ans，代表MATLAB运算後的答案（Answer）并显示其数值於萤幕上。<br>小提示： “&gt;&gt;”是MATLAB的提示符号（Prompt），但在PC中文视窗系统下，由於编码方式不同，此提示符号常会消失不见，但这并不会影响到MATLAB的运算结果。<br>我们也可将上述运算式的结果设定给另一个变数x：<br>x = (5<em>2+1.3-0.8)</em>10^2/25<br>x = 42<br>此时MATLAB会直接显示x的值。由上例可知，MATLAB认识所有一般常用到的加（+）、减（-）、乘（<em>）、除（/）的数学运算符号，以及幂次运算（^）。<br>小提示： MATLAB将所有变数均存成double的形式，所以不需经过变数宣告（Variabledeclaration）。MATLAB同时也会自动进行记忆体的使用和回收，而不必像C语言,必须由使用者一一指定.这些功能使的MATLAB易学易用，使用者可专心致力於撰写程式，而不必被软体枝节问题所干扰。<br>若不想让MATLAB每次都显示运算结果，只需在运算式最後加上分号（；）即可，如下例：<br>y = sin(10)</em>exp(-0.3*4^2);<br>若要显示变数y的值，直接键入y即可：  </p>
+<blockquote>
+<blockquote>
+<p>y<br>y =-0.0045  </p>
+</blockquote>
+</blockquote>
+<p>在上例中，sin是正弦函数，exp是指数函数，这些都是MATLAB常用到的数学函数。<br>下表即为MATLAB常用的基本数学函数及三角函数：<br>小整理：MATLAB常用的基本数学函数<br>abs(x)：纯量的绝对值或向量的长度<br>angle(z)：复 数z的相角(Phase angle)<br>sqrt(x)：开平方<br>real(z)：复数z的实部<br>imag(z)：复数z的虚 部<br>conj(z)：复数z的共轭复数<br>round(x)：四舍五入至最近整数<br>fix(x)：无论正负，舍去小数至最近整数<br>floor(x)：地板函数，即舍去正小数至最近整数<br>ceil(x)：天花板函数，即加入正小数至最近整数<br>rat(x)：将实数x化为分数表示<br>rats(x)：将实数x化为多项分数展开<br>sign(x)：符号函数 (Signum function)。<br>当x<0时，sign(x)=-1； 当x="0时，sign(x)=0;">0时，sign(x)=1。  </0时，sign(x)=-1；></p>
+<blockquote>
+<p>小整理：MATLAB常用的三角函数<br>sin(x)：正弦函数<br>cos(x)：馀弦函数<br>tan(x)：正切函数<br>asin(x)：反正弦函数<br>acos(x)：反馀弦函数<br>atan(x)：反正切函数<br>atan2(x,y)：四象限的反正切函数<br>sinh(x)：超越正弦函数<br>cosh(x)：超越馀弦函数<br>tanh(x)：超越正切函数<br>asinh(x)：反超越正弦函数<br>acosh(x)：反超越馀弦函数<br>atanh(x)：反超越正切函数<br>变数也可用来存放向量或矩阵，并进行各种运算，如下例的列向量（Row vector）运算：<br>x = [1 3 5 2];<br>y = 2<em>x+1<br>y = 3 7 11 5<br>小提示：变数命名的规则<br>1.第一个字母必须是英文字母 2.字母间不可留空格 3.最多只能有19个字母，MATLAB会忽略多馀字母<br>我们可以随意更改、增加或删除向量的元素：<br>y(3) = 2 % 更改第三个元素<br>y =3 7 2 5<br>y(6) = 10 % 加入第六个元素<br>y = 3 7 2 5 0 10<br>y(4) = [] % 删除第四个元素，<br>y = 3 7 2 0 10<br>在上例中，MATLAB会忽略所有在百分比符号（%）之後的文字，因此百分比之後的文字均可视为程式的注解（Comments）。MATLAB亦可取出向量的一个元素或一部份来做运算：<br>x(2)</em>3+y(4) % 取出x的第二个元素和y的第四个元素来做运算<br>ans = 9<br>y(2:4)-1 % 取出y的第二至第四个元素来做运算<br>ans = 6 1 -1<br>在上例中，2:4代表一个由2、3、4组成的向量</p>
+</blockquote>
+<p>若对MATLAB函数用法有疑问，可随时使用help来寻求线上支援（on-line help）：helplinspace<br>小整理：MATLAB的查询命令<br>help：用来查询已知命令的用法。例如已知inv是用来计算反矩阵，键入help inv即可得知有关inv命令的用法。（键入help help则显示help的用法，请试看看！） lookfor：用来寻找未知的命令。例如要寻找计算反矩阵的命令，可键入 lookfor inverse，MATLAB即会列出所有和关键字inverse相关的指令。找到所需的命令後 ，即可用help进一步找出其用法。（lookfor事实上是对所有在搜寻路径下的M档案进行关键字对第一注解行的比对，详见後叙。）<br>将列向量转置（Transpose）後，即可得到行向量（Column vector）：<br>z = x’<br>z = 4.0000<br>   5.2000<br>   6.4000<br>   7.6000<br>   8.8000<br>   10.0000<br>不论是行向量或列向量，我们均可用相同的函数找出其元素个数、最大值、最小值等：<br>length(z) % z的元素个数<br>ans = 6<br>max(z) % z的最大值<br>ans = 10<br>min(z) % z的最小值<br>ans =   4<br>小整理：适用於向量的常用函数有：<br>min(x): 向量x的元素的最小值<br>max(x): 向量x的元素的最大值<br>mean(x): 向量x的元素的平均值<br>median(x): 向量x的元素的中位数<br>std(x): 向量x的元素的标准差<br>diff(x): 向量x的相邻元素的差<br>sort(x): 对向量x的元素进行排序（Sorting）<br>length(x): 向量x的元素个数<br>norm(x): 向量x的欧氏（Euclidean）长度<br>sum(x): 向量x的元素总和<br>prod(x): 向量x的元素总乘积<br>cumsum(x): 向量x的累计元素总和<br>cumprod(x): 向量x的累计元素总乘积<br>dot(x, y): 向量x和y的内 积<br>cross(x, y): 向量x和y的外积 （大部份的向量函数也可适用於矩阵，详见下述。） </p>
+<p>若要输入矩阵，则必须在每一列结尾加上分号（；），如下例：<br>A = [1 2 3 4; 5 6 7 8; 9 1011 12];<br>A =<br>1  2  3 4<br>5  6  7 8<br>9  10 11  12<br>同样地，我们可以对矩阵进行各种处理：<br>A(2,3) = 5 % 改变位於第二列，第三行的元素值<br>A =<br>1  2  3 4<br>5  6  5 8<br>9  10 11  12<br>B = A(2,1:3) % 取出部份矩阵B<br>B = 5 6 5<br>A = [A B’] % 将B转置後以行向量并入A<br>A =<br>1  2  3  4  5<br>5  6  5  8  6<br>9  10 11  12 5<br>A(:, 2) = [] % 删除第二行（：代表所有列）<br>A =<br>1  3  4 5<br>5  5  8 6<br>9  11 12  5<br>A = [A; 4 3 2 1] % 加入第四列<br>A =<br>1  3   4  5<br>5  5   8  6<br>9  11  12 5<br>4  3   2  1<br>A([1 4], :) = [] % 删除第一和第四列（：代表所有行）<br>A =<br>5  5   8  6<br>9  11  12 5<br>这几种矩阵处理的方式可以相互叠代运用，产生各种意想不到的效果，就看各位的巧思和创意。<br>小提示：在MATLAB的内部资料结构中,每一个矩阵都是一个以行为主（Column-oriented ）的阵列（Array）因此对於矩阵元素的存取，我们可用一维或二维的索引（Index）来定址。举例来说，在上述矩阵A中，位於第二列、第三行的元素可写为A(2,3) （二维索引）或A(6)（一维索引，即将所有直行进行堆叠後的第六个元素）。<br>此外，若要重新安排矩阵的形状，可用reshape命令：<br>B = reshape(A, 4, 2) % 4是新矩阵的列数，2是新矩阵的行数<br>B =<br>5   8<br>9   12<br>5   6<br>11  5<br>小提示： A(:)就是将矩阵A每一列堆叠起来，成为一个行向量，而这也是MATLAB变数的内部储存方式。以前例而言，reshape(A, 8, 1)和A(:)同样都会产生一个8x1的矩阵。<br>MATLAB可在同时执行数个命令，只要以逗号或分号将命令隔开：<br>x = sin(pi/3); y = x^2; z = y<em>10,<br>z =<br>7.5000<br>若一个数学运算是太长，可用三个句点将其延伸到下一行：<br>z = 10</em>sin(pi/3)* …<br>sin(pi/3);<br>若要检视现存於工作空间（Workspace）的变数，可键入who：<br>who<br>Your variables are:<br>testfile x<br>这些是由使用者定义的变数。若要知道这些变数的详细资料，可键入：<br>whos<br>Name Size Bytes Class<br>A 2x4 64 double array<br>B 4x2 64 double array<br>ans 1x1 8 double array<br>x 1x1 8 double array<br>y 1x1 8 double array<br>z 1x1 8 double array<br>Grand total is 20 elements using 160 bytes<br>使用clear可以删除工作空间的变数：<br>clear A<br>A<br>??? Undefined function or variable ‘A’.<br>另外MATLAB有些永久常数（Permanent constants），虽然在工作空间中看不 到，但使用者可直接取用，例如：<br>pi<br>ans = 3.1416<br>下表即为MATLAB常用到的永久常数。<br>小整理：MATLAB的永久常数 i或j：基本虚数单位<br>eps：系统的浮点（Floating-point）精确度<br>inf：无限大， 例如1/0 nan或NaN：非数值（Not a number） ，例如0/0<br>pi：圆周率 p（= 3.1415926…）<br>realmax：系统所能表示的最大数值<br>realmin：系统所能表示的最小数值<br>nargin: 函数的输入引数个数<br>nargin: 函数的输出引数个数<br> 1-2、重复命令<br>最简单的重复命令是for圈（for-loop），其基本形式为：<br>for 变数 = 矩阵；<br>运算式；<br>end<br>其中变数的值会被依次设定为矩阵的每一行，来执行介於for和end之间的运算式。因此,若无意外情况，运算式执行的次数会等於矩阵的行数。<br>举例来说，下列命令会产生一个长度为6的调和数列（Harmonic sequence）：<br>x = zeros(1,6); % x是一个16的零矩阵<br>for i = 1:6,<br>x(i) = 1/i;<br>end<br>在上例中，矩阵x最初是一个16的零矩阵，在for圈中，变数i的值依次是1到6，因此矩阵x的第i个元素的值依次被设为1/i。我们可用分数来显示此数列：<br>format rat % 使用分数来表示数值<br>disp(x)<br>1 1/2 1/3 1/4 1/5 1/6<br>for圈可以是多层的，下例产生一个16的Hilbert矩阵h，其中为於第i列、第j行的元素为<br>h = zeros(6);<br>for i = 1:6,<br>for j = 1:6,<br>h(i,j) = 1/(i+j-1);<br>end<br>end<br>disp(h)<br>1 1/2 1/3 1/4 1/5 1/6<br>1/2 1/3 1/4 1/5 1/6 1/7<br>1/3 1/4 1/5 1/6 1/7 1/8<br>1/4 1/5 1/6 1/7 1/8 1/9<br>1/5 1/6 1/7 1/8 1/9 1/10<br>1/6 1/7 1/8 1/9 1/10 1/11<br>小提示：预先配置矩阵 在上面的例子，我们使用zeros来预先配置（Allocate）了一个适当大小的矩阵。若不预先配置矩阵，程式仍可执行，但此时MATLAB需要动态地增加（或减小）矩阵的大小，因而降低程式的执行效率。所以在使用一个矩阵时，若能在事前知道其大小，则最好先使用zeros或ones等命令来预先配置所需的记忆体（即矩阵）大小。  </p>
+<p>在下例中，for圈列出先前产生的Hilbert矩阵的每一行的平方和：<br>for i = h,<br>disp(norm(i)^2); % 印出每一行的平方和<br>end  </p>
+<p>1299/871<br>282/551<br>650/2343<br>524/2933<br>559/4431<br>831/8801<br>在上例中，每一次i的值就是矩阵h的一行，所以写出来的命令特别简洁。<br>令一个常用到的重复命令是while圈，其基本形式为：<br>while 条件式；<br>运算式；<br>end<br>也就是说，只要条件示成立，运算式就会一再被执行。例如先前产生调和数列的例子，我们可用while圈改写如下：<br>x = zeros(1,6); % x是一个16的零矩阵<br>i = 1;<br>while i &lt;= 6,<br>x(i) = 1/i;<br>i = i+1;<br>end<br>format short</p>
+<p>1-3、逻辑命令<br>最简单的逻辑命令是if, …, end，其基本形式为：<br>if 条件式；<br>运算式；<br>end<br>if rand(1,1) &gt; 0.5,<br>disp(‘Given random number is greater than 0.5.’);<br>end<br>Given random number is greater than 0.5.</p>
+<p>1-4、集合多个命令於一个M档案<br>若要一次执行大量的MATLAB命令，可将这些命令存放於一个副档名为m的档案，并在 MATLAB提示号下键入此档案的主档名即可。此种包含MATLAB命令的档案都以m为副档名，因此通称M档案（M-files）。例如一个名为test.m的M档案，包含一连串的MATLAB命令，那麽只要直接键入test，即可执行其所包含的命令：<br>pwd % 显示现在的目录<br>ans =<br>D:\MATLAB5\bin<br>cd c:\data\mlbook % 进入test.m所在的目录<br>type test.m % 显示test.m的内容<br>% This is my first test M-file.<br>% Roger Jang, March 3, 1997<br>fprintf(‘Start of test.m!\n’);<br>for i = 1:3,<br>fprintf(‘i = %d —&gt; i^3 = %d\n’, i, i^3);<br>end<br>fprintf(‘End of test.m!\n’);<br>test % 执行test.m<br>Start of test.m!<br>i = 1 —&gt; i^3 = 1<br>i = 2 —&gt; i^3 = 8<br>i = 3 —&gt; i^3 = 27<br>End of test.m!<br>小提示：第一注解行（H1 help line） test.m的前两行是注解，可以使程式易於了解与管理。特别要说明的是，第一注解行通常用来简短说明此M档案的功能，以便lookfor能以关键字比对的方式来找出此M档案。举例来说，test.m的第一注解行包含test这个字，因此如果键入lookfor test，MATLAB即可列出所有在第一注解行包含test的M档案，因而test.m也会被列名在内。<br>严格来说，M档案可再细分为命令集（Scripts）及函数（Functions）。前述的test.m即为命令集，其效用和将命令逐一输入完全一样，因此若在命令集可以直接使用工作空间的变数，而且在命令集中设定的变数，也都在工作空间中看得到。函数则需要用到输入引数（Input arguments）和输出引数（Output arguments）来传递资讯，这就像是C语言的函数,或是FORTRAN语言的副程序（Subroutines）。举例来说，若要计算一个正整数的阶乘 （Factorial），我们可以写一个如下的MATLAB函数并将之存档於fact.m：<br>function output = fact(n)<br>% FACT Calculate factorial of a given positive integer.<br>output = 1;<br>for i = 1:n,<br>output = output<em>i;<br>end<br>其中fact是函数名，n是输入引数，output是输出引数，而i则是此函数用到的暂时变数。要使用此函数，直接键入函数名及适当输入引数值即可：<br>y = fact(5)<br>y = 120<br>（当然，在执行fact之前，你必须先进入fact.m所在的目录。）在执行fact(5)时，<br>MATLAB会跳入一个下层的暂时工作空间（Temperary workspace），将变数n的值设定为5，然後进行各项函数的内部运算，所有内部运算所产生的变数（包含输入引数n、暂时变数i，以及输出引数output）都存在此暂时工作空间中。运算完毕後，MATLAB会将最後输出引数output的值设定给上层的变数y，并将清除此暂时工作空间及其所含的所有变数。换句话说，在呼叫函数时，你只能经由输入引数来控制函数的输入，经由输出引数来得到函数的输出，但所有的暂时变数都会随着函数的结束而消失，你并无法得到它们的值。<br>小提示：有关阶乘函数 前面（及後面）用到的阶乘函数只是纯粹用来说明MATLAB的函数观念。若实际要计算一个正整数n的阶乘（即n!）时，可直接写成prod(1:n)，或是直接呼叫gamma函数：gamma(n-1)。<br>MATLAB的函数也可以是递式的（Recursive），也就是说，一个函数可以呼叫它本身。<br>举例来说，n! = n</em>(n-1)!，因此前面的阶乘函数可以改成递式的写法：<br>function output = fact(n)<br>% FACT Calculate factorial of a given positive integerrecursively.<br>if n == 1, % Terminating condition<br>output = 1;<br>return;<br>end<br>output = n*fact(n-1);<br>在写一个递函数时，一定要包含结束条件（Terminating condition），否则此函数将会一再呼叫自己，永远不会停止，直到电脑的记忆体被耗尽为止。以上例而言，n==1即满足结束条件，此时我们直接将output设为1，而不再呼叫此函数本身。  </p>
+<p>1-5、搜寻路径<br>在前一节中，test.m所在的目录是d:\mlbook。如果不先进入这个目录，MATLAB就找不到你要执行的M档案。如果希望MATLAB不论在何处都能执行test.m，那麽就必须将d:\mlbook加入MATLAB的搜寻路径（Search path）上。要检视MATLAB的搜寻路径，键入path即可：<br>path<br>MATLABPATH<br>d:\matlab5\toolbox\matlab\general<br>d:\matlab5\toolbox\matlab\ops<br>d:\matlab5\toolbox\matlab\lang<br>d:\matlab5\toolbox\matlab\elmat<br>d:\matlab5\toolbox\matlab\elfun<br>d:\matlab5\toolbox\matlab\specfun<br>d:\matlab5\toolbox\matlab\matfun<br>d:\matlab5\toolbox\matlab\datafun<br>d:\matlab5\toolbox\matlab\polyfun<br>d:\matlab5\toolbox\matlab\funfun<br>d:\matlab5\toolbox\matlab\sparfun<br>d:\matlab5\toolbox\matlab\graph2d<br>d:\matlab5\toolbox\matlab\graph3d<br>d:\matlab5\toolbox\matlab\specgraph<br>d:\matlab5\toolbox\matlab\graphics<br>d:\matlab5\toolbox\matlab\uitools<br>d:\matlab5\toolbox\matlab\strfun<br>d:\matlab5\toolbox\matlab\iofun<br>d:\matlab5\toolbox\matlab\timefun<br>d:\matlab5\toolbox\matlab\datatypes<br>d:\matlab5\toolbox\matlab\dde<br>d:\matlab5\toolbox\matlab\demos<br>d:\matlab5\toolbox\tour<br>d:\matlab5\toolbox\simulink\simulink<br>d:\matlab5\toolbox\simulink\blocks<br>d:\matlab5\toolbox\simulink\simdemos<br>d:\matlab5\toolbox\simulink\dee<br>d:\matlab5\toolbox\local<br>此搜寻路径会依已安装的工具箱（Toolboxes）不同而有所不同。要查询某一命令是在搜寻路径的何处，可用which命令：<br>which expo<br>d:\matlab5\toolbox\matlab\demos\expo.m<br>很显然c:\data\mlbook并不在MATLAB的搜寻路径中，因此MATLAB找不到test.m这个M档案：<br>which test<br>c:\data\mlbook\test.m<br>要将d:\mlbook加入MATLAB的搜寻路径，还是使用path命令：<br>path(path, ‘c:\data\mlbook’);<br>此时d:\mlbook已加入MATLAB搜寻路径（键入path试看看），因此MATLAB已经”看”得到<br>test.m:<br>which test<br>c:\data\mlbook\test.m<br>现在我们就可以直接键入test，而不必先进入test.m所在的目录。<br>小提示：如何在其启动MATLAB时，自动设定所需的搜寻路径？ 如果在每一次启动MATLAB後都要设定所需的搜寻路径，将是一件很麻烦的事。有两种方法，可以使MATLAB启动後 ，即可载入使用者定义的搜寻路径：<br>1.MATLAB的预设搜寻路径是定义在matlabrc.m（在c:\matlab之下，或是其他安装MATLAB 的主目录下），MATLAB每次启动後，即自动执行此档案。因此你可以直接修改matlabrc.m ，以加入新的目录於搜寻路径之中。<br>2.MATLAB在执行matlabrc.m时，同时也会在预设搜寻路径中寻找startup.m，若此档案存在，则执行其所含的命令。因此我们可将所有在MATLAB启动时必须执行的命令（包含更改搜寻路径的命令），放在此档案中。<br>每次MATLAB遇到一个命令（例如test）时，其处置程序为：<br>1.将test视为使用者定义的变数。<br>2.若test不是使用者定义的变数，将其视为永久常数 。<br>3.若test不是永久常数，检查其是否为目前工作目录下的M档案。<br>4.若不是，则由搜寻路径寻找是否有test.m的档案。<br>5.若在搜寻路径中找不到，则MATLAB会发出哔哔声并印出错误讯息。<br>以下介绍与MATLAB搜寻路径相关的各项命令。  </p>
+<p>1-6、资料的储存与载入<br>有些计算旷日废时，那麽我们通常希望能将计算所得的储存在档案中，以便将来可进行其他处理。MATLAB储存变数的基本命令是save，在不加任何选项（Options）时，save会将变数以二进制（Binary）的方式储存至副档名为mat的档案，如下述：<br>save：将工作空间的所有变数储存到名为matlab.mat的二进制档案。<br>save filename：将工作空间的所有变数储存到名为filename.mat的二进制档案。 save filename x y z ：将变数x、y、z储存到名为filename.mat的二进制档案。<br>以下为使用save命令的一个简例：<br>who % 列出工作空间的变数<br>Your variables are:<br>B h j y<br>ans i x z<br>save test B y % 将变数B与y储存至test.mat<br>dir % 列出现在目录中的档案<br>. 2plotxy.doc fact.m simulink.doc test.m ~$1basic.doc<br>.. 3plotxyz.doc first.doc temp.doc test.mat<br>1basic.doc book.dot go.m template.doc testfile.dat<br>delete test.mat % 删除test.mat<br>以二进制的方式储存变数，通常档案会比较小，而且在载入时速度较快，但是就无法用普通的文书软体（例如pe2或记事本）看到档案内容。若想看到档案内容，则必须加上-ascii选项，详见下述：<br>save filename x -ascii：将变数x以八位数存到名为filename的ASCII档案。<br>Save filename x -ascii -double：将变数x以十六位数存到名为filename的ASCII档案。<br>另一个选项是-tab，可将同一列相邻的数目以定位键（Tab）隔开。<br>小提示：二进制和ASCII档案的比较 在save命令使用-ascii选项後，会有下列现象:save命令就不会在档案名称後加上mat的副档名。<br>因此以副档名mat结尾的档案通常是MATLAB的二进位资料档。<br>若非有特殊需要，我们应该尽量以二进制方式储存资料。<br>load命令可将档案载入以取得储存之变数：<br>load filename：load会寻找名称为filename.mat的档案，并以二进制格式载入。若找不到filename.mat，则寻找名称为filename的档案，并以ASCII格式载入。load filename-ascii：load会寻找名称为filename的档案，并以ASCII格式载入。<br>若以ASCII格式载入，则变数名称即为档案名称（但不包含副档名）。若以二进制载入，则可保留原有的变数名称，如下例：<br>clear all; % 清除工作空间中的变数<br>x = 1:10;<br>save testfile.dat x -ascii % 将x以ASCII格式存至名为testfile.dat的档案<br>load testfile.dat % 载入testfile.dat<br>who % 列出工作空间中的变数<br>Your variables are:<br>testfile x<br>注意在上述过程中，由於是以ASCII格式储存与载入，所以产生了一个与档案名称相同的变数testfile，此变数的值和原变数x完全相同。<br>1-7、结束MATLAB<br>有三种方法可以结束MATLAB：<br>1.键入exit<br>2.键入quit<br>3.直接关闭MATLAB的命令视窗（Command window）  </p>
+<p>2．数值分析<br>2．1微分<br>diff函数用以演算一函数的微分项，相关的函数语法有下列4个：<br>diff(f) 传回f对预设独立变数的一次微分值<br>diff(f,’t’) 传回f对独立变数t的一次微分值<br>diff(f,n) 传回f对预设独立变数的n次微分值<br>diff(f,’t’,n) 传回f对独立变数t的n次微分值<br>    数值微分函数也是用diff，因此这个函数是靠输入的引数决定是以数值或是符号微分，如果引数为向量则执行数值微分，如果引数为符号表示式则执行符号微分。<br>    先定义下列三个方程式，接著再演算其微分项：  </p>
+<blockquote>
+<blockquote>
+<p>S1 = ‘6<em>x^3-4</em>x^2+b<em>x-5’;<br>S2 = ‘sin(a)’;<br>S3 = ‘(1 - t^3)/(1 + t^4)’;<br>diff(S1)<br>ans=18</em>x^2-8<em>x+b<br>diff(S1,2)<br>ans= 36</em>x-8<br>diff(S1,’b’)<br>ans= x<br>diff(S2)<br>ans=<br>cos(a)<br>diff(S3)<br>ans=-3<em>t^2/(1+t^4)-4</em>(1-t^3)/(1+t^4)^2<em>t^3<br>simplify(diff(S3))<br>ans= t^2</em>(-3+t^4-4<em>t)/(1+t^4)^2<br>2．2积分<br> int函数用以演算一函数的积分项， 这个函数要找出一符号式 F 使得diff(F)=f。如果积<br>分式的解析式(analytical form, closed form) 不存在的话或是MATLAB无法找到，则int 传回原输入的符号式。相关的函数语法有下列 4个：<br>int(f) 传回f对预设独立变数的积分值<br>int(f,’t’) 传回f对独立变数t的积分值<br>int(f,a,b) 传回f对预设独立变数的积分值，积分区间为[a,b]，a和b为数值式<br>int(f,’t’,a,b) 传回f对独立变数t的积分值，积分区间为[a,b]，a和b为数值式<br>int(f,’m’,’n’) 传回f对预设变数的积分值，积分区间为[m,n]，m和n为符号式<br>我们示范几个例子：<br>S1 = ‘6</em>x^3-4<em>x^2+b</em>x-5’;<br>S2 = ‘sin(a)’;<br>S3 = ‘sqrt(x)’;<br>int(S1)<br>ans= 3/2<em>x^4-4/3</em>x^3+1/2<em>b</em>x^2-5<em>x<br>int(S2)<br>ans= -cos(a)<br>int(S3)<br>ans= 2/3</em>x^(3/2)<br>int(S3,’a’,’b’)<br>ans= 2/3<em>b^(3/2)- 2/3</em>a^(3/2)<br>int(S3,0.5,0.6)<br>ans= 2/25<em>15^(1/2)-1/6</em>2^(1/2)<br>numeric(int(S3,0.5,0.6)) % 使用numeric函数可以计算积分的数值<br>ans= 0.0741<br>2．3求解常微分方程式<br>  MATLAB解常微分方程式的语法是dsolve(‘equation’,’condition’)，其中equation代表常微分方程式即y’=g(x,y)，且须以Dy代表一阶微分项y’　D2y代表二阶微分项y’’　，<br>condition则为初始条件。<br>假设有以下三个一阶常微分方程式和其初始条件<br>y’=3x2, y(2)=0.5<br>y’=2.x.cos(y)2, y(0)=0.25<br>y’=3y+exp(2x), y(0)=3<br>对应上述常微分方程式的符号运算式为：<br>soln_1 = dsolve(‘Dy =3<em>x^2’,’y(2)=0.5’)<br>ans= x^3-7.500000000000000<br>ezplot(soln_1,[2,4]) % 看看这个函数的长相<br>soln_2 = dsolve(‘Dy =2</em>x<em>cos(y)^2’,’y(0) = pi/4’)<br>ans= atan(x^2+1)<br>soln_3 = dsolve(‘Dy = 3</em>y +exp(2<em>x)’,’ y(0) = 3’)<br>ans= -exp(2</em>x)+4<em>exp(3</em>x)<br>2．4非线性方程式的实根<br>    要求任一方程式的根有三步骤：<br>    先定义方程式。要注意必须将方程式安排成 f(x)=0 的形态，例如一方程式为sin(x)=3，<br>则该方程式应表示为f(x)=sin(x)-3。可以 m-file 定义方程式。<br>    代入适当范围的 x, y(x) 值，将该函数的分布图画出，藉以了解该方程式的「长相」。<br>    由图中决定y(x)在何处附近(x0)与 x 轴相交，以fzero的语法fzero(‘function’,x0)即可求出在 x0附近的根，其中 function 是先前已定义的函数名称。如果从函数分布图看出根不只一个，则须再代入另一个在根附近的 x0，再求出下一个根。<br>    以下分别介绍几数个方程式，来说明如何求解它们的根。<br>    例一、方程式为<br>   sin(x)=0<br>    我们知道上式的根有 ，求根方式如下：<br>r=fzero(‘sin’,3) % 因为sin(x)是内建函数，其名称为sin，因此无须定义它,选择 x=3 附近求根<br> r=3.1416<br>r=fzero(‘sin’,6) % 选择 x=6 附近求根<br>r = 6.2832<br>    例二、方程式为MATLAB 内建函数 humps，我们不须要知道这个方程式的形态为何，不过我们可以将它划出来，再找出根的位置。求根方式如下：<br>x=linspace(-2,3);<br>y=humps(x);<br>plot(x,y), grid % 由图中可看出在0和1附近有二个根</p>
+<p>r=fzero(‘humps’,1.2)<br>r = 1.2995<br>例三、方程式为y=x.^3-2<em>x-5<br>    这个方程式其实是个多项式，我们说明除了用 roots 函数找出它的根外，也可以用这节介绍的方法求根，注意二者的解法及结果有所不同。求根方式如下：<br>% m-function, f_1.m<br>function y=f_1(x) % 定义 f_1.m 函数<br>y=x.^3-2</em>x-5;<br>x=linspace(-2,3);<br>y=f_1(x);<br>plot(x,y), grid % 由图中可看出在2和-1附近有二个根 </p>
+<p>r=fzero(‘f_1’,2); % 决定在2附近的根<br>r = 2.0946<br>p=[1 0 -2 -5]<br>r=roots(p) % 以求解多项式根方式验证<br>r =<br>2.0946<br>-1.0473 + 1.1359i<br>-1.0473 - 1.1359i<br>2．5线性代数方程（组）求解<br>    我们习惯将上组方程式以矩阵方式表示如下<br>    AX=B<br>其中 A 为等式左边各方程式的系数项，X 为欲求解的未知项，B 代表等式右边之已知项<br>要解上述的联立方程式，我们可以利用矩阵左除 \ 做运算，即是 X=A\B。<br>    如果将原方程式改写成 XA=B<br>其中 A 为等式左边各方程式的系数项，X 为欲求解的未知项，B 代表等式右边之已知项<br>    注意上式的 X, B 已改写成列向量，A其实是前一个方程式中 A 的转置矩阵。上式的 X 可以矩阵右除 / 求解，即是 X=B/A。<br>    若以反矩阵运算求解 AX=B, X=B，即是 X=inv(A)<em>B，或是改写成 XA=B, X=B，即是X=B</em>inv(A)。<br>    我们直接以下面的例子来说明这三个运算的用法：<br>A=[3 2-1; -1 3 2; 1 -1 -1]; % 将等式的左边系数键入<br>B=[10 5 -1]’; % 将等式右边之已知项键入，B要做转置<br>X=A\B % 先以左除运算求解<br>X = % 注意X为行向量<br>-2<br>5<br>6<br>C=A*X % 验算解是否正确<br>C = % C=B  </p>
+</blockquote>
+</blockquote>
+<p>10<br>5<br>-1 </p>
+<blockquote>
+<blockquote>
+<p>A=A’; % 将A先做转置<br>B=[10 5 -1];<br>X=B/A % 以右除运算求解的结果亦同<br>X = % 注意X为列向量<br>10 5  -1<br>X=B*inv(A); % 也可以反矩阵运算求解 </p>
+</blockquote>
+</blockquote>
+<p>3.基本xy平面绘图命令<br>    MATLAB不但擅长於矩阵相关的数值运算，也适合用在各种科学目视表示（Scientificvisualization）。<br>    本节将介绍MATLAB基本xy平面及xyz空间的各项绘图命令，包含一维曲线及二维曲面的绘制、列印及存档。<br>    plot是绘制一维曲线的基本函数，但在使用此函数之前，我们需先定义曲线上每一点的x 及y座标。<br>下例可画出一条正弦曲线：<br>close all;<br>x=linspace(0, 2*pi, 100); % 100个点的x座标<br>y=sin(x); % 对应的y座标<br>plot(x,y);  </p>
+<p>小整理：MATLAB基本绘图函数<br>plot: x轴和y轴均为线性刻度（Linear scale）<br>loglog: x轴和y轴均为对数刻度（Logarithmic scale）<br>semilogx: x轴为对数刻度，y轴为线性刻度<br>semilogy: x轴为线性刻度，y轴为对数刻度<br>若要画出多条曲线，只需将座标对依次放入plot函数即可：<br>plot(x, sin(x), x, cos(x));  </p>
+<p>若要改变颜色，在座标对後面加上相关字串即可：<br>plot(x, sin(x), ‘c’, x, cos(x), ‘g’);  </p>
+<p>若要同时改变颜色及图线型态（Line style），也是在座标对後面加上相关字串即可：<br>plot(x, sin(x), ‘co’, x, cos(x), ‘g*’);  </p>
+<p>小整理：plot绘图函数的叁数 字元 颜色字元 图线型态y 黄色. 点k 黑色o 圆w 白色x  xb 蓝色+ +g 绿色<em> </em>r 红色- 实线c 亮青色: 点线m 锰紫色-. 点虚线– 虚线<br>图形完成後，我们可用axis([xmin,xmax,ymin,ymax])函数来调整图轴的范围：<br>axis([0, 6, -1.2, 1.2]); </p>
+<p>此外，MATLAB也可对图形加上各种注解与处理：<br>xlabel(‘Input Value’); % x轴注解<br>ylabel(‘Function Value’); % y轴注解<br>title(‘Two Trigonometric Functions’); % 图形标题<br>legend(‘y = sin(x)’,’y = cos(x)’); % 图形注解<br>grid on; % 显示格线  </p>
+<p>我们可用subplot来同时画出数个小图形於同一个视窗之中：<br>subplot(2,2,1); plot(x, sin(x));<br>subplot(2,2,2); plot(x, cos(x));<br>subplot(2,2,3); plot(x, sinh(x));<br>subplot(2,2,4); plot(x, cosh(x));  </p>
+<p>MATLAB还有其他各种二维绘图函数，以适合不同的应用，详见下表。<br>小整理：其他各种二维绘图函数<br>bar 长条图<br>errorbar 图形加上误差范围<br>fplot 较精确的函数图形<br>polar 极座标图<br>hist 累计图<br>rose 极座标累计图<br>stairs 阶梯图<br>stem 针状图<br>fill 实心图<br>feather 羽毛图<br>compass 罗盘图<br>quiver 向量场图<br>以下我们针对每个函数举例。<br>当资料点数量不多时，长条图是很适合的表示方式：<br>close all; % 关闭所有的图形视窗<br>x=1:10;<br>y=rand(size(x));<br>bar(x,y);  </p>
+<p>如果已知资料的误差量，就可用errorbar来表示。下例以单位标准差来做资的误差量：<br>x = linspace(0,2<em>pi,30);<br>y = sin(x);<br>e = std(y)</em>ones(size(x));<br>errorbar(x,y,e)  </p>
+<p>对於变化剧烈的函数，可用fplot来进行较精确的绘图，会对剧烈变化处进行较密集的取样，如下例：<br>fplot(‘sin(1/x)’, [0.02 0.2]); % [0.02 0.2]是绘图范围  </p>
+<p>若要产生极座标图形，可用polar：<br>theta=linspace(0, 2<em>pi);<br>r=cos(4</em>theta);<br>polar(theta, r);  </p>
+<p>对於大量的资料，我们可用hist来显示资料的分　情况和统计特性。下面几个命令可用来验证randn产生的高斯乱数分　：<br>x=randn(5000, 1); % 产生5000个 m=0，s=1 的高斯乱数<br>hist(x,20); % 20代表长条的个数  </p>
+<p>rose和hist很接近，只不过是将资料大小视为角度，资料个数视为距离，并用极座标绘制<br>表示：<br>x=randn(1000, 1);<br>rose(x);  </p>
+<p>stairs可画出阶梯图：<br>x=linspace(0,10,50);<br>y=sin(x).*exp(-x/3);<br>stairs(x,y);  </p>
+<p>stems可产生针状图，常被用来绘制数位讯号：<br>x=linspace(0,10,50);<br>y=sin(x).*exp(-x/3);<br>stem(x,y);  </p>
+<p>stairs将资料点视为多边行顶点，并将此多边行涂上颜色：<br>x=linspace(0,10,50);<br>y=sin(x).*exp(-x/3);<br>fill(x,y,’b’); % ‘b’为蓝色  </p>
+<p>feather将每一个资料点视复数，并以箭号画出：<br>theta=linspace(0, 2<em>pi, 20);<br>z = cos(theta)+i</em>sin(theta);<br>feather(z);  </p>
+<p>compass和feather很接近，只是每个箭号的起点都在圆点：<br>theta=linspace(0, 2<em>pi, 20);<br>z = cos(theta)+i</em>sin(theta);<br>compass(z);  </p>
+<p>4．基本XYZ立体绘图命令<br>在科学目视表示（Scientific visualization）中，三度空间的立体图是一个非常重要的技巧。本章将介绍MATLAB基本XYZ三度空间的各项绘图命令。<br>mesh和plot是三度空间立体绘图的基本命令，mesh可画出立体网状图，plot则可画出立体曲面图，两者产生的图形都会依高度而有不同颜色。<br>下列命令可画出由函数&lt;图片&gt;形成的立体网状图:<br>x=linspace(-2, 2, 25); % 在x轴上取25点<br>y=linspace(-2, 2, 25); % 在y轴上取25点<br>[xx,yy]=meshgrid(x, y); % xx和yy都是21x21的矩阵<br>zz=xx.*exp(-xx.^2-yy.^2); % 计算函数值，zz也是21x21的矩阵<br>mesh(xx, yy, zz); % 画出立体网状图  </p>
+<p>surf和mesh的用法类似：<br>x=linspace(-2, 2, 25); % 在x轴上取25点<br>y=linspace(-2, 2, 25); % 在y轴上取25点<br>[xx,yy]=meshgrid(x, y); % xx和yy都是21x21的矩阵<br>zz=xx.*exp(-xx.^2-yy.^2); % 计算函数值，zz也是21x21的矩阵<br>surf(xx, yy, zz); % 画出立体曲面图  </p>
+<p>为了方便测试立体绘图，MATLAB提供了一个peaks函数，可产生一个凹凸有致的曲面，包含了三个局部极大点及三个局部极小点<br>要画出此函数的最快方法即是直接键入peaks：<br>peaks  </p>
+<p>z = 3<em>(1-x).^2.</em>exp(-(x.^2) - (y+1).^2) …  </p>
+<ul>
+<li>10<em>(x/5 - x.^3 - y.^5).</em>exp(-x.^2-y.^2) …  </li>
+<li>1/3*exp(-(x+1).^2 - y.^2)<br>我们亦可对peaks函数取点，再以各种不同方法进行绘图。<br>meshz可将曲面加上围裙：<br>[x,y,z]=peaks;<br>meshz(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </li>
+</ul>
+<p>waterfall可在x方向或y方向产生水流效果：<br>[x,y,z]=peaks;<br>waterfall(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>下列命令产生在y方向的水流效果：<br>[x,y,z]=peaks;<br>waterfall(x’,y’,z’);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>meshc同时画出网状图与等高线：<br>[x,y,z]=peaks;<br>meshc(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>surfc同时画出曲面图与等高线：<br>[x,y,z]=peaks;<br>surfc(x,y,z);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>contour3画出曲面在三度空间中的等高线：<br>contour3(peaks, 20);<br>axis([-inf inf -inf inf -inf inf]);  </p>
+<p>contour画出曲面等高线在XY平面的投影：<br>contour(peaks, 20);  </p>
+<p>plot3可画出三度空间中的曲线：<br>t=linspace(0,20<em>pi, 501);<br>plot3(t.</em>sin(t), t.*cos(t), t);  </p>
+<p>亦可同时画出两条三度空间中的曲线：<br>t=linspace(0, 10<em>pi, 501);<br>plot3(t.</em>sin(t), t.<em>cos(t), t, t.</em>sin(t), t.*cos(t), -t);  </p>
+<p>4.三维网图的高级处理</p>
+<ol>
+<li>消隐处理<br>例.比较网图消隐前后的图形<br>z=peaks(50);<br>subplot(2,1,1);<br>mesh(z);<br>title(‘消隐前的网图’)<br>hidden off<br>subplot(2,1,2)<br>mesh(z);<br>title(‘消隐后的网图’)<br>hidden on<br>colormap([0 0 1])</li>
+</ol>
+<ol>
+<li>裁剪处理<br>利用不定数NaN的特点,可以对网图进行裁剪处理<br>例.图形裁剪处理<br>P=peaks(30);<br>subplot(2,1,1);<br>mesh(P);<br>title(‘裁剪前的网图’)<br>subplot(2,1,2);<br>P(20:23,9:15)=NaN*ones(4,7);       %剪孔<br>meshz(P)                        %垂帘网线图<br>title(‘裁剪后的网图’)<br>colormap([0 0 1])                  %蓝色网线</li>
+</ol>
+<p>注意裁剪时矩阵的对应关系,即大小一定要相同.</p>
+<ol>
+<li>三维旋转体的绘制<br>为了一些专业用户可以更方便地绘制出三维旋转体,MATLAB专门提供了2个函数:柱面函数cylinder和球面函数sphere<br>(1)   柱面图<br>柱面图绘制由函数cylinder实现.<br>[X,Y,Z]=cylinder(R,N)  此函数以母线向量R生成单位柱面.母线向量R是在单位高度里等分刻度上定义的半径向量.N为旋转圆周上的分格线的条数.可以用surf(X,Y,Z)来表示此柱面.<br>[X,Y,Z]=cylinder(R)或[X,Y,Z]=cylinder此形式为默认N=20且R=[1 1]</li>
+</ol>
+<p>例.柱面函数演示举例<br>x=0:pi/20:pi*3;<br>r=5+cos(x);<br>[a,b,c]=cylinder(r,30);<br>mesh(a,b,c)</p>
+<p>例.旋转柱面图.<br>r=abs(exp(-0.25<em>t).</em>sin(t));<br>t=0:pi/12:3<em>pi;<br>r=abs(exp(-0.25</em>t).*sin(t));<br>[X,Y,Z]=cylinder(r,30);<br>mesh(X,Y,Z)<br>colormap([1 0 0])</p>
+<p>(2).球面图<br>球面图绘制由函数sphere来实现<br>[X,Y,Z]=sphere(N)             此函数生成3个(N+1)*(N+1)的矩阵,利用函数        surf(X,Y,Z) 可产生单位球面.<br>[X,Y,Z]=sphere         此形式使用了默认值N=20.<br>Sphere(N)             只是绘制了球面图而不返回任何值.<br>例.绘制地球表面的气温分布示意图.<br>[a,b,c]=sphere(40);<br>t=abs(c);<br>surf(a,b,c,t);<br>axis(‘equal’)   %此两句控制坐标轴的大小相同.<br>axis(‘square’)<br>colormap(‘hot’)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;title-安装SQL2012&quot;&gt;&lt;a href=&quot;#title-安装SQL2012&quot; class=&quot;headerlink&quot; title=&quot;title: 安装SQL2012&quot;&gt;&lt;/a&gt;title: 安装SQL2012&lt;/h2&gt;&lt;p&gt;MATLAB入门教程&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://fr1ee.github.io/2017/03/15/Apache%E5%BC%95%E8%B5%B7%E7%9A%84wampserver%E5%AE%89%E8%A3%85%E5%A5%BD%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%BF%E7%94%A8%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/"/>
+    <id>http://fr1ee.github.io/2017/03/15/Apache引起的wampserver安装好第二次使用无法启动问题/</id>
+    <published>2017-03-15T03:24:29.000Z</published>
+    <updated>2017-03-15T06:11:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="title-安装SQL2012"><a href="#title-安装SQL2012" class="headerlink" title="title: 安装SQL2012"></a>title: 安装SQL2012</h2><p>Apache引起的wampserver安装好第二次使用无法启动问题</p>
+<p>昨天安的wampserver的PHP开发环境，用的好好的今天就完了，由红色转为黄色就一直不变绿，我查了一下，MySQL正常启动，看样子是Apache不行了，在服务里看了一下，wampserver没有启动，想手动启动也不行，说是系统不允许。百度一下吧，可能是80端口被占用了，于是我netstat一下，没有啊，又用wampserver自带的功能测试一下80端口，发现问题了端口被占用了。我果断选择改Apache端口，改成了8088,问题解决。<br>具体做法我来写一下吧，上述表达完全没有理科生特点。<br>1.发现wampserver无法正常启动，检查是否是因为Apache未启动，是请继续看，不是的话就自己去百度吧。<br>2，查看“服务”（控制面板\所有控制面板项\管理工具、服务），找到wampserver，看是否启动，尝试手动启动，失败请继续看。<br>3，直接用wampserver自带的80端口测试功能测试，发现占用请更改Apache端口。（因为占用端口的服务我们不清楚，为了减少麻烦，还是改端口而不是禁用该服务）<br>4，将Apache的httpd.conf的80直接改成8088，将wampserver的wampmanager.tpl所有网址的localhost后面加“：8088”。原因大概就是默认都是80，我们改了就告诉他一下是8088。。。。。。。。。。。。。。。。。。。。。。。。。怎么改端口自己百度吧，人家写的很详细<br>5，输入网址“localhost:8088”，一切正常了。</p>
+<h2 id="6，配置文件一定改全，我把wampmanager-ini里的localhost也加上了8088哦！！"><a href="#6，配置文件一定改全，我把wampmanager-ini里的localhost也加上了8088哦！！" class="headerlink" title="6，配置文件一定改全，我把wampmanager.ini里的localhost也加上了8088哦！！"></a>6，配置文件一定改全，我把wampmanager.ini里的localhost也加上了8088哦！！</h2><p>在摸索中学习，求大神指点，感激不尽</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;title-安装SQL2012&quot;&gt;&lt;a href=&quot;#title-安装SQL2012&quot; class=&quot;headerlink&quot; title=&quot;title: 安装SQL2012&quot;&gt;&lt;/a&gt;title: 安装SQL2012&lt;/h2&gt;&lt;p&gt;Apache引起的wa
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/"/>
+    <id>http://fr1ee.github.io/2017/03/15/搜索引擎使用整理/</id>
+    <published>2017-03-15T03:23:11.000Z</published>
+    <updated>2017-03-15T06:09:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>搜索引擎使用整理</p>
+<p>GOOGLE搜索技巧<br>GOOGLE无需用明文的“+”来表示逻辑“与”操作，只要空格就可以了。<br>GOOGLE用减号“-”表示逻辑“非”操作。<br>注意：这里的“+”和“-”号，是英文字符。此外，操作符与作用的关键字之间，不能有空格。比如“易筋经– 吸星+++”，搜索引擎将视为逻辑“与”操作，中间的“-”被忽略。<br>GOOGLE用大写的“OR”表示逻辑“或”操作。但是，关键字为中文的或查询似乎还有BUG，无法得到正确的查询结果。<br>注意：小写的“or”，在查询的时候将被忽略；<br>GOOGLE不支持通配符，如“<em>”、“?”等，只能做精确查询，关键字后面的“</em>”或者“?”会被忽略掉。<br>GOOGLE对英文字符大小写不敏感，“GOD”和“god”搜索的结果是一样的。<br>GOOGLE的关键字可以是词组（中间没有空格），也可以是句子（中间有空格），但是，用句子做关键字，必须加英文引号。<br>示例：搜索包含“long, long ago”字串的页面。<br>注意：和搜索英文关键字串不同的是，GOOGLE对中文字串的处理并不十分完善<br>GOOGLE对一些网路上出现频率极高的词（主要是英文单词），如“i”、“com”，以及一些符号如“*”、“.”等，作忽略处理，如果用户必须要求关键字中包含这些常用词，就要用强制语法“+”。<br>注意：英文符号（如问号，句号，逗号等）无法成为搜索关键字，加强制也不行。<br> “site”表示搜索结果局限于某个具体网站或者网站频道，如“sina.com.cn”、“edu.sina.com.cn”，或者是某个域名，如“com.cn”、“com”等等。如果是要排除某网站或者域名范围内的页面，只需用“-网站/域名”。<br>示例：搜索中文教育科研网站（edu.cn）上所有包含“金庸”的页面。<br>搜索：“金庸 site:edu.cn”<br>结果：已搜索有关金庸 site:edu.cn的中文(简体)网页。共约有2,680项查询结果，这是第1-10项。搜索用时0.31秒。<br>示例：搜索包含“金庸”和“古龙”的中文新浪网站页面，<br>搜索：“金庸 古龙site:sina.com.cn”<br>结果：已在sina.com.cn搜索有关金庸古龙的中文(简体)网页。共约有869项查询结果，这是第1-10项。搜索用时0.34秒。<br>注意：site后的冒号为英文字符，而且，冒号后不能有空格，否则，“site:”将被作为一个搜索的关键字。此外，网站域名不能有“http”以及“www”前缀，也不能有任何“/”的目录后缀；网站频道则只局限于“频道名.域名”方式，而不能是“域名/频道名”方式。诸如“金庸 site:edu.sina.com.cn/1/”的语法是错误的。<br>“link”语法返回所有链接到某个URL地址的网页。<br>示例：搜索所有含指向华军软件园“www.newhua.com”链接的网页。<br>搜索：“link:www.newhua.com”<br>结果：搜索有链接到www.newhua.com的网页。共约有695项查询结果，这是第1-10项。搜索用时0.23秒。<br>注意：“link”不能与其他语法相混合操作，所以“link:”后面即使有空格，也将被GOOGLE忽略。<br>inurl语法返回的网页链接中包含第一个关键字，后面的关键字则出现在链接中或者网页文档中。有很多网站把某一类具有相同属性的资源名称显示在目录名称或者网页名称中，比如“MP3”、“GALLARY”等，于是，就可以用INURL语法找到这些相关资源链接，然后，用第二个关键词确定是否有某项具体资料。INURL语法和基本搜索语法的最大区别在于，前者通常能提供非常精确的专题资料。<br>示例：查找MIDI曲“沧海一声笑”。<br>搜索：“inurl:midi 沧海一声笑”<br>结果：已搜索有关inurl:midi 沧海一声笑的中文(简体)网页。共约有14项查询结果，这是第1-10项。搜索用时0.01秒。<br>示例：查找微软网站上关于windows2000的安全课题资料。<br>搜索：“inurl:security windows2000 site:microsoft.com”<br>结果：已在microsoft.com内搜索有关 inurl:security windows2000的网页。共约有198项查询结果，这是第1-10项。搜索用时0.37秒。<br>注意：“inurl:”后面不能有空格，GOOGLE也不对URL符号如“/”进行搜索。GOOGLE对“cgi-bin/phf”中的“/”当成空格处理。<br>allinurl语法返回的网页的链接中包含所有查询关键字。这个查询的对象只集中于网页的链接字符串。<br>示例：查找可能具有PHF安全漏洞的公司网站。通常这些网站的CGI-BIN目录中含有PHF脚本程序（这个脚本是不安全的），表现在链接中就是“域名/cgi-bin/phf”。<br>语法：“allinurl:”cgi-bin” phf +com”<br>搜索：已向英特网搜索allinurl:”cgi-bin” phf +com. 共约有40项查询结果，这是第1-10项。搜索用时0.06秒。<br>allintitle和intitle的用法类似于上面的allinurl和inurl，只是后者对URL进行查询，而前者对网页的标题栏进行查询。网页标题，就是HTML标记语言title中之间的部分。网页设计的一个原则就是要把主页的关键内容用简洁的语言表示在网页标题中。因此，只查询标题栏，通常也可以找到高相关率的专题页面。<br>示例：查找日本明星藤原纪香的照片集。<br>搜索：“intitle:藤原纪香写真”<br>结果：已搜索有关intitle:藤原纪香写真的中文(简体)网页。共约有284项查询结果，这是第1-10项。搜索用时0.03秒。<br>GOOGLE的罕用高级搜索语法：related，cache，info<br>related用来搜索结构内容方面相似的网页。例：搜索所有与中文新浪网主页相似的页面（如网易首页，搜狐首页，中华网首页等），“related:www.sina.com.cn/index.shtml”。<br>cache用来搜索GOOGLE服务器上某页面的缓存，这个功能同“网页快照”，通常用于查找某些已经被删除的死链接网页，相当于使用普通搜索结果页面中的“网页快照”功能。<br>info用来显示与某链接相关的一系列搜索，提供cache、link、related和完全包含该链接的网页的功能。<br>示例：查找和新浪首页相关的一些资讯。<br>搜索：“info:www.sina.com.cn”<br>结果：有关www.sina.com.cn的网页信息。<br>北京站 上海站 广东站. … 游戏世界, |, 影音娱乐, |, Club缘, |, 男人女人, |, 论坛聊天, |, 时尚潮流, |, 文教育儿, |, 车行天下, |, 软件下载. … Google 提供这个网址的信息:<br>查看Google网页快照里www.sina.com.cn的存档<br>寻找和www.sina.com.cn类似的网页<br>寻找网页有链接到www.sina.com.cn<br>寻找网页包含有’www.sina.com.cn’</p>
+<p>其他常用搜索个案<br>例一：找人<br>分析：一个人在网上揭示的资料通常有：姓名，网名，性别，年龄，毕业学校，工作单位，外号，住址，电话，信箱，BP，手机号码，ICQ号，OICQ号等等。所以，如果你要了解一下你多年没见过的同学，那不妨用上述信息做关键字进行查询，也许会有大的收获。<br>例二：找软件<br>分析一：最简单的搜索当然就是直接以软件名称以及版本号为关键字查询。但是，仅仅有软件名称和目标网站，显然还不行，因为搜索到的可能是软件的相关新闻。应该再增加一个关键字。考虑到下载页面上常有“点击此处下载”或者“download”的提示语，因此，可以增加“下载”或者“download”为关键字。<br>搜索：“winzip 8.0 下载”<br>结果：已搜索有关winzip 8.0 下载的中文(简体)网页。共约有6,670项查询结果，这是第1-10项。搜索用时0.22秒。<br>分析二：很多网站设有专门的下载目录，而且就命名为“download”，因此，可以用INURL语法直接搜索这些下载目录。<br>搜索：“winzip 8.0 inurl:download”<br>结果：已搜索有关winzip 8.0 inurl:download的中文(简体)网页。共约有358项查询结果，这是第1-10项。搜索用时0.44秒。<br>在互联网上随意的下载软件是不安全的，因为供下载的软件有可能带有病毒或者捆绑了木马，所以，对下载网站作一个限定，是一个稳妥的思路。可以用SITE语法达到这个目的。<br>共享软件下载完之后，使用的时候，软件总跳出警示框，或者软件的功能受到一定限制。由于中国的网民多是穷棒子，所以应该再找一个注册码。找注册码，除了软件的名称和版本号外，还需要有诸如“serial number”、“sn”、“序列号”等关键字。现在，来搜索一下winzip8.0的注册码。<br>搜索：“winzip 8.0 sn”<br>结果：已向英特网搜索winzip 8.0 sn. 共约有777项查询结果，这是第1-10项。搜索用时0.30秒。<br>例三：找图片<br>除了GOOGLE提供的专门图片搜索功能，还可以组合使用一些搜索语法，达到图片搜索之目的。<br>分析一：专门的图片集合，提供图片的网站通常会把图片放在某个专门目录下，如“gallary”、“album”、“photo”、“image”等。这样就可以使用INURL语法迅速找到这类目录。现在，试着找找小甜甜布兰妮的照片集。<br>搜索：“”britney spears” inurl:photo”<br>结果：已向英特网搜索”britney spears” inurl:photo. 共约有2,720项查询结果，这是第1-10项。搜索用时0.23秒。<br>分析二：提供图片集合的网页，在标题栏内通常会注明，这是谁谁的图片集合。于是就可以用INTITLE语法找到这类网页。<br>搜索：“intitle:”britney spears” picture”<br>结果：已向英特网搜索intitle:”britney spears” picture. 共约有317项查询结果，这是第1-10项。搜索用时0.40秒。<br>分析三：明星的FANS通常会申请免费个人主页来存放他们偶像的靓照。于是用SITE语法指定某免费主页提供站点，是个迅速找到图片的好办法。<br>搜索：“”britney spears” site:geocities.com”<br>结果：已在geocities.com内搜索有关”britney spears”的网页。共约有5,020项查询结果，这是第1-10项。搜索用时0.47秒。<br>例四：找MP3<br>分析一：提供MP3的网站，通常会建立一个叫做MP3的目录，目录底下分门别类的存放各种MP3乐曲。所以，可以用INURL语法迅速找到这类目录。现在用这个办法找找老歌“say you say me”。<br>搜索：“”say you say me” inurl:mp3”<br>结果：已向英特网搜索inurl:mp3 “say you say me”. 共约有155项查询结果，这是第1-10项。搜索用时0.17秒。<br>分析二：也可以通过网页标题，找到这类提供MP3的网页。<br>搜索：“”say you say me” intitle:mp3”<br>结果：已向英特网搜索”say you say me” intitle:mp3. 共约有178项查询结果，这是第1-10项。搜索用时0.73秒。<br>当然，如果你知道某个网站的下载速度快，而且乐曲全，就可以用SITE语法先到该网站上看看有没有目标乐曲。<br>例五：找书<br>分析一：对我而言，常访问的电子图书馆类网站就那么几个，比如文艺类的“www.shuku.net”。于是可以用SITE语法很简单的找到某本书（如果该网站上有的话）。比如，“旧唐书 site:shuku.net”，就可以马上找到该书。如果没有，通常别的网站上也很难找到。因此，找书的关键，是你了解一大批著名的图书馆网站。<br>分析二：我上面介绍的第一项关键字选择技巧特定词法，对于迅速找到某书或者文章也是极其有用的，当然，这得建立在你已经读过该书，对书的内容有印象的基础上。比如如果了解堂吉诃德一书战风车的大致内容，就可以用“吉诃德风车 桑乔”迅速找到该书。<br> 百度搜索</p>
+<ol>
+<li>减除无关资料<br>有时候，排除含有某些词语的资料有利于缩小查询范围。<br>百度支持”-“功能，用于有目的地删除某些无关网页，但减号之前必须留一空格，语法是”A -B”。<br>例如，要搜寻关于”武侠小说”，但不含”古龙”的资料，可使用如下查询：<br>武侠小说 - 古龙</li>
+<li>并行搜索<br>使用”A | B”来搜索”或者包含关键词A，或者包含关键词B”的网页。<br>例如：您要查询”图片”或”写真”相关资料，无须分两次查询，只要输入 [图片 | 写真] 搜索即可。 百度会提供跟”|”前后任何关键词相关的网站和资料。</li>
+<li>在指定网站内搜索<br>在一个网址前加”site:”，可以限制只搜索某个具体网站、网站频道、或某域名内的网页。<br>例如，<br>[电话 site:www.baidu.com] 表示在www.baidu.com网站内搜索和”电话”相关的资料；<br>[竞价排名 site:baidu.com] 表示在baidu.com网站内搜索和”竞价排名”相关的资料； [intel site:com.cn] 表示在域名以”com.cn”结尾的网站内搜索和”intel”相关的资料；<br>[门户 .cn] 表示在域名以”cn”结尾的网站内搜索和”门户”相关的资料；<br>注意：搜索关键词在前，site:及网址在后；关键词与site:之间须留一空格隔开；site后的冒号”:”可以是半角”:”也可以是全角”：”，百度搜索引擎会自动辨认。”site:”后不能有”<a href="http://&quot;前缀或&quot;/&quot;后缀，网站频道只局限于&quot;频道名.域名&quot;方式，不能是&quot;域名/频道名&quot;方式。" target="_blank" rel="external">http://&quot;前缀或&quot;/&quot;后缀，网站频道只局限于&quot;频道名.域名&quot;方式，不能是&quot;域名/频道名&quot;方式。</a><br>4 在标题中搜索<br>在一个或几个关键词前加”intitle:”，可以限制只搜索网页标题中含有这些关键词的网页。<br>例如，<br>[intitle:南瓜饼] 表示搜索标题中含有关键词”南瓜饼”的网页；<br>[intitle:百度 互联网] 表示搜索标题中含有关键词”百度”和”互联网”的网页。</li>
+<li>在url中搜索<br>在”inurl: “后加url中的文字，可以限制只搜索url中含有这些文字的网页。<br>例如，<br>[inurl:mp3] 表示搜索url中含有”mp3”的网页；<br>[inurl:网页] 表示搜索url中含有”网页”的网页；<br>[inurl:china news] 表示搜索url中含有”china”和”news”的网页。<br>6.“——“精确匹配<br>如果输入的查询词很长，百度在经过分析后，给出的搜索结果中的查询词，可能是拆分的。如果您对这种情况不满意，可以尝试让百度不拆分查询词。给查询词加上双引号，就可以达到这种效果。如：“上海大学”，搜索结果中的上海大学四个字就不会是分开的。<br>7.“filetype:”——特定格式的文档检索<br>百度以”filetype:”来对搜索对象做限制，冒号后是文档格式，如PDF、DOC、XLS等。通过添加”filetype:”可以更方便有效的找到特定的信息，尤其是学术领域的一些信息。如：经济信息学 filetypeDF<br>8.《》——精确匹配/电影或小说<br>书名号是百度独有的一个特殊查询语法。在其他搜索引擎中，书名号会被忽略，而在百度，中文书名号是可被查询的。加上书名号的查询词，有两层特殊功能，一是书名号会出现在搜索结果中；二是被书名号扩起来的内容，不会被拆分。 书名号在某些情况下特别有效果，例如，查名字很通俗和常用的那些电影或者小说。比如，查电影“手机”，如果不加书名号，很多情况下出来的是通讯工具——手机，而加上书名号后，《手机》结果就都是关于电影方面的了。<br>9．“开始连接”、“正在连接”——搜索<strong><em><br>网络上有很多热心人提供</em></strong>的下载地址。为了表明真实可靠，把下载过程也同时附上。现在最流行的下载工具是flashget和迅雷。 Flashget下载开始就是“正在连接”，迅雷则是“开始连接”。所以，可以用想找的电影名字，加上“开始连接”或者“正在连接”，来寻找<em>*</em>。 检索式形式如：“电影名 开始连接”、电影名 正在连接”、“电影名 (开始连接 | 正在连接)” 。如：哈利波特4 开始连接 、倩女幽魂 正在连接 、史前一万年 (正在连接 | 开始连接) 。<br>10.『』——查找论坛版块<br>百度作为国人自己开发的搜索引擎，支持的中文标点符号最多。『』是直行双引号。 检索式形式如： 『论坛版块名称』 。如：『影视交流』。<br>PS：这个直行双引号怎么输入呢？调出中文输入法，选择“软键盘”——“标点符号”，就能找到。<br>11.“文本方式”——查找论坛内容<br>论坛是个宝库，资源丰富，人才荟萃。交流的气息浓，在反复的讨论和回帖中，可以获得相对真实的信息。如：文本方式 可口可乐 、文本方式 超级女声。<br>12.intitle:bookmarks——查询别人的收藏夹<br>IE 浏览器的收藏夹导出后，网页的标题（title）是bookmarks。百度的intitle语法可以把搜索范围限定在网页标题内。所以，用 intitle语法可以查询别人的收藏夹，结果应该都是精品，没有哪个人会把垃圾放到自己收藏夹的。如：小说 intitle:bookmarks \查找小说的精彩站点 语文 intitle:bookmarks \查找语文方面的精彩站点 。<br>13.利用后缀名来搜索电子书<br>网络资源丰富，有极多电子书。人们在提供电子书时，往往带上书的后缀名。因此，可以利用后缀名来搜索电子书。如：明朝那些事儿 txt<br>14.中英文混合搜索<br>想把某些汉语词句翻译成英语，可以中英文混合搜索。有一个经典例子，查找德语的“我爱你”。英语的我们知道，于是，可以混合搜索。如：”I Love You “ 德语 我爱你</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;搜索引擎使用整理&lt;/p&gt;
+&lt;p&gt;GOOGLE搜索技巧&lt;br&gt;GOOGLE无需用明文的“+”来表示逻辑“与”操作，只要空格就可以了。&lt;br&gt;GOOGLE用减号“-”表示逻辑“非”操作。&lt;br&gt;注意：这里的“+”和“-”号，是英文字符。此外，操作符与作用的关键字之间，不能有空格
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开发工具链（国内项目）</title>
+    <link href="http://fr1ee.github.io/2017/03/15/&amp;%E4%BD%A0%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+    <id>http://fr1ee.github.io/2017/03/15/&amp;你到底是什么/</id>
+    <published>2017-03-15T03:22:22.000Z</published>
+    <updated>2017-03-15T05:57:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="amp-你到底是什么？"><a href="#amp-你到底是什么？" class="headerlink" title="&amp;你到底是什么？"></a>&amp;你到底是什么？</h4><p>前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么渣，怎么当程序员。。。<br>问题：函数声明中参数用“&amp;”是什么用法？<br>我蒙了，我说这个函数是我copy的，我认为用&amp;和用*都可以实现功能。<br>老师告诉我他只想考我一下基础知识，这个叫“引用”。//此处前提是我们在讨论C语言的程序<br>我蒙了，引用？找找资料自己脑补吧！<br>在C语言中，&amp;有三种作用，分别如下：</p>
+<ol>
+<li>取地址。单目运算符。用来取一个变量的地址。<br>比如<br>int i, *p;<br>p = &i;//这里的&amp;作用是取变量i的地址。<br>最常用的是scanf（）中，<br>int a;<br>scanf(“%d”,&amp;a);//取地址</li>
+<li>位操作中的与操作运算符。<br>也就是常说的and操作，双目运算符。<br>计算的时候按位计算，&amp;两边操作数对应位上全为1时，结果的该位值为1。否则该位值为0<br>比如<br>0x12&amp;0x23 转为二进制为:<br>B00010010&amp;B00100011，<br>按位计算结果为B00000010，<br>即结果为0x02。</li>
+<li>当两个&amp;&amp;一起用的时候，表示为逻辑运算中的与运算。<br>逻辑运算结果只有0和1两种结果。<br>一般在&amp;&amp;两边是两个逻辑表达式。<br>当两个表达式值均为1时，&amp;&amp;运算结果为1，否则为0。<br>比如<br>2&gt;1 &amp;&amp; 0<1 1="" 这个的值为1&&1="1。">2 &amp;&amp; 2&gt;0 这个值为0&amp;&amp;1 = 0。<br>1&gt;2 &amp;&amp; 2&gt;3 这个值为0&amp;&amp;0=0。<br>在C++中呢？<br>除了C中的功能多加了一个“引用”，这个才是———-引用<br>有人要问了，我用C语音写的使用了引用的用法，怎么也行？<br>你的编译器在”捣鬼”，C和C++编译器可能在一起，它能够允许你使用C++的用法。<br>（下面这段转自h.t.t.p://w.w.w.cnblogs.com/Mr-xu/archive/2012/08/07/2626973.html）<br>一、引用简介</1></li>
+</ol>
+<p>　　引用就是某一变量（目标）的一个别名，对引用的操作与对变量直接操作完全一样。</p>
+<p>　　引用的声明方法：类型标识符 &amp;引用名=目标变量名；</p>
+<p>　　【例1】：int a; int &amp;ra=a; //定义引用ra,它是变量a的引用，即别名</p>
+<p>　　说明：</p>
+<p>　　（1）&amp;在此不是求地址运算，而是起标识作用。</p>
+<p>　　（2）类型标识符是指目标变量的类型。</p>
+<p>　　（3）声明引用时，必须同时对其进行初始化。</p>
+<p>　　（4）引用声明完毕后，相当于目标变量名有两个名称，即该目标原名称和引用名，且不能再把该引用名作为其他变量名的别名。</p>
+<p>　　 ra=1; 等价于 a=1;</p>
+<p>　　（5）声明一个引用，不是新定义了一个变量，它只表示该引用名是目标变量名的一个别名，它本身不是一种数据类型，因此引用本身不占存储单元，系统也不给引用分配存储单元。故：对引用求地址，就是对目标变量求地址。&amp;ra与&amp;a相等。</p>
+<p>　　（6）不能建立数组的引用。因为数组是一个由若干个元素所组成的集合，所以无法建立一个数组的别名。</p>
+<p>　　二、引用应用</p>
+<p>　　1、引用作为参数</p>
+<p>　　引用的一个重要作用就是作为函数的参数。以前的C语言中函数参数传递是值传递，如果有大块数据作为参数传递的时候，采用的方案往往是指针，因为 这样可以避免将整块数据全部压栈，可以提高程序的效率。但是现在（C++中）又增加了一种同样有效率的选择（在某些特殊情况下又是必须的选择），就是引 用。</p>
+<p>　　【例2】：</p>
+<p>void swap(int &amp;p1, int &amp;p2) //此处函数的形参p1, p2都是引用<br>{ int p; p=p1; p1=p2; p2=p; }</p>
+<p>　　为在程序中调用该函数，则相应的主调函数的调用点处，直接以变量作为实参进行调用即可，而不需要实参变量有任何的特殊要求。如：对应上面定义的swap函数，相应的主调函数可写为：</p>
+<p>main( )<br>{<br>　int a,b;<br>　cin&gt;&gt;a&gt;&gt;b; //输入a,b两变量的值<br>　swap(a,b); //直接以变量a和b作为实参调用swap函数<br>　cout&lt;&lt;a&lt;&lt; ‘ ‘ &lt;&lt;b; //输出结果<br>}</p>
+<p>　　上述程序运行时，如果输入数据10 20并回车后，则输出结果为20 10。</p>
+<p>　　由【例2】可看出：</p>
+<p>　　（1）传递引用给函数与传递指针的效果是一样的。这时，被调函数的形参就成为原来主调函数中的实参变量或对象的一个别名来使用，所以在被调函数中对形参变量的操作就是对其相应的目标对象（在主调函数中）的操作。</p>
+<p>　　（2）使用引用传递函数的参数，在内存中并没有产生实参的副本，它是直接对实参操作；而使用一般变量传递函数的参数，当发生函数调用时，需要给 形参分配存储单元，形参变量是实参变量的副本；如果传递的是对象，还将调用拷贝构造函数。因此，当参数传递的数据较大时，用引用比用一般变量传递参数的效 率和所占空间都好。</p>
+<p>　　（3）使用指针作为函数的参数虽然也能达到与使用引用的效果，但是，在被调函数中同样要给形参分配存储单元，且需要重复使用”*指针变量名”的 形式进行运算，这很容易产生错误且程序的阅读性较差；另一方面，在主调函数的调用点处，必须用变量的地址作为实参。而引用更容易使用，更清晰。</p>
+<p>　　如果既要利用引用提高程序的效率，又要保护传递给函数的数据不在函数中被改变，就应使用常引用。</p>
+<p>　　2、常引用</p>
+<p>　　常引用声明方式：const 类型标识符 &amp;引用名=目标变量名；</p>
+<p>　　用这种方式声明的引用，不能通过引用对目标变量的值进行修改,从而使引用的目标成为const，达到了引用的安全性。</p>
+<p>　　【例3】：</p>
+<p>int a ;<br>const int &amp;ra=a;<br>ra=1; //错误<br>a=1; //正确</p>
+<p>　　这不光是让代码更健壮，也有些其它方面的需要。</p>
+<p>　　【例4】：假设有如下函数声明：</p>
+<p>string foo( );<br>void bar(string &amp; s);</p>
+<p>　　那么下面的表达式将是非法的：</p>
+<p>bar(foo( ));<br>bar(“hello world”);</p>
+<p>　　原因在于foo( )和”hello world”串都会产生一个临时对象，而在C++中，这些临时对象都是const类型的。因此上面的表达式就是试图将一个const类型的对象转换为非const类型，这是非法的。</p>
+<p>　　引用型参数应该在能被定义为const的情况下，尽量定义为const 。</p>
+<p>　　3、引用作为返回值</p>
+<p>　　要以引用返回函数值，则函数定义时要按以下格式：</p>
+<p>类型标识符 &amp;函数名（形参列表及类型说明）<br>{函数体}</p>
+<p>　　说明：</p>
+<p>　　（1）以引用返回函数值，定义函数时需要在函数名前加&amp;</p>
+<p>　　（2）用引用返回一个函数值的最大好处是，在内存中不产生被返回值的副本。</p>
+<p>　　【例5】以下程序中定义了一个普通的函数fn1（它用返回值的方法返回函数值），另外一个函数fn2，它以引用的方法返回函数值。</p>
+<p>#include <iostream.h><br>float temp; //定义全局变量temp<br>float fn1(float r); //声明函数fn1<br>float &amp;fn2(float r); //声明函数fn2<br>float fn1(float r) //定义函数fn1，它以返回值的方法返回函数值<br>{<br>　temp=(float)(r<em>r</em>3.14);<br>　return temp;<br>}<br>float &amp;fn2(float r) //定义函数fn2，它以引用方式返回函数值<br>{<br>　temp=(float)(r<em>r</em>3.14);<br>　return temp;<br>}<br>void main() //主函数<br>{<br>　float a=fn1(10.0); //第1种情况，系统生成要返回值的副本（即临时变量）<br>　float &amp;b=fn1(10.0); //第2种情况，可能会出错（不同 C++系统有不同规定）<br>　//不能从被调函数中返回一个临时变量或局部变量的引用<br>　float c=fn2(10.0); //第3种情况，系统不生成返回值的副本<br>　//可以从被调函数中返回一个全局变量的引用<br>　float &amp;d=fn2(10.0); //第4种情况，系统不生成返回值的副本<br>　//可以从被调函数中返回一个全局变量的引用<br>　cout&lt;&lt;a&lt;&lt;c&lt;&lt;d;<br>}</iostream.h></p>
+<p>　　引用作为返回值，必须遵守以下规则：</p>
+<p>　　（1）不能返回局部变量的引用。这条可以参照Effective C++[1]的Item 31。主要原因是局部变量会在函数返回后被销毁，因此被返回的引用就成为了”无所指”的引用，程序会进入未知状态。</p>
+<p>　　（2）不能返回函数内部new分配的内存的引用。这条可以参照Effective C++[1]的Item 31。虽然不存在局部变量的被动销毁问题，可对于这种情况（返回函数内部new分配内存的引用），又面临其它尴尬局面。例如，被函数返回的引用只是作为一 个临时变量出现，而没有被赋予一个实际的变量，那么这个引用所指向的空间（由new分配）就无法释放，造成memory leak。</p>
+<p>　　（3）可以返回类成员的引用，但最好是const。这条原则可以参照Effective C++[1]的Item 30。主要原因是当对象的属性是与某种业务规则（business rule）相关联的时候，其赋值常常与某些其它属性或者对象的状态有关，因此有必要将赋值操作封装在一个业务规则当中。如果其它对象可以获得该属性的非常 量引用（或指针），那么对该属性的单纯赋值就会破坏业务规则的完整性。</p>
+<p>　　（4）引用与一些操作符的重载：</p>
+<p>　　流操作符&lt;&lt;和&gt;&gt;，这两个操作符常常希望被连续使用，例如：cout &lt;&lt; “hello” &lt;&lt; endl;　因此这两个操作符的返回值应该是一个仍然支持这两个操作符的流引用。可选的其它方案包括：返回一个流对象和返回一个流对象指针。但是对于返回 一个流对象，程序必须重新（拷贝）构造一个新的流对象，也就是说，连续的两个&lt;&lt;操作符实际上是针对不同对象的！这无法让人接受。对于返回一 个流指针则不能连续使用&lt;&lt;操作符。因此，返回一个流对象引用是惟一选择。这个唯一选择很关键，它说明了引用的重要性以及无可替代性，也许这 就是C++语言中引入引用这个概念的原因吧。 赋值操作符=。这个操作符象流操作符一样，是可以连续使用的，例如：x = j = 10;或者(x=10)=100;赋值操作符的返回值必须是一个左值，以便可以被继续赋值。因此引用成了这个操作符的惟一返回值选择。</p>
+<p>　　【例6】 测试用返回引用的函数值作为赋值表达式的左值。</p>
+<p>#include <iostream.h><br>int &amp;put(int n);<br>int vals[10];<br>int error=-1;<br>void main()<br>{<br>put(0)=10; //以put(0)函数值作为左值，等价于vals[0]=10;<br>put(9)=20; //以put(9)函数值作为左值，等价于vals[9]=20;<br>cout&lt;<vals[0]; cout<<vals[9];="" }="" int="" &put(int="" n)="" {="" if="" (n="">=0 &amp;&amp; n&lt;=9 ) return vals[n];<br>else { cout&lt;&lt;”subscript error”; return error; }<br>}</vals[0];></iostream.h></p>
+<p>　　（5）在另外的一些操作符中，却千万不能返回引用：+-*/ 四则运算符。它们不能返回引用，Effective C++[1]的Item23详细的讨论了这个问题。主要原因是这四个操作符没有side effect，因此，它们必须构造一个对象作为返回值，可选的方案包括：返回一个对象、返回一个局部变量的引用，返回一个new分配的对象的引用、返回一 个静态对象引用。根据前面提到的引用作为返回值的三个规则，第2、3两个方案都被否决了。静态对象的引用又因为((a+b) == (c+d))会永远为true而导致错误。所以可选的只剩下返回一个对象了。</p>
+<p>　　4、引用和多态</p>
+<p>　　引用是除指针外另一个可以产生多态效果的手段。这意味着，一个基类的引用可以指向它的派生类实例。</p>
+<p>　　【例7】：</p>
+<p>class 　A;<br>class 　B：public A{……};<br>B 　b;<br>A 　&amp;Ref = b; // 用派生类对象初始化基类对象的引用</p>
+<p>　　Ref 只能用来访问派生类对象中从基类继承下来的成员，是基类引用指向派生类。如果A类中定义有虚函数，并且在B类中重写了这个虚函数，就可以通过Ref产生多态效果。</p>
+<p>　　三、引用总结</p>
+<p>　　（1）在引用的使用中，单纯给某个变量取个别名是毫无意义的，引用的目的主要用于在函数参数传递中，解决大块数据或对象的传递效率和空间不如意的问题。</p>
+<p>　　（2）用引用传递函数的参数，能保证参数传递中不产生副本，提高传递的效率，且通过const的使用，保证了引用传递的安全性。</p>
+<p>　　（3）引用与指针的区别是，指针通过某个指针变量指向一个对象后，对它所指向的变量间接操作。程序中使用指针，程序的可读性差；而引用本身就是目标变量的别名，对引用的操作就是对目标变量的操作。</p>
+<p>　　（4）使用引用的时机。流操作符&lt;&lt;和&gt;&gt;、赋值操作符=的返回值、拷贝构造函数的参数、赋值操作符=的参数、其它情况都推荐使用引用。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;amp-你到底是什么？&quot;&gt;&lt;a href=&quot;#amp-你到底是什么？&quot; class=&quot;headerlink&quot; title=&quot;&amp;amp;你到底是什么？&quot;&gt;&lt;/a&gt;&amp;amp;你到底是什么？&lt;/h4&gt;&lt;p&gt;前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么
+    
+    </summary>
+    
+      <category term="C" scheme="http://fr1ee.github.io/categories/C/"/>
+    
+    
+      <category term="C" scheme="http://fr1ee.github.io/tags/C/"/>
+    
+      <category term="C++" scheme="http://fr1ee.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/PHP%E7%AE%80%E5%8D%95%E4%BC%A0%E8%A1%A8%E5%8D%95/"/>
+    <id>http://fr1ee.github.io/2017/03/15/PHP简单传表单/</id>
+    <published>2017-03-15T03:21:30.000Z</published>
+    <updated>2017-03-15T06:12:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#PHP简单传表单</p>
+<p>####php代码中获取表单中单选按钮的值：<br>单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;form name=&quot;myform&quot; action=&quot;&quot; method=&quot;post&quot;&gt; 性别:</div><div class="line">		&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;男&quot; checked /&gt;男</div><div class="line">		&lt;input name=&quot;sex&quot; type=&quot;radio&quot; value=&quot;女&quot; /&gt;女</div><div class="line">		&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;提交&quot; /&gt;</div><div class="line">	&lt;/form&gt;</div><div class="line">	&lt;?php</div><div class="line">		echo &quot;您的选择是：&quot;;</div><div class="line">		echo $_POST[&quot;sex&quot;];</div><div class="line">	?&gt;</div></pre></td></tr></table></figure></p>
+<p>如果你选择的是男，则出来的值就是“男”，要是你选择的是女，则出来的值就是“女”。</p>
+<p>####php代码中获取复选框的值：<br>复选框是能够让我们去多选的，他们同时存在，为了便于传值我们将name令为一个数组。<br>格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;chkbox[]&quot; value=&quot;chkbox1&quot; /&gt;</div></pre></td></tr></table></figure></p>
+<p>方法：在返回页面中用count（）函数计算数组的大小，结合for循环语句来输出选择的复选框<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;form action=&quot;&quot; name=&quot;form1&quot; method=&quot;post&quot;&gt;</div><div class="line">您喜欢的数字：</div><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;mrbook[]&quot; value=&quot;1&quot; /&gt;1</div><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;mrbook[]&quot; value=&quot;2&quot; /&gt;2</div><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;mrbook[]&quot; value=&quot;3&quot; /&gt;3</div><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;mrbook[]&quot; value=&quot;4&quot; /&gt;4</div><div class="line">&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;提交&quot; /&gt;</div><div class="line">&lt;/form&gt;</div><div class="line">&lt;?php</div><div class="line">if($_POST[&apos;mrbook&apos;]!=null)</div><div class="line">&#123;</div><div class="line">       echo &quot;您选择的数字是：&quot;;</div><div class="line">       for($i=0;$i&lt;count($_POST[&apos;mrbook&apos;]);$i++)</div><div class="line">       &#123;</div><div class="line">              echo $_POST[&apos;mrbook&apos;][$i].&quot;&amp;nbsp;&amp;nbsp;&quot;;</div><div class="line">       &#125;</div><div class="line">&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#PHP简单传表单&lt;/p&gt;
+&lt;p&gt;####php代码中获取表单中单选按钮的值：&lt;br&gt;单选按钮只能让我们选择一个，这里有一个“checked”属性，这是用来默认选取的，我们每次刷新我们的页面时就默认为这个值。&lt;br&gt;例：&lt;br&gt;&lt;figure class=&quot;highligh
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/PHP%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://fr1ee.github.io/2017/03/15/PHP用户登录功能实现/</id>
+    <published>2017-03-15T03:21:21.000Z</published>
+    <updated>2017-03-15T06:12:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#PHP用户登录功能实现<br>设计数据库连接，简单查询，表单提交，直接上代码，大家很容易明白。<br>我建了一个很简单的数据库，表单包括用户名，ID，密码。</p>
+<p>###用户登录界面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;title&gt;</div><div class="line">			Login</div><div class="line">		&lt;/title&gt;</div><div class="line">		&lt;link type=&quot;text/css&quot; href=&quot;css/login.css&quot; rel=&quot;stylesheet&quot; /&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;container&quot;&gt;</div><div class="line">			&lt;div class=&quot;logo&quot;&gt;</div><div class="line">				&lt;a href=&quot;#&quot;&gt;</div><div class="line">					&lt;img src=&quot;assets/logo.png&quot; alt=&quot;center&quot;/&gt;</div><div class="line">				&lt;/a&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">			&lt;div id=&quot;box&quot;&gt;</div><div class="line">				&lt;form name=&quot;LoginForm&quot; method=&quot;post&quot; action=&quot;login.php&quot; onSubmit=&quot;return InputCheck(this)&quot;&gt;</div><div class="line">					&lt;p class=&quot;main&quot;&gt;</div><div class="line">						&lt;label for=&quot;username&quot; class=&quot;label&quot;&gt;用户名:&lt;/label&gt;</div><div class="line">						&lt;input id=&quot;username&quot; name=&quot;username&quot; type=&quot;text&quot; class=&quot;input&quot; /&gt;</div><div class="line">						&lt;label for=&quot;password&quot; class=&quot;label&quot;&gt;密 码:&lt;/label&gt;</div><div class="line">						&lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; class=&quot;input&quot; /&gt;</div><div class="line">					&lt;p/&gt;</div><div class="line">					&lt;p class=&quot;space&quot;&gt;</div><div class="line">						&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;确 定 &quot; class=&quot;login&quot; /&gt;</div><div class="line">					&lt;/p&gt;</div><div class="line">					&lt;p class=&quot;main&quot;&gt;</div><div class="line">						本站属于学校内部网站，登陆后方可使用。如未注册请先注册。</div><div class="line">						&lt;a href=&quot;reg.php&quot;&gt;</div><div class="line">							点我注册</div><div class="line">						&lt;/a&gt;</div><div class="line">					&lt;/p&gt;</div><div class="line">				&lt;/form&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>###登录处理PHP文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">if (!isset($_POST[&apos;submit&apos;])) &#123;</div><div class="line">	exit(&apos;非法访问!&apos;);</div><div class="line">&#125;</div><div class="line">//$username = htmlspecialchars($_POST[&apos;username&apos;]);</div><div class="line">$username = $_POST[&apos;username&apos;];</div><div class="line">$password = $_POST[&apos;password&apos;];</div><div class="line">//包含数据库连接文件</div><div class="line">include (&apos;conn.php&apos;);</div><div class="line">//检测用户名及密码是否正确</div><div class="line">$check_query = mysql_query(&quot;select userid from user where username=&apos;$username&apos; and password=&apos;$password&apos;&quot;);</div><div class="line">//$check_query = mysql_query(&quot;select userid from user where username=&apos;wang&apos; and //password=&apos;123456&apos;&quot;);</div><div class="line">if ($result = mysql_fetch_array($check_query)) &#123;</div><div class="line">	//登录成功</div><div class="line">	session_start();</div><div class="line">	$_SESSION[&apos;username&apos;] = $username;</div><div class="line">	$_SESSION[&apos;userid&apos;] = $result[&apos;userid&apos;];</div><div class="line">	echo &quot;&lt;p&gt;&quot;;</div><div class="line">	echo $username, &apos; 欢迎你！进入 &lt;a href=&quot;my.php&quot;&gt;用户中心&lt;/a&gt;&lt;br /&gt;&apos;;</div><div class="line">	echo &apos;点击此处 &lt;a href=&quot;logout.php?action=logout&quot;&gt;注销&lt;/a&gt; 登录！&lt;br /&gt;&apos;;</div><div class="line">	exit ;</div><div class="line">&#125; else &#123;</div><div class="line">	exit(&apos;登录失败！点击此处 &lt;a href=&quot;javascript:history.back(-1);&quot;&gt;返回&lt;/a&gt; 重试&apos;);</div><div class="line">&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
+<p>###连接数据库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">$conn = mysql_connect(&quot;localhost&quot;, &quot;root&quot;, &quot;&quot;) or die(&quot;连接数据库失败&quot; . mysql_error());</div><div class="line">mysql_select_db(&quot;swzl&quot;, $conn) or die(&quot;选择数据库失败&quot; . mysql_error());</div><div class="line">mysql_query(&quot;set names utf8&quot;);</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
+<p>欢迎大家交流学习，qq：953082389</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#PHP用户登录功能实现&lt;br&gt;设计数据库连接，简单查询，表单提交，直接上代码，大家很容易明白。&lt;br&gt;我建了一个很简单的数据库，表单包括用户名，ID，密码。&lt;/p&gt;
+&lt;p&gt;###用户登录界面&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tabl
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BD%91%E9%A1%B5%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%83%BD%E5%88%87%E5%BC%80/"/>
+    <id>http://fr1ee.github.io/2017/03/15/为什么网页背景图片都切开/</id>
+    <published>2017-03-15T03:20:46.000Z</published>
+    <updated>2017-03-15T06:09:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>以下是个人观点，如有不对欢迎指正。<br>很多时候有很多专门设计界面的Ui人员，他们更熟悉的可能是PS之类，于是他们PS出一个很美观的界面，顺便用PS的切图功能转成网页格式（table，如果想用的话最好把img这种格式改成background）。就出现了大多数网站都是背景都切开的现象。<br>好处呢？是不是能加快加载我没法说，因为是理解问题，一张大图和同面积同像素很多小图哪个更快？希望对此有看法的大牛补充一下。但是有一定是可以理解的，如果网页一块一块加载，很多时候会这样，比如一些导航页，我们会等待因为我们知道他在加载中。。。但是如果一个图片要加载几十秒加载不出来，画面一片空白，估计就关网页了，当然我夸张了，大图片加载很多时候要降像素的，不至于加载很长时间，这可能就是心理上给人感觉加载快。<br>在一点，人家前段设计好了页面，比如简单的登录页面，切成表格，交给代码工人加功能，比让代码工人照着图片去找位置可容易多了，而且界面肯定和UI设计的更相似。也就是人家网站靠这种方法不止考虑用户加载了，还考虑了开发效率啊 </p>
+<hr>
+<p>后续添加：<br>我也请教了几个老师，又有新发现。切不切取决于应用的需求，当前网络带宽环境下，大图片也是可以的，不用切，因为你会在降像素，不会就直接加载一个20兆的背景图片吧.而且现在大多数都是div定位，表格已经没落了。上文提出的提高开发效率的说法（换句话就是图省事）也是得到肯定的。<br>（欢迎讨论）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以下是个人观点，如有不对欢迎指正。&lt;br&gt;很多时候有很多专门设计界面的Ui人员，他们更熟悉的可能是PS之类，于是他们PS出一个很美观的界面，顺便用PS的切图功能转成网页格式（table，如果想用的话最好把img这种格式改成background）。就出现了大多数网站都是背景都
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>http://fr1ee.github.io/2017/03/15/平衡二叉树/</id>
+    <published>2017-03-15T03:20:27.000Z</published>
+    <updated>2017-03-15T06:09:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div></pre></td><td class="code"><pre><div class="line">#include&lt;stdio.h&gt;</div><div class="line">#include&lt;stdlib.h&gt;</div><div class="line">#include&lt;string.h&gt;</div><div class="line">#define TRUE 1</div><div class="line">#define FALSE 0</div><div class="line">#define OK 1</div><div class="line">#define ERROR 0</div><div class="line">#define LH +1 </div><div class="line">#define EH 0 </div><div class="line">#define RH -1</div><div class="line">typedef int Status;</div><div class="line">typedef int ElemType;</div><div class="line">typedef struct BSTNode&#123;</div><div class="line">ElemType data;</div><div class="line">int bf;</div><div class="line">struct BSTNode *lchild ,*rchild;</div><div class="line">&#125; BSTNode,* BSTree; </div><div class="line">/*</div><div class="line">查找算法</div><div class="line">*/</div><div class="line">Status SearchBST(BSTree T,ElemType e);//查找</div><div class="line">void R_Rotate(BSTree &amp;p);//右旋</div><div class="line">void L_Rotate(BSTree &amp;p);//左旋</div><div class="line">void LeftBalance(BSTree &amp;T);//插入平衡调整</div><div class="line">void RightBalance(BSTree &amp;T);//插入平衡调整</div><div class="line">Status InsertAVL(BSTree &amp;T,ElemType e,int &amp;taller);//插入</div><div class="line">void DELeftBalance(BSTree &amp;T);//删除平衡调整</div><div class="line">void DERightBalance(BSTree &amp;T);//删除平衡调整</div><div class="line">Status Delete(BSTree &amp;T,int &amp;shorter);//删除操作</div><div class="line">Status DeleteAVL(BSTree &amp;T,ElemType e,int &amp;shorter);//删除操作</div><div class="line">void PrintBSTree(BSTree &amp;T,int lev);//凹入表显示</div><div class="line"></div><div class="line">Status SearchBST(BSTree T,ElemType e)&#123;</div><div class="line">if(!T)&#123;</div><div class="line">return FALSE; //查找失败</div><div class="line">&#125;</div><div class="line">else if(e == T-&gt;data )&#123;</div><div class="line">return TRUE; //查找成功</div><div class="line">&#125;</div><div class="line">else if (e &lt; T-&gt;data)&#123;</div><div class="line">return SearchBST(T-&gt;lchild,e);  //递归调用</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">return SearchBST(T-&gt;rchild,e);  //递归调用</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">//右旋</div><div class="line">void R_Rotate(BSTree &amp;p)&#123;</div><div class="line">BSTree lc;                         </div><div class="line">lc = p-&gt;lchild;</div><div class="line">p-&gt;lchild = lc-&gt;rchild;</div><div class="line">lc-&gt;rchild = p;</div><div class="line">p = lc;</div><div class="line"></div><div class="line">&#125;</div><div class="line">//左旋</div><div class="line">void L_Rotate(BSTree &amp;p)&#123;</div><div class="line">BSTree rc;</div><div class="line">rc = p-&gt;rchild;</div><div class="line">p-&gt;rchild = rc-&gt;lchild; </div><div class="line">rc-&gt;lchild = p;</div><div class="line">p = rc;</div><div class="line">&#125;</div><div class="line"> //左插入平衡调整</div><div class="line">void LeftBalance(BSTree &amp;T)&#123;</div><div class="line">BSTree lc,rd; </div><div class="line">lc=T-&gt;lchild;</div><div class="line">switch(lc-&gt;bf)&#123; </div><div class="line">case LH:                      </div><div class="line">T-&gt;bf = lc-&gt;bf=EH; </div><div class="line">R_Rotate(T);</div><div class="line">break; </div><div class="line">case RH:           </div><div class="line">rd=lc-&gt;rchild; </div><div class="line">switch(rd-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case RH: T-&gt;bf=EH; lc-&gt;bf=LH; </div><div class="line">break; </div><div class="line">&#125; </div><div class="line">rd-&gt;bf=EH; </div><div class="line">L_Rotate(T-&gt;lchild); </div><div class="line">R_Rotate(T);</div><div class="line">&#125; </div><div class="line">&#125;</div><div class="line">//  右插入平衡调整</div><div class="line">void RightBalance(BSTree &amp;T) </div><div class="line">&#123; </div><div class="line">BSTree rc,ld; </div><div class="line">rc=T-&gt;rchild; </div><div class="line">switch(rc-&gt;bf)&#123; </div><div class="line">case RH:                      //左旋</div><div class="line">T-&gt;bf= rc-&gt;bf=EH; </div><div class="line">L_Rotate(T); </div><div class="line">break; </div><div class="line">case LH:                    //</div><div class="line">ld=rc-&gt;lchild; </div><div class="line">switch(ld-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; rc-&gt;bf=EH; //插入结点无兄弟结点，且新节点从他的左边</div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=rc-&gt;bf=EH;   //插入结点有兄弟结点</div><div class="line">break; </div><div class="line">case RH: T-&gt;bf = EH; rc-&gt;bf=LH; //插入结点无兄弟结点，且新节点从他的右边</div><div class="line">break; </div><div class="line">&#125; </div><div class="line">ld-&gt;bf=EH; </div><div class="line">R_Rotate(T-&gt;rchild); </div><div class="line">L_Rotate(T); </div><div class="line">&#125; </div><div class="line">&#125; </div><div class="line">//插入结点</div><div class="line">Status InsertAVL(BSTree &amp;T,ElemType e,int &amp;taller)&#123;</div><div class="line">if(!T)&#123;</div><div class="line">T= (BSTree) malloc (sizeof(BSTNode));</div><div class="line">T-&gt;data = e;</div><div class="line">T-&gt;lchild = T-&gt;rchild = NULL;</div><div class="line">T-&gt;bf = EH;</div><div class="line">taller = 1;      // taller表示树是否&quot;长高&quot;</div><div class="line">&#125;</div><div class="line"> else&#123;</div><div class="line">if(e == T-&gt;data)&#123;</div><div class="line">taller = 0;</div><div class="line">printf(&quot;请插入不同的数值\n&quot;);</div><div class="line">return ERROR;</div><div class="line">&#125;</div><div class="line">if(e &lt; T-&gt;data)&#123;</div><div class="line">   if(!InsertAVL(T-&gt;lchild,e,taller))//递归调用 找到父节点，判断左孩子是否为空</div><div class="line">   return ERROR;</div><div class="line">   if(taller)</div><div class="line">   switch(T-&gt;bf)&#123;</div><div class="line">   case LH:</div><div class="line">   LeftBalance(T);</div><div class="line">   taller = 0;</div><div class="line">   break;</div><div class="line">   case EH :</div><div class="line">   T-&gt;bf = LH;</div><div class="line">   taller = TRUE;</div><div class="line">   break;</div><div class="line">   case RH:</div><div class="line">   T-&gt;bf = EH;</div><div class="line">   taller = FALSE;</div><div class="line">   break;</div><div class="line">   &#125;</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">	if (!InsertAVL(T-&gt;rchild,e,taller))&#123;     // 递归调用 找到父节点，判断右孩子是否为空</div><div class="line">return ERROR;</div><div class="line">&#125;</div><div class="line">if(taller)</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case LH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">taller = FALSE;</div><div class="line">break;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = RH;</div><div class="line">taller = TRUE;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">RightBalance(T);   //右平衡调整</div><div class="line">taller = FALSE;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">return 1;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//删除左子树结点平衡调整      左右</div><div class="line">void DELeftBalance(BSTree &amp;T)&#123;</div><div class="line">BSTree lc,rd;   </div><div class="line">lc=T-&gt;lchild;</div><div class="line">switch(lc-&gt;bf)&#123; </div><div class="line">case LH: </div><div class="line">T-&gt;bf = EH; </div><div class="line">//lc-&gt;bf= EH;</div><div class="line">R_Rotate(T);</div><div class="line">break; </div><div class="line">case EH: </div><div class="line">T-&gt;bf = EH; </div><div class="line">lc-&gt;bf= EH;</div><div class="line">R_Rotate(T);</div><div class="line">break; </div><div class="line">case RH: </div><div class="line">rd=lc-&gt;rchild; </div><div class="line">switch(rd-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=lc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case RH: T-&gt;bf=EH; lc-&gt;bf=LH; </div><div class="line">break; </div><div class="line">&#125; </div><div class="line">rd-&gt;bf=EH; </div><div class="line">L_Rotate(T-&gt;lchild); </div><div class="line">R_Rotate(T);</div><div class="line">&#125; </div><div class="line">&#125;</div><div class="line">//删除右子树结点平衡调整   </div><div class="line">void DERightBalance(BSTree &amp;T) </div><div class="line">&#123; </div><div class="line">BSTree rc,ld; </div><div class="line">rc=T-&gt;rchild; </div><div class="line">switch(rc-&gt;bf)&#123; </div><div class="line">case RH: </div><div class="line">T-&gt;bf= EH; </div><div class="line">//rc-&gt;bf= EH;</div><div class="line">L_Rotate(T); </div><div class="line">break;</div><div class="line">case EH:</div><div class="line">T-&gt;bf= EH; </div><div class="line">//rc-&gt;bf= EH;</div><div class="line">L_Rotate(T); </div><div class="line">break;</div><div class="line">case LH: </div><div class="line">ld=rc-&gt;lchild; </div><div class="line">switch(ld-&gt;bf)&#123; </div><div class="line">case LH: T-&gt;bf=RH; rc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case EH: T-&gt;bf=rc-&gt;bf=EH; </div><div class="line">break; </div><div class="line">case RH: T-&gt;bf = EH; rc-&gt;bf=LH; </div><div class="line">break; </div><div class="line">&#125; </div><div class="line">ld-&gt;bf=EH; </div><div class="line">R_Rotate(T-&gt;rchild); </div><div class="line">L_Rotate(T); </div><div class="line">&#125; </div><div class="line">&#125; </div><div class="line"></div><div class="line">//被删的节点既有左子树又有右子树</div><div class="line">void SDelete(BSTree &amp;T,BSTree &amp;q,BSTree &amp;s,int &amp;shorter)&#123;</div><div class="line">	if(s-&gt;rchild)&#123;    </div><div class="line">SDelete(T,s,s-&gt;rchild,shorter);  //被删除结点最右边结点</div><div class="line"></div><div class="line">if(shorter)</div><div class="line">switch(s-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">s-&gt;bf = LH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">s-&gt;bf = EH;</div><div class="line">shorter = 1;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">DELeftBalance(s);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">return;</div><div class="line">&#125;</div><div class="line"></div><div class="line">T-&gt;data = s-&gt;data;</div><div class="line">if(q != T)</div><div class="line">q-&gt;rchild = s-&gt;lchild;</div><div class="line">else</div><div class="line">q-&gt;lchild = s-&gt;lchild;</div><div class="line">shorter = 1;</div><div class="line"></div><div class="line">&#125;</div><div class="line"> </div><div class="line">//删除结点</div><div class="line">Status Delete(BSTree &amp;T,int &amp;shorter)&#123;</div><div class="line">BSTree q;</div><div class="line">if(!T-&gt;rchild)&#123;       //被删的节点只有左子树，其父节点直接指向左孩子  叶子节点也是这</div><div class="line">                      </div><div class="line"></div><div class="line">q = T;</div><div class="line">T = T-&gt;lchild;</div><div class="line">free(q);</div><div class="line">shorter = 1;   </div><div class="line">&#125;</div><div class="line">else if(!T-&gt;lchild)&#123;       //被删的节点只有右子树，其父节点直接指向右孩子 叶子节点也是这</div><div class="line">q = T;</div><div class="line">T= T-&gt;rchild;</div><div class="line">free(q);</div><div class="line">shorter = 1;</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">SDelete(T,T,T-&gt;lchild,shorter);    //被删的节点有左右子树</div><div class="line">if(shorter)                        //进行平衡调整</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = RH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">shorter = 1;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">DERightBalance(T);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">return TRUE;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">//删除操作  找结点</div><div class="line">Status DeleteAVL(BSTree &amp;T,ElemType e,int &amp;shorter)&#123;</div><div class="line">int sign = 0;</div><div class="line">if (!T)&#123;</div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line">else&#123;</div><div class="line">if(e == T-&gt;data)&#123;</div><div class="line">sign = Delete(T,shorter);</div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line"></div><div class="line">else if(e &lt; T-&gt;data)&#123;            //向左查找</div><div class="line">sign = DeleteAVL(T-&gt;lchild,e,shorter);</div><div class="line">if(shorter)         //通过shorter回溯</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = RH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">shorter = 1;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">DERightBalance(T);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line"></div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line">else&#123;                                //向右查找</div><div class="line">sign = DeleteAVL(T-&gt;rchild,e,shorter);</div><div class="line">if(shorter)     //通过shorter回溯</div><div class="line">switch(T-&gt;bf)&#123;</div><div class="line">case EH:</div><div class="line">T-&gt;bf = LH;</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">case RH:</div><div class="line">T-&gt;bf = EH;</div><div class="line">break;</div><div class="line">case LH:</div><div class="line">DELeftBalance(T);</div><div class="line">shorter = 0;</div><div class="line">break;</div><div class="line">&#125;</div><div class="line">return sign;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">//构建</div><div class="line">void CreatBSTree(BSTree &amp;T)&#123;</div><div class="line">FILE *fp;</div><div class="line">	</div><div class="line">	if((fp=fopen(&quot;a.txt&quot;, &quot;r&quot;))==NULL)</div><div class="line">	&#123;</div><div class="line">		printf(&quot;can&apos;t open the file!\n&quot;);</div><div class="line">		exit(0);	</div><div class="line">	&#125; </div><div class="line">	</div><div class="line">int e,taller = 0;</div><div class="line">//printf(&quot;输入结点个数:&quot;);</div><div class="line">//scanf(&quot;%d&quot;,&amp;num);</div><div class="line">//printf(&quot;请顺序输入结点值:\n&quot;);</div><div class="line">//for(i = 0 ;i &lt; num;i++)&#123;</div><div class="line">//printf(&quot;第%d个结点的值:&quot;,i+1);</div><div class="line">while(feof(fp)==0)&#123;</div><div class="line">	fscanf(fp,&quot;%d&quot;,&amp;e);</div><div class="line">	InsertAVL(T,e,taller) ;</div><div class="line">&#125;</div><div class="line">//scanf(&quot;%d&quot;,&amp;e);</div><div class="line"> </div><div class="line">//&#125;</div><div class="line">printf(&quot;构建成功，输入任意字符返回\n&quot;);</div><div class="line">getchar();</div><div class="line">getchar();</div><div class="line">fclose(fp);</div><div class="line">&#125;</div><div class="line">//凹入表形式显示方法</div><div class="line">void PrintBSTree(BSTree &amp;T,int lev)&#123;</div><div class="line">int i;</div><div class="line">if(T-&gt;rchild)</div><div class="line">PrintBSTree(T-&gt;rchild,lev+1);</div><div class="line">for(i = 0;i &lt; lev;i++)</div><div class="line">printf(&quot; &quot;);</div><div class="line">printf(&quot;%d\n&quot;,T-&gt;data);</div><div class="line">if(T-&gt;lchild)</div><div class="line">PrintBSTree(T-&gt;lchild,lev+1);</div><div class="line">&#125;</div><div class="line"></div><div class="line">void main()&#123;</div><div class="line"></div><div class="line">BSTree T1 = NULL;</div><div class="line">int cho,taller,e,k;</div><div class="line">taller = 0;</div><div class="line">k = 0;</div><div class="line">while(1)&#123;</div><div class="line">printf(&quot; 平衡二叉树操作的演示\n&quot;);</div><div class="line">printf(&quot;******************************************************************************/n&quot;);</div><div class="line">printf(&quot; 平衡二叉树显示区 \n&quot;);</div><div class="line">printf(&quot;T1树\n&quot;);</div><div class="line">if(!T1 )</div><div class="line">printf(&quot; 当前为空树\n&quot;);</div><div class="line">else&#123;</div><div class="line">PrintBSTree(T1,1);</div><div class="line">&#125;</div><div class="line">printf(&quot;******************************************************************************\n&quot;);</div><div class="line">printf(&quot;T1操作：1.创建 2.插入 3.查找 4.删除 \n&quot;);</div><div class="line">printf(&quot;0.退出\n&quot;);</div><div class="line">printf(&quot;******************************************************************************\n&quot;);</div><div class="line">printf(&quot;输入你要进行的操作：&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;cho);</div><div class="line">switch(cho)&#123;</div><div class="line">case 1: </div><div class="line">	CreatBSTree(T1);	</div><div class="line">break;</div><div class="line">case 2:</div><div class="line">printf(&quot;请输入要插入关键字的值&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;e);</div><div class="line">InsertAVL(T1,e,taller) ;</div><div class="line">break;</div><div class="line">case 3:</div><div class="line">printf(&quot;请输入要查找关键字的值&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;e);</div><div class="line"></div><div class="line">if(SearchBST(T1,e))</div><div class="line">printf(&quot;查找成功！\n&quot;);</div><div class="line">else</div><div class="line">printf(&quot;查找失败！\n&quot;);</div><div class="line">printf(&quot;按任意键返回&quot;);</div><div class="line">getchar();</div><div class="line">getchar();</div><div class="line">break;</div><div class="line"></div><div class="line">case 4:</div><div class="line">printf(&quot;请输入要删除关键字的值&quot;);</div><div class="line">scanf(&quot;%d&quot;,&amp;e);</div><div class="line">if(DeleteAVL(T1,e,k))</div><div class="line">printf(&quot;删除成功！\n&quot;);</div><div class="line">else</div><div class="line">printf(&quot;删除失败！\n&quot;);</div><div class="line">printf(&quot;按任意键返回&quot;);</div><div class="line">getchar();</div><div class="line">getchar();</div><div class="line">break;</div><div class="line">case 0:</div><div class="line">//system(&quot;cls&quot;);</div><div class="line">exit(0);</div><div class="line">&#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div><div class="line">460</div><div class="line">461</div><div class="line">462</div><div class="line">463</div><div class="line">464</div><div class="line">465</div><div class="line">466</div><div class="line">467</div><div class="line">468</div><div class="line">469</div><div class="line">470</div><div class="line">471</div><div class="line">472</div><div class="line">473</div><div class="line">474</div><div class="line">475</div><div class="line">476</div><div class="line">477</div><div class="line">478</div><div class="line">479</div><div class="line">480</div><div class="line">481</div><div class="line">482</div><div class="line">483</div><div class="line">484</div><div class="line">485</div><div class="line">486</div><div class="line">487</div><div class="line">488</div><div class="line">489</div><div class="line">490</div><div class="line">491</div><div class="line">492</div><div class="line">493</div><div class="line">494</div><div class="line">495</div><div class="line">496</div><div class="line">497</div><div class="line">498</div><div class="line">499</div><div class="line">500</div><div class="line">501</div><div class="line">502</div><div class="line">503</div><div class="line">504</div><div class="line">505</div><div class="line">506</div><div class="line">507</div><div class="line">508</div><div class="line">509</div><div class="line">510</div><div class="line">511</div><div class="line">512</div><div class="line">513</div><div class="line">514</div><div class="line">515</div><div class="line">516</div><div class="line">517</div><div class="line">518</div><div class="line">519</div><div class="line">520</div><div class="line">521</div><div class="line">522</div><div class="line">523</div><div class="line">524</div><div class="line">525</div><div class="line">526</div><div class="line">527</div><div class="line">528</div><div class="line">529</div><div class="line">530</div><div class="line">531</div><div class="line">532</div><div class="line">533</div><div class="line">534</div><div class="line">535</div><div class="line">536</div><div class="line">537</div><div class="line">538</div><div class="line">539</div><div class="line">540</div><div class="line">541</div><div class="line">542</div><div class="line">543</div><div class="line">544</div><div class="line">545</div><div class="line">546</div><div class="line">547</div><div class="line">548</div><div class="line">549</div><div class="line">550</div><div class="line">551</div><div class="line">552</div><div class="line">553</div><div class="line">554</div><div class="line">555</div><div class="line">556</div><div class="line">557</div><div class="line">558</div><div class="line">559</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;fstream&gt;</div><div class="line">#include&lt;malloc.h&gt;//malloc()</div><div class="line">using namespace std;</div><div class="line">#define  LH 1//左高</div><div class="line">#define  EH 0//等高</div><div class="line">#define  RH -1//右高</div><div class="line">typedef struct TreeNode</div><div class="line">&#123;</div><div class="line">    int m_nValue;//学号，检测该学号的学生是不是存在</div><div class="line">    int BF;//平衡因子</div><div class="line">    TreeNode *lchild;</div><div class="line">    TreeNode *rchild;</div><div class="line">&#125;*PBSTree;</div><div class="line">class AVLTree</div><div class="line">&#123;</div><div class="line"></div><div class="line">protected:</div><div class="line">    int len;//树高，GetHeight</div><div class="line">    int BF;//平衡因子</div><div class="line">    TreeNode *lc,*rd;</div><div class="line">    PBSTree rc,ld;</div><div class="line">    TreeNode *p;</div><div class="line">    PBSTree q;</div><div class="line">public:</div><div class="line">    PBSTree root;</div><div class="line"></div><div class="line">    AVLTree()</div><div class="line">    &#123;</div><div class="line">        PBSTree root=NULL;</div><div class="line">    &#125;;</div><div class="line">    ~AVLTree() &#123;&#125;;</div><div class="line">    void Instree(PBSTree root,int m_nValue);//插入节点</div><div class="line">    void PreTraver(PBSTree root);//先序遍历</div><div class="line">    void InorderTra(PBSTree root);//中序遍历</div><div class="line">    void RR_Rotate(PBSTree r);//右旋转处理</div><div class="line">    int GetHeight(PBSTree root);//获得树的高度</div><div class="line">    int GetBF(PBSTree root);//获得树的平衡因子</div><div class="line">    void LL_Rotate(PBSTree r);//左旋转处理</div><div class="line">    void RL_Rotate(PBSTree r);//先右旋转，再左旋转</div><div class="line">    void LR_Rotate(PBSTree r);//先左旋转，再右旋转</div><div class="line">    void LeftBalance(PBSTree T);//左平衡处理</div><div class="line">    void RightBalance(PBSTree T);//右平衡处理</div><div class="line">    bool FindNode(PBSTree T,int e);//查找节点</div><div class="line">    void DELeftBalance(PBSTree T);//删除平衡 左</div><div class="line">    void DERightBalance(PBSTree T);//删除平衡  右</div><div class="line">    void SDelete(PBSTree T,PBSTree q,PBSTree s,int shorter);//被删的节点有左右子树</div><div class="line">    int Delete(PBSTree T,int shorter);//执行删除</div><div class="line">    int DeleteAVL(PBSTree T,int e,int shorter);//删除操作入口函数，为了找到要删的节点</div><div class="line">&#125;;</div><div class="line">int Max(int a,int b)</div><div class="line">&#123;</div><div class="line">    if(a&gt;b)return a;</div><div class="line">    else return b;</div><div class="line">&#125;</div><div class="line">int AVLTree::GetHeight(PBSTree root)</div><div class="line">&#123;</div><div class="line">    if(root==NULL)len=0;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        len=Max(GetHeight(root-&gt;lchild),GetHeight(root-&gt;rchild))+1;</div><div class="line">    &#125;</div><div class="line">    return len;</div><div class="line">&#125;</div><div class="line">void AVLTree::InorderTra(PBSTree root)//中序遍历</div><div class="line">&#123;</div><div class="line">    if(root-&gt;lchild)</div><div class="line">        InorderTra(root-&gt;lchild);</div><div class="line">    printf(&quot;%d &quot;,root-&gt;m_nValue);</div><div class="line">    if(root-&gt;rchild)</div><div class="line">        InorderTra(root-&gt;rchild);</div><div class="line">&#125;</div><div class="line">int AVLTree::GetBF(PBSTree root)</div><div class="line">&#123;</div><div class="line"></div><div class="line">    BF=GetHeight(root-&gt;lchild)-GetHeight(root-&gt;rchild);</div><div class="line">    return BF;</div><div class="line">&#125;</div><div class="line">void AVLTree::Instree(PBSTree root,int m_nValue)</div><div class="line">&#123;</div><div class="line">    if(root==NULL)</div><div class="line">    &#123;</div><div class="line">        root=(TreeNode*)malloc(sizeof(TreeNode));</div><div class="line">        root-&gt;m_nValue=m_nValue;</div><div class="line">        root-&gt;lchild=NULL;</div><div class="line">        root-&gt;rchild=NULL;</div><div class="line">        root-&gt;BF=EH;//初始叶子结点的平衡因子为等高</div><div class="line">    &#125;</div><div class="line">    else if(m_nValue&lt;root-&gt;m_nValue)</div><div class="line">    &#123;</div><div class="line">        Instree(root-&gt;lchild,m_nValue);</div><div class="line">        switch(root-&gt;BF)//检查root的平衡度</div><div class="line">        &#123;</div><div class="line">        case LH://原来树root的左子树比右子树高，现在左子树更高</div><div class="line">            LeftBalance(root);//对树进行左平衡处理</div><div class="line">            break;</div><div class="line">        case EH://原来树root的左右子树等高，现在左子树高</div><div class="line">            root-&gt;BF=LH;//root的平衡因子由0变为1</div><div class="line">            break;</div><div class="line">        case RH://原来树root的右子树比左子树高，现在左右子树等高</div><div class="line">            root-&gt;BF=EH;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    else if(m_nValue&gt;root-&gt;m_nValue)</div><div class="line">    &#123;</div><div class="line">        Instree(root-&gt;rchild,m_nValue);</div><div class="line">        switch(root-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH:</div><div class="line">            root-&gt;BF=EH;//原来树root的左子树比右子树高，现在root的左右子树等高</div><div class="line">            break;</div><div class="line">        case EH://原来树root的左右子树等高，现在root的右子树更高</div><div class="line">            root-&gt;BF=RH;</div><div class="line">            break;</div><div class="line">        case RH://原来右子树比左子树高，现在root右子树高</div><div class="line">            RightBalance(root);//对树root作右平衡处理</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">void AVLTree::PreTraver(PBSTree root)</div><div class="line">&#123;</div><div class="line">    if(root)</div><div class="line">    &#123;</div><div class="line">        cout.width(3);</div><div class="line">        cout&lt;&lt;root-&gt;m_nValue;</div><div class="line">    &#125;</div><div class="line">    if(root-&gt;lchild)</div><div class="line">        PreTraver(root-&gt;lchild);</div><div class="line">    if(root-&gt;rchild)</div><div class="line">        PreTraver(root-&gt;rchild);</div><div class="line">&#125;</div><div class="line">void AVLTree::LL_Rotate(PBSTree r)//插入位置为右子树右孩子，要进行左旋转</div><div class="line">&#123;</div><div class="line">    //TreeNode *p;</div><div class="line">    p=r-&gt;rchild;//p指向r的右孩子结点</div><div class="line">    r-&gt;rchild=p-&gt;lchild;//r结点左旋转成为p的左子树，p原来的左子树成为r的右子树</div><div class="line">    p-&gt;lchild=r;//r成为p的左孩子</div><div class="line">    r=p;</div><div class="line">&#125;</div><div class="line">void AVLTree::RR_Rotate(PBSTree r)//插入位置为左子树左孩子，进行右旋转</div><div class="line">&#123;</div><div class="line">    //TreeNode *p;</div><div class="line">    p=r-&gt;lchild;</div><div class="line">    r-&gt;lchild=p-&gt;rchild;</div><div class="line">    p-&gt;rchild=r;</div><div class="line">    r=p;</div><div class="line">&#125;</div><div class="line">void AVLTree::RL_Rotate(PBSTree r)//插入位置为右子树左孩子，先进行右旋转，再进行左旋转</div><div class="line">&#123;</div><div class="line">    // TreeNode *p;</div><div class="line">    p=r-&gt;rchild;</div><div class="line">    RR_Rotate(p);//最小失衡树的根结点的右子树根结点进行右旋转</div><div class="line">    r-&gt;rchild=p;//更新最小失衡树根结点的右孩子</div><div class="line">    LL_Rotate(r);//最小失衡树的根结点进行左旋转</div><div class="line"></div><div class="line">&#125;</div><div class="line">void AVLTree::LR_Rotate(PBSTree r)//插入位置为左子树右孩子，先进行左旋转，再进行右旋转</div><div class="line">&#123;</div><div class="line">    // TreeNode *p;</div><div class="line">    p=r-&gt;lchild;</div><div class="line">    LL_Rotate(p);//最小失衡树根结点的左子树根结点进行左旋转</div><div class="line">    r-&gt;lchild=p;//更新最小失衡树根结点的左孩子</div><div class="line">    RR_Rotate(r);//最小失衡树根结点进行右旋转</div><div class="line">&#125;</div><div class="line">void AVLTree::LeftBalance(PBSTree T)//左平衡处理</div><div class="line">&#123;</div><div class="line">    //初始条件：原来平衡的二叉排序树T的左子树比右子树高(T-&gt;BF=1)</div><div class="line">//          又在左子树中插入了结点，并导致左子树更高，破坏了树T的平衡性</div><div class="line">//操作结果：对不平衡的树T作左平衡旋转处理，使树T的重心右移实现 新的平衡</div><div class="line">    //TreeNode *lc,*rd;</div><div class="line">    lc=T-&gt;lchild;//lc指向T的左孩子结点</div><div class="line">    switch(lc-&gt;BF)//检查T左子树的平衡因子</div><div class="line">    &#123;</div><div class="line">    case LH://新结点插入在T的左孩子的左子树上，导致左子树的平衡因子为左高，进行右旋转处理</div><div class="line">        RR_Rotate(T);//右旋转处理</div><div class="line">        T-&gt;BF=lc-&gt;BF=EH;//旋转后，原根结点和左孩子结点平衡因子都 为0</div><div class="line">        break;</div><div class="line">    case RH://新结点插入在T的左孩子的右子树上，导致左子树的平衡因子为右高，进行LR处理</div><div class="line">        rd=lc-&gt;rchild;</div><div class="line">        switch(rd-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH://新结点插入在T的左孩子的右子树的左子树上</div><div class="line">            T-&gt;BF=RH;//旋转后，原根结点的平衡因子为右高</div><div class="line">            lc-&gt;BF=EH;//旋转后，原根结点的左孩子结点平衡因子为等高</div><div class="line">            break;</div><div class="line">        case EH://新结点插入到T的左孩子的右孩子（叶子）</div><div class="line">            T-&gt;BF=lc-&gt;BF=EH;//旋转后，原根和左孩子结点的平衡因子都为等高</div><div class="line">            break;</div><div class="line">        case RH://新结点插入在T的左孩子的右子树的右子树上</div><div class="line">            T-&gt;BF=EH;//旋转后，原根结点的平衡因子为等高</div><div class="line">            lc-&gt;BF=LH;//旋转后，原根结点的左孩子结点平衡因子为左高</div><div class="line">        &#125;</div><div class="line">        rd-&gt;BF=EH;//旋转后的新结点的平衡因子为等高</div><div class="line">        //双旋转处理</div><div class="line">        LL_Rotate(T-&gt;lchild);//对T的左子树左旋转处理</div><div class="line">        RR_Rotate(T);//对T作右旋转处理</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">void AVLTree::RightBalance(PBSTree T)//右平衡处理</div><div class="line">&#123;</div><div class="line">    //初始条件：原来平衡二叉排序树T的右子树比左子树高，又在右子树中插入结点，导致右子树更高</div><div class="line">//操作结果：对不平衡的树T作右平衡旋转处理</div><div class="line">    //TreeNode *rc,*ld;</div><div class="line">    rc=T-&gt;rchild;</div><div class="line"></div><div class="line">    switch(rc-&gt;BF)</div><div class="line">    &#123;</div><div class="line">    case RH://新结点插入在T的右孩子的右子树上，导致右子平衡因子为右高,进行左旋转处理</div><div class="line">        T-&gt;BF=rc-&gt;BF=EH;//旋转后，原根结点和右孩子结点的平衡因子均为0</div><div class="line">        LL_Rotate(T);</div><div class="line">        break;</div><div class="line">    case LH://新结点插入在T的右孩子的左子树上，导致右子树的平衡因子为左高，进行双旋处理</div><div class="line">        ld=rc-&gt;lchild;</div><div class="line">        switch(ld-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case RH://新结点插入在T的右孩子的左子树的右子树上</div><div class="line">            T-&gt;BF=LH;//旋转后，原根结点的平衡因子为左高</div><div class="line">            rc-&gt;BF=EH;//旋转后，原根结点的右孩子结点平衡因子为等高</div><div class="line">            break;</div><div class="line">        case EH://新结点插入到T的右孩子的左孩子（叶子）</div><div class="line">            T-&gt;BF=rc-&gt;BF=EH;//旋转后，原根和右孩子结点的平衡因子等高</div><div class="line">            break;</div><div class="line">        case LH://新结点插入到T的右孩子的左子树的左子树</div><div class="line">            T-&gt;BF=EH;//旋转后，原根结点的平衡因子等高</div><div class="line">            rc-&gt;BF=RH;//旋转后，原根结点的右孩子结点的平衡因子为右高</div><div class="line">        &#125;</div><div class="line">        ld-&gt;BF=EH;//旋转后的新根结点的平衡因子为等高</div><div class="line">        //双旋转处理</div><div class="line">        RR_Rotate(T-&gt;rchild);//对T的右子树作右旋转处理</div><div class="line">        LL_Rotate(T);//对T作左旋转处理</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">bool AVLTree::FindNode(PBSTree T,int e)</div><div class="line">//查找节点</div><div class="line">&#123;</div><div class="line">    //右旋</div><div class="line">    if(!T)</div><div class="line">    &#123;</div><div class="line">        return 0; //查找失败</div><div class="line">    &#125;</div><div class="line">    else if(e == T-&gt;m_nValue )</div><div class="line">    &#123;</div><div class="line">        return 1; //查找成功</div><div class="line">    &#125;</div><div class="line">    else if (e &lt; T-&gt;m_nValue)</div><div class="line">    &#123;</div><div class="line">        return FindNode(T-&gt;lchild,e);  //递归调用</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        return FindNode(T-&gt;rchild,e);  //递归调用</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//删除左子树结点平衡调整      左右</div><div class="line">void AVLTree::DELeftBalance(PBSTree T)</div><div class="line">&#123;</div><div class="line">    //PBSTree lc,rd;</div><div class="line">    lc=T-&gt;lchild;</div><div class="line">    switch(lc-&gt;BF)</div><div class="line">    &#123;</div><div class="line">    case LH:</div><div class="line">        T-&gt;BF= EH;</div><div class="line">//lc-&gt;BF= EH;</div><div class="line">        RR_Rotate(T);</div><div class="line">        break;</div><div class="line">    case EH:</div><div class="line">        T-&gt;BF = EH;</div><div class="line">        lc-&gt;BF= EH;</div><div class="line">        RR_Rotate(T);</div><div class="line">        break;</div><div class="line">    case RH:</div><div class="line">        rd=lc-&gt;rchild;</div><div class="line">        switch(rd-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH:</div><div class="line">            T-&gt;BF=RH;</div><div class="line">            lc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case EH:</div><div class="line">            T-&gt;BF=lc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case RH:</div><div class="line">            T-&gt;BF=EH;</div><div class="line">            lc-&gt;BF=LH;</div><div class="line">            break;</div><div class="line">        &#125;</div><div class="line">        rd-&gt;BF=EH;</div><div class="line">        LL_Rotate(T-&gt;lchild);</div><div class="line">        RR_Rotate(T);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//删除右子树结点平衡调整</div><div class="line">void AVLTree::DERightBalance(PBSTree T)</div><div class="line">&#123;</div><div class="line">    //PBSTree rc,ld;</div><div class="line">    rc=T-&gt;rchild;</div><div class="line">    switch(rc-&gt;BF)</div><div class="line">    &#123;</div><div class="line">    case RH:</div><div class="line">        T-&gt;BF= EH;</div><div class="line">//rc-&gt;BF= EH;</div><div class="line">        LL_Rotate(T);</div><div class="line">        break;</div><div class="line">    case EH:</div><div class="line">        T-&gt;BF= EH;</div><div class="line">//rc-&gt;BF= EH;</div><div class="line">        LL_Rotate(T);</div><div class="line">        break;</div><div class="line">    case LH:</div><div class="line">        ld=rc-&gt;lchild;</div><div class="line">        switch(ld-&gt;BF)</div><div class="line">        &#123;</div><div class="line">        case LH:</div><div class="line">            T-&gt;BF=RH;</div><div class="line">            rc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case EH:</div><div class="line">            T-&gt;BF=rc-&gt;BF=EH;</div><div class="line">            break;</div><div class="line">        case RH:</div><div class="line">            T-&gt;BF = EH;</div><div class="line">            rc-&gt;BF=LH;</div><div class="line">            break;</div><div class="line">        &#125;</div><div class="line">        ld-&gt;BF=EH;</div><div class="line">        RR_Rotate(T-&gt;rchild);</div><div class="line">        LL_Rotate(T);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//被删的节点既有左子树又有右子树</div><div class="line">void AVLTree::SDelete(PBSTree T,PBSTree q,PBSTree s,int shorter)</div><div class="line">&#123;</div><div class="line">    if(s-&gt;rchild)</div><div class="line">    &#123;</div><div class="line">        SDelete(T,s,s-&gt;rchild,shorter);  //被删除结点最右边结点</div><div class="line"></div><div class="line">        if(shorter)</div><div class="line">            switch(s-&gt;BF)</div><div class="line">            &#123;</div><div class="line">            case EH:</div><div class="line">                s-&gt;BF = LH;</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            case RH:</div><div class="line">                s-&gt;BF = EH;</div><div class="line">                shorter = 1;</div><div class="line">                break;</div><div class="line">            case LH:</div><div class="line">                DELeftBalance(s);</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    T-&gt;m_nValue = s-&gt;m_nValue;</div><div class="line">    if(q != T)</div><div class="line">        q-&gt;rchild = s-&gt;lchild;</div><div class="line">    else</div><div class="line">        q-&gt;lchild = s-&gt;lchild;</div><div class="line">    shorter = 1;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">//删除结点</div><div class="line">int AVLTree::Delete(PBSTree T,int shorter)</div><div class="line">&#123;</div><div class="line">    //PBSTree q;</div><div class="line">    if(!T-&gt;rchild)        //被删的节点只有左子树，其父节点直接指向左孩子  叶子节点也是这</div><div class="line">    &#123;</div><div class="line"></div><div class="line"></div><div class="line">        q = T;</div><div class="line">        T = T-&gt;lchild;</div><div class="line">        free(q);</div><div class="line">        shorter = 1;</div><div class="line">    &#125;</div><div class="line">    else if(!T-&gt;lchild)        //被删的节点只有右子树，其父节点直接指向右孩子 叶子节点也是这</div><div class="line">    &#123;</div><div class="line">        q = T;</div><div class="line">        T= T-&gt;rchild;</div><div class="line">        free(q);</div><div class="line">        shorter = 1;</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        SDelete(T,T,T-&gt;lchild,shorter);    //被删的节点有左右子树</div><div class="line">        if(shorter)                        //进行平衡调整</div><div class="line">            switch(T-&gt;BF)</div><div class="line">            &#123;</div><div class="line">            case EH:</div><div class="line">                T-&gt;BF = RH;</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            case LH:</div><div class="line">                T-&gt;BF = EH;</div><div class="line">                shorter = 1;</div><div class="line">                break;</div><div class="line">            case RH:</div><div class="line">                DERightBalance(T);</div><div class="line">                shorter = 0;</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">    &#125;</div><div class="line">    return 1;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">//删除操作时寻找结点</div><div class="line">int AVLTree::DeleteAVL(PBSTree T,int e,int shorter)</div><div class="line">&#123;</div><div class="line">    int sign = 0;</div><div class="line">    if (!T)</div><div class="line">    &#123;</div><div class="line">        return sign;</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        if(e == T-&gt;m_nValue)//如果找到就执行删除</div><div class="line">        &#123;</div><div class="line">            sign = Delete(T,shorter);//如果找到就执行删除</div><div class="line">            return sign;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        else if(e &lt; T-&gt;m_nValue)             //向左查找</div><div class="line">        &#123;</div><div class="line">            sign = DeleteAVL(T-&gt;lchild,e,shorter);</div><div class="line">            if(shorter)         //通过shorter回溯</div><div class="line">                switch(T-&gt;BF)</div><div class="line">                &#123;</div><div class="line">                case EH:</div><div class="line">                    T-&gt;BF = RH;</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                case LH:</div><div class="line">                    T-&gt;BF = EH;</div><div class="line">                    shorter = 1;</div><div class="line">                    break;</div><div class="line">                case RH:</div><div class="line">                    DERightBalance(T);</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                &#125;</div><div class="line"></div><div class="line">            return sign;</div><div class="line">        &#125;</div><div class="line">        else                                 //向右查找</div><div class="line">        &#123;</div><div class="line">            sign = DeleteAVL(T-&gt;rchild,e,shorter);</div><div class="line">            if(shorter)     //通过shorter回溯</div><div class="line">                switch(T-&gt;BF)</div><div class="line">                &#123;</div><div class="line">                case EH:</div><div class="line">                    T-&gt;BF = LH;</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                case RH:</div><div class="line">                    T-&gt;BF = EH;</div><div class="line">                    break;</div><div class="line">                case LH:</div><div class="line">                    DELeftBalance(T);</div><div class="line">                    shorter = 0;</div><div class="line">                    break;</div><div class="line">                &#125;</div><div class="line">            return sign;</div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//void AVLTree::AVLTree()&#123;</div><div class="line">// TreeNode *root=NULL;</div><div class="line">//&#125;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    AVLTree AVL=AVLTree();</div><div class="line">    AVL.root=NULL;</div><div class="line">    int taller,e,k;</div><div class="line">    char cho;</div><div class="line">    taller = 0;</div><div class="line">    k = 0;</div><div class="line">    while(1)</div><div class="line">    &#123;</div><div class="line">        printf(&quot;操作：1.创建 2.插入 3.查找 4.删除 5.遍历 0.退出\n&quot;);</div><div class="line">        printf(&quot;输入你要进行的操作：&quot;);</div><div class="line">        scanf(&quot;%c&quot;,&amp;cho);</div><div class="line">        switch(cho)</div><div class="line">        &#123;</div><div class="line">        case &apos;1&apos;:</div><div class="line">        &#123;</div><div class="line">            FILE *fp;</div><div class="line">            if((fp=fopen(&quot;te.txt&quot;, &quot;r&quot;))==NULL)</div><div class="line">            &#123;</div><div class="line">                printf(&quot;文件打开失败\n&quot;);</div><div class="line">                exit(0);</div><div class="line">            &#125;</div><div class="line">            int e = 0;</div><div class="line">            while(feof(fp)==0)</div><div class="line">            &#123;</div><div class="line">                fscanf(fp,&quot;%d&quot;,&amp;e);</div><div class="line">                AVL.Instree(AVL.root,e);</div><div class="line">            &#125;</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">        &#125;</div><div class="line">        getchar();</div><div class="line">        break;</div><div class="line">        case &apos;2&apos;:</div><div class="line">        &#123;</div><div class="line">            printf(&quot;请输入要插入关键字的值&quot;);</div><div class="line">            scanf(&quot;%d&quot;,&amp;e);</div><div class="line">            AVL.Instree(AVL.root,e);</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">        &#125;</div><div class="line">        getchar();</div><div class="line">        break;</div><div class="line">        case &apos;3&apos;:</div><div class="line">        &#123;</div><div class="line">            printf(&quot;请输入要查找关键字的值&quot;);</div><div class="line">            scanf(&quot;%d&quot;,&amp;e);</div><div class="line">            if(AVL.FindNode(AVL.root,9))</div><div class="line">                printf(&quot;\n找到\n&quot;);</div><div class="line">            else</div><div class="line">                printf(&quot;\n没有找到\n&quot;);</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">            getchar();</div><div class="line">        &#125;</div><div class="line">        break;</div><div class="line">        case &apos;4&apos;:</div><div class="line">            printf(&quot;请输入要删除关键字的值&quot;);</div><div class="line">            scanf(&quot;%d&quot;,&amp;e);</div><div class="line">            if(AVL.DeleteAVL(AVL.root,e,k))</div><div class="line">                printf(&quot;删除成功！\n&quot;);</div><div class="line">            else</div><div class="line">                printf(&quot;删除失败！\n&quot;);</div><div class="line">            getchar();</div><div class="line">            break;</div><div class="line">        case &apos;5&apos;:</div><div class="line">            printf(&quot;中序遍历：&quot;);</div><div class="line">            AVL.InorderTra(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">            printf(&quot;前序遍历：&quot;);</div><div class="line">            AVL.PreTraver(AVL.root);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">            getchar();</div><div class="line">            break;</div><div class="line">        case &apos;0&apos;:</div><div class="line">            exit(0);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">    return 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/python%E4%B9%8Bprint%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://fr1ee.github.io/2017/03/15/python之print实践/</id>
+    <published>2017-03-15T03:19:50.000Z</published>
+    <updated>2017-03-15T06:12:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>python之print实践</p>
+<p>环境为Python2.7，sulime3</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#!/usr/bin/python</div><div class="line"></div><div class="line">print &quot;hello&quot;;#在后期版本可能不兼容了</div><div class="line"></div><div class="line">print(&quot;hello &quot;+&quot;free&quot;);</div><div class="line"></div><div class="line">print(5+9);</div><div class="line"></div><div class="line">print(1234445678909876543*1234567898765432);</div><div class="line"></div><div class="line">print(&quot;free\n&quot;*8);</div><div class="line"></div><div class="line"># result:hello</div><div class="line"></div><div class="line"># hello free</div><div class="line"></div><div class="line"># 14</div><div class="line"></div><div class="line"># 1524007007951833440030361236061576</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># free</div><div class="line"></div><div class="line"># [Finished in 0.3s]</div><div class="line"></div><div class="line"># #########################</div><div class="line"></div><div class="line">print(1.0/2.0)</div><div class="line"></div><div class="line">print(2**3)</div><div class="line"></div><div class="line">print(0xaf)</div><div class="line"></div><div class="line">print(011)</div><div class="line"></div><div class="line">x=3</div><div class="line"></div><div class="line">print(x*2)</div><div class="line"></div><div class="line">#result:0.5</div><div class="line"></div><div class="line">#8</div><div class="line"></div><div class="line">#175</div><div class="line"></div><div class="line">#9</div><div class="line"></div><div class="line">#6</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;python之print实践&lt;/p&gt;
+&lt;p&gt;环境为Python2.7，sulime3&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E5%AE%89%E8%A3%85visual%20studio(vs)%E5%90%8E%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85SQLserver%E9%97%AE%E9%A2%98%E7%9A%84%E6%88%90%E5%8A%9F%E8%A7%A3%E5%86%B3/"/>
+    <id>http://fr1ee.github.io/2017/03/15/安装visual studio(vs)后无法安装SQLserver问题的成功解决/</id>
+    <published>2017-03-15T03:18:25.000Z</published>
+    <updated>2017-03-15T03:36:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>前两天跑一个老师给的程序，可是我的数据库（SQLserver）版本太低了，于是打算安装个SQLserver2012，中间有一些经验分享一下。前提是我电脑最开始安装的是SQLserver2005，vs2010和vs2013.
+</code></pre><p>第一步我先卸掉SQL2005，卸载完后最好重启一下（一般这种软件是卸载不干净的，如果你愿意就用360清理一下残留吧）<br>然后我就安装SQL2012（是镜像文件，这个应该无所谓，压缩包文件就自己解压呗）问题出来了，sql server安装时提示重启计算机失败，好吧！找度娘，很简单，我copy下。</p>
+<blockquote>
+<p>1）键盘上的“开始+R”可以快速进入运行，输入“regedit”。</p>
+<p>找到：“HKEY_LOCAL_MACHINE ” 下的“ SYSTEM<br>”——“CurrentControlSet”——“Control”——“Session Manage”<br>中找到PendingFileRenameOperations值并删除它。就可以安装了。<br>2、运行注册表,删除如下项：<br>HKEY_CURRENT_USER\Software\Microsoft\Microsoft SQL<br>Server<br>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server<br>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer<br>4、重新启动系统（<a style="color=#a22">我并没有重启，不用重启的</a>）<br>5、重新安装。</p>
+</blockquote>
+<p>重点来了，安装sql server2012出错，提示：Visual Studio 2010实例需要更新。有人建议安装补丁(<a href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=23691(官网)下载" target="_blank" rel="external">http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=23691(官网)下载</a><br>Microsoft Visual Studio 2010 Service Pack 1（exe）)我发现了别的问题，因为vs安装时带有数据库部分，SQL安装时会带有vs部分功能，这就起冲突了，也是为什么老师都告诉我们先按SQL在按vs。</p>
+<p></p><p>我发现可以在选择安装组件是避开与vs冲突的部分，具体应该是最后一部分功能模块，先不勾选，让他安装。安装完成后你发现没那几个部分根本没法用嘛！！！这时候在此打开安装程序，选择添加功能，这次在安剩下的功能，就可以了。只是相当于把sql分两部分安装。</p>
+<hr>
+<p>欢迎大家指正讨论我的博客，Free愿意和大家共同进步</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;前两天跑一个老师给的程序，可是我的数据库（SQLserver）版本太低了，于是打算安装个SQLserver2012，中间有一些经验分享一下。前提是我电脑最开始安装的是SQLserver2005，vs2010和vs2013.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;第
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开发工具链（国内项目）</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E6%9C%AC%E7%A8%8B%E5%BA%8F%E4%B8%BB%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E6%96%B9%E9%98%B5%E7%9A%84%E6%B1%82%E9%80%86%E4%B8%8E%E5%AE%9E%E7%8E%B0%E4%BA%86%E9%80%86%E7%9F%A9%E9%98%B5%E5%92%8C%E5%8E%9F%E7%9F%A9%E9%98%B5%E7%9A%84%E4%B9%98%E7%A7%AF%E4%B8%BA%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5/"/>
+    <id>http://fr1ee.github.io/2017/03/15/本程序主要实现了一个方阵的求逆与实现了逆矩阵和原矩阵的乘积为单位矩阵/</id>
+    <published>2017-03-15T03:17:42.000Z</published>
+    <updated>2017-03-15T05:58:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div></pre></td><td class="code"><pre><div class="line">#include&lt;stdio.h&gt;</div><div class="line">#define M 10</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    void chengji(int n);</div><div class="line">    float a[M][M*2];</div><div class="line">    float b[M][M*2];</div><div class="line">    float c[M][M*2];</div><div class="line">    float d[M][M];//存储原矩阵</div><div class="line">    float t,x;</div><div class="line">    int k,T,i,j,n;</div><div class="line">    printf(&quot;输入方阵的维数(小于M)：\n&quot;);     //请输入方阵，即行和列相等的矩阵。</div><div class="line">    scanf(&quot;%d&quot;,&amp;T);</div><div class="line">    n=T;</div><div class="line">    printf(&quot;请输入矩阵:\n&quot;);</div><div class="line">    for(i=0; i&lt;T; i++)</div><div class="line">        for (j=0; j&lt;T; j++)</div><div class="line">        &#123;</div><div class="line">            scanf(&quot;%f&quot;,&amp;b[i][j]);</div><div class="line">            d[i][j]=b[i][j];</div><div class="line">        &#125;</div><div class="line">    printf(&quot;原矩阵为：\n&quot;);</div><div class="line">    for (i=0; i&lt;T; i++)</div><div class="line">    &#123;</div><div class="line">        for (j=0; j&lt;T; j++) printf(&quot;%10.3f&quot;,b[i][j]);</div><div class="line">        printf(&quot;\n&quot;);</div><div class="line">    &#125;</div><div class="line">    for(i=0; i&lt;T; i++)         for(j=0; j&lt;(2*T); j++)</div><div class="line">        &#123;</div><div class="line">            if(j&lt;T) a[i][j]=b[i][j];</div><div class="line">            else if (j==T+i) a[i][j]=1.0;</div><div class="line">            else a[i][j]=0.0;</div><div class="line">        &#125;</div><div class="line">    for(i=0; i&lt;T; i++)</div><div class="line">    &#123;</div><div class="line">        for(k=0; k&lt;T; k++)</div><div class="line">        &#123;</div><div class="line">            if(k!=i)</div><div class="line">            &#123;</div><div class="line">                t=a[k][i]/a[i][i];</div><div class="line">                for(j=0; j&lt;(2*T); j++)</div><div class="line">                &#123;</div><div class="line">                    x=a[i][j]*t;</div><div class="line">                    a[k][j]=a[k][j]-x;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    for(i=0; i&lt;T; i++)</div><div class="line">    &#123;</div><div class="line">        t=a[i][i];</div><div class="line">        for(j=0; j&lt;(2*T); j++) a[i][j]=a[i][j]/t;</div><div class="line">    &#125;</div><div class="line">    int y=1;</div><div class="line">    for(i=0; i&lt;T; i++)        y=y*a[i][i];</div><div class="line">    if(y==0)</div><div class="line">        printf(&quot;对不起，您输入的矩阵没有逆矩阵，请重新输入。\n&quot;);</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        for(i=0; i&lt;T; i++)</div><div class="line">            for(j=0; j&lt;T; j++) b[i][j]=a[i][j+T];</div><div class="line">        printf(&quot;逆矩阵为：\n&quot;);</div><div class="line">        for (i=0; i&lt;T; i++)</div><div class="line">        &#123;</div><div class="line">            for (j=0; j&lt;T; j++)</div><div class="line">                printf(&quot;%10.3f&quot;,b[i][j]);</div><div class="line">            printf(&quot;\n&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    printf(&quot;原方阵与逆方阵的积:\n&quot;);</div><div class="line">    k=0;</div><div class="line">    //int l=0;</div><div class="line">    //int i,j;</div><div class="line">    for(i=0; i&lt;n; i++)</div><div class="line">    &#123;</div><div class="line">        for(j=0; j&lt;n; j++)</div><div class="line">        &#123;</div><div class="line">            c[i][j]=0;</div><div class="line">            for(k=0; k&lt;n; k++)</div><div class="line">            &#123;</div><div class="line">                c[i][j]+=d[i][k]*b[k][j];</div><div class="line">//printf(&quot;%g   &quot;,c[i][j]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    for (i=0; i&lt;n; i++)</div><div class="line">    &#123;</div><div class="line">        for(j=0; j&lt;n; j++)</div><div class="line">        &#123;</div><div class="line">            printf(&quot;%g    &quot;,c[i][j]);</div><div class="line">        &#125;</div><div class="line">        puts(&quot;&quot;);</div><div class="line">    &#125;</div><div class="line">    puts(&quot; &quot;);</div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://fr1ee.github.io/2017/03/15/Nodejs%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://fr1ee.github.io/2017/03/15/Nodejs学习笔记（一）/</id>
+    <published>2017-03-15T03:17:33.000Z</published>
+    <updated>2017-03-15T06:12:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="title-安装SQL2012"><a href="#title-安装SQL2012" class="headerlink" title="title: 安装SQL2012"></a>title: 安装SQL2012</h2><p>#node学习笔记</p>
+<p>###直接上代码开始吧！go！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">var http = require(&apos;http&apos;);//引入 required 模块.require 指令来载入 http 模块，并将实例化的 HTTP 赋值给变量 http </div><div class="line">　　http.createServer(function (req, res) &#123;//http.createServer() 方法创建服务器，并使用 listen 方法绑定 8888 端口。 函数通过 request, response 参数来接收和响应数据。</div><div class="line">　　    res.writeHead(200, &#123;&apos;Content-Type&apos;: &apos;text/html&apos;&#125;);</div><div class="line">	// 发送 HTTP 头部 </div><div class="line">	// HTTP 状态值: 200 : OK</div><div class="line">	// 内容类型: text/html</div><div class="line">	// text/html</div><div class="line">		res.write(&apos;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;/head&gt;&apos;);//为了支持中文</div><div class="line">		//res.end(&apos;Hello 一名儿\n&apos;);// 发送响应数据 &quot;Hello World&quot;</div><div class="line">		var fs=require(&quot;fs&quot;);</div><div class="line">		var data=fs.readFileSync(&apos;test.txt&apos;);</div><div class="line">		var strAll=data.toString()+&apos;Hello 一名儿&apos;;</div><div class="line">		res.end(strAll);</div><div class="line">　　&#125;).listen(6666, &quot;127.0.0.1&quot;);</div><div class="line">	//阻塞代码</div><div class="line">	var fs=require(&quot;fs&quot;);</div><div class="line">	var data=fs.readFileSync(&apos;test.txt&apos;);</div><div class="line">	console.log(data);//输出的貌似是内存地址</div><div class="line">	console.log(data.toString());</div><div class="line">　　console.log(&quot;程序执行结束!&quot;);</div><div class="line">	</div><div class="line">	console.log(&apos;我是一名儿。我的服务器是http://127.0.0.1:6666/&apos;);//显示网址</div><div class="line"></div><div class="line">	//非阻塞代码</div><div class="line">	var fs = require(&quot;fs&quot;);</div><div class="line">		fs.readFile(&apos;test.txt&apos;, function (err, data) &#123;</div><div class="line">    		if (err) return console.error(err);</div><div class="line">    		console.log(data.toString());</div><div class="line">	&#125;);</div><div class="line">	console.log(&quot;程序执行结束!&quot;);</div><div class="line">	//阻塞代码按顺序执行，而非阻塞代码不按顺序执行，利用回调带来了较高的并发能力</div></pre></td></tr></table></figure></p>
+<p>###运行结果截图</p>
+<p>#####先看下我的环境，如何安装配置我就不多说了</p>
+<p>######<em>PS :我这个是git的bush，看着舒服，还可以用”ls”呢！</em><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160323232923078" alt="环境说明" title="">
+                </div>
+                <div class="image-caption">环境说明</div>
+            </figure></p>
+<p>#####hello world！打helloworld就像篮下投篮一样，基础的第一步，一定要得分。<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160323233108498" alt="hello" title="">
+                </div>
+                <div class="image-caption">hello</div>
+            </figure></p>
+<p>#####来看看阻塞与非阻塞的区别。<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160323233556254" alt="这里写图片描述" title="">
+                </div>
+                <div class="image-caption">这里写图片描述</div>
+            </figure></p>
+<p>#####主要是发现了<em>buffer</em><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160323233647316" alt="这里写图片描述" title="">
+                </div>
+                <div class="image-caption">这里写图片描述</div>
+            </figure></p>
+<p>#####中文的支持问题从来是我们常遇到的麻烦<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160323233745457" alt="这里写图片描述" title="">
+                </div>
+                <div class="image-caption">这里写图片描述</div>
+            </figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;title-安装SQL2012&quot;&gt;&lt;a href=&quot;#title-安装SQL2012&quot; class=&quot;headerlink&quot; title=&quot;title: 安装SQL2012&quot;&gt;&lt;/a&gt;title: 安装SQL2012&lt;/h2&gt;&lt;p&gt;#node学习笔记&lt;/
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/Windows%E4%B8%8B%E6%89%B9%E9%87%8F%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89/"/>
+    <id>http://fr1ee.github.io/2017/03/15/Windows下批量创建文件夹（批处理）/</id>
+    <published>2017-03-15T03:17:23.000Z</published>
+    <updated>2017-03-15T06:13:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#在Windows下批量创建文件夹</p>
+<p>###起因</p>
+<p>####新买了块移动硬盘，准备创建个目录结构方便后来的管理和使用。写个批处理吧，也好久不用了。</p>
+<p>###使用方法</p>
+<p>####一共两个文件，md.bat和mkdir.bat。使用方法非常简单。把这两个文件放到你要批量创建文件夹的目录下，然后双击md.bat即可。如果想停止，当然是Ctrl+C了。</p>
+<p>###代码</p>
+<p>####md.bat如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">@echo off</div><div class="line">echo 欢迎使用批量文件夹建立脚本QQ953082389</div><div class="line">echo 请根据提示输入。可以按ctrl+C退出。</div><div class="line"></div><div class="line">set /p val=请输入您要建立的文件夹数：</div><div class="line">set /a varshu=%val%-1 </div><div class="line">for /l %%i in (1,1,%val%) do call mkdir.bat</div><div class="line">echo 文件夹创建完成</div><div class="line">pause</div></pre></td></tr></table></figure></p>
+<p>####mkdir.bat如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@echo off</div><div class="line">set /p val=请输入文件夹名:</div><div class="line">md %val%</div></pre></td></tr></table></figure></p>
+<p>在md.bat中有个call,调用了mkdir.bat。没什么别的逻辑了。直接上图吧。<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160324094529387" alt="结果" title="">
+                </div>
+                <div class="image-caption">结果</div>
+            </figure><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20160324094102070" alt="效果" title="">
+                </div>
+                <div class="image-caption">效果</div>
+            </figure></p>
+<p>####自己用的，还行，挺方便的。如果觉得太简陋了，请自行加些颜色窗口大小的限制。我是使用主义了，就不加了。</p>
+<hr>
+<p>对于本人的所有博客内容，如有问题，欢迎沟通交流。<br>本人ＱＱ９５３０８２３８９<br>邮箱：wang.6688.cool@qq.com</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#在Windows下批量创建文件夹&lt;/p&gt;
+&lt;p&gt;###起因&lt;/p&gt;
+&lt;p&gt;####新买了块移动硬盘，准备创建个目录结构方便后来的管理和使用。写个批处理吧，也好久不用了。&lt;/p&gt;
+&lt;p&gt;###使用方法&lt;/p&gt;
+&lt;p&gt;####一共两个文件，md.bat和mkdir.bat。使
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/angularjs%20ng-click%E4%BC%A0%E5%8F%82%E6%8E%A7%E5%88%B6ng-repeat%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F/"/>
+    <id>http://fr1ee.github.io/2017/03/15/angularjs ng-click传参控制ng-repeat元素显示与隐藏/</id>
+    <published>2017-03-15T03:17:14.000Z</published>
+    <updated>2017-03-15T06:11:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#ng-click传参控制ng-repeat元素显示与隐藏</p>
+<p>###说明：</p>
+<p>###1、使用ng-repeat显示参数</p>
+<p>###2、通过ng-click按钮显示或隐藏内容。通过添加shows和id两个参数控制显示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">&lt;script src=&quot;http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">	&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;personCtrl&quot; ng-init=&quot;names=[</div><div class="line">&#123;name:&apos;Jani&apos;,country:&apos;Norway&apos;,shows:&apos;true&apos;,id:0&#125;,</div><div class="line">&#123;name:&apos;Hege&apos;,country:&apos;Sweden&apos;,shows:&apos;true&apos;,id:1&#125;,</div><div class="line">&#123;name:&apos;Kai&apos;,country:&apos;Denmark&apos;,shows:&apos;true&apos;,id:2&#125;]&quot;&gt;</div><div class="line"></div><div class="line">		&lt;button ng-click=&quot;toggle()&quot;&gt;隐藏/显示&lt;/button&gt;</div><div class="line">		&lt;div ng-repeat=&apos;item in names&apos;&gt;</div><div class="line">			&lt;div ng-hide=&quot;item.shows&quot;&gt;OKOK&lt;/div&gt;</div><div class="line">			&lt;button ng-click=&quot;showItemId(item.id)&quot;&gt;&#123;&#123;item.name&#125;&#125;&lt;/button&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">		Javascript:</div><div class="line"></div><div class="line">		&lt;p ng-hide=&quot;myVar&quot;&gt;</div><div class="line">			名:</div><div class="line">			&lt;input type=text ng-model=&quot;firstName&quot;&gt;</div><div class="line">			&lt;br&gt; 姓:</div><div class="line">			&lt;input type=text ng-model=&quot;lastName&quot;&gt;</div><div class="line">			&lt;br&gt;</div><div class="line">			&lt;br&gt; 姓名: &#123;&#123;firstName + &quot; &quot; + lastName&#125;&#125;</div><div class="line">		&lt;/p&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;script&gt;</div><div class="line">		var app = angular.module(&apos;myApp&apos;, []);</div><div class="line">		app.controller(&apos;personCtrl&apos;, function($scope) &#123;</div><div class="line">			$scope.firstName = &quot;John&quot;,</div><div class="line">				$scope.lastName = &quot;Doe&quot;</div><div class="line">			$scope.myVar = false;</div><div class="line">			$scope.showItemId = function(itemId) &#123;</div><div class="line">				$scope.names[itemId].shows = false;</div><div class="line">				alert(&quot;Item Id 是 &quot; + itemId);</div><div class="line">			&#125;;</div><div class="line">			$scope.toggle = function() &#123;</div><div class="line">				$scope.myVar = !$scope.myVar;</div><div class="line">			&#125;</div><div class="line">		&#125;);</div><div class="line">	&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#ng-click传参控制ng-repeat元素显示与隐藏&lt;/p&gt;
+&lt;p&gt;###说明：&lt;/p&gt;
+&lt;p&gt;###1、使用ng-repeat显示参数&lt;/p&gt;
+&lt;p&gt;###2、通过ng-click按钮显示或隐藏内容。通过添加shows和id两个参数控制显示。&lt;br&gt;&lt;figure 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E6%9E%84%E5%BB%BA%E5%99%A8/"/>
+    <id>http://fr1ee.github.io/2017/03/15/构建器/</id>
+    <published>2017-03-15T03:17:05.000Z</published>
+    <updated>2017-03-15T06:08:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>##遇到多个构造器参数时考虑用构建器</p>
+<p>####Builder模式适合类有<strong>很多</strong>可选构造参数时。<br>如果类有很多参数，而且这些参数可选时，在初始化时就会比较麻烦。如果用构造函数，要写很多个，而且可能传入我们不想传入的参数。而JavaBean,构造过程会被分到几个调用中，在构造过程中javabean可能处于<strong><em>不一致</em></strong>的状态。<br>关于这个不一致我也不是很理解。希望有懂得帮忙解释下。特地用sublime手打了一遍builder模式加深印象。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line">//Builder Pattern</div><div class="line">public class NutritionFacts&#123;</div><div class="line">	private final int servingSize;</div><div class="line">	private final int servings;</div><div class="line">	private final int calories;</div><div class="line">	private final int fat;</div><div class="line">	private final int sodium;</div><div class="line">	private final int carbohhydrate;</div><div class="line"></div><div class="line">	public static class Builder&#123;</div><div class="line">		//Required parameters</div><div class="line">		private final int servingSize;</div><div class="line">		private final int servings;</div><div class="line"></div><div class="line">		//Optional patameters-initialized to default values</div><div class="line">		private int calories   =0;</div><div class="line">		private int fat        =0;</div><div class="line">		private int carbohhydrate=0;</div><div class="line">		private int sodium      =0;</div><div class="line"></div><div class="line">		public Builder(int servingSize,int servings)&#123;</div><div class="line">			this.servingSize=servingSize;</div><div class="line">			this.servings=servings;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		public Builder calories(int val)&#123;</div><div class="line">			this.calories=val;</div><div class="line">			return this;</div><div class="line">		&#125;</div><div class="line">		public Builder fat(int val)&#123;</div><div class="line">			this.fat=val;</div><div class="line">			return this;</div><div class="line">		&#125;</div><div class="line">		public Builder carbohhydrate(int val)&#123;</div><div class="line">			this.carbohhydrate=val;</div><div class="line">			return this;</div><div class="line">		&#125;</div><div class="line">		public Builder sodium(int val)&#123;</div><div class="line">			this.sodium=val;</div><div class="line">			return this;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		public NutritionFacts build()&#123;</div><div class="line">			return new NutritionFacts(this);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	private NutritionFacts(Builder builder)&#123;</div><div class="line">		servingSize=builder.servingSize;</div><div class="line">		servings=builder.servings;</div><div class="line">		fat=builder.fat;</div><div class="line">		sodium=builder.sodium;</div><div class="line">		carbohhydrate=builder.carbohhydrate;</div><div class="line">		calories=builder.calories;</div><div class="line">	&#125;</div><div class="line">	public void printInfo()&#123;</div><div class="line">		System.out.println(&quot;servingSize:&quot;+servingSize);</div><div class="line">		System.out.println(&quot;servings:&quot;+servings);</div><div class="line">		System.out.println(&quot;fat:&quot;+fat);</div><div class="line">		System.out.println(&quot;sodium:&quot;+sodium);</div><div class="line">		System.out.println(&quot;carbohhydrate:&quot;+carbohhydrate);</div><div class="line">		System.out.println(&quot;calories:&quot;+calories);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>###调用方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">public class BuilderPatternEx &#123;</div><div class="line"></div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		NutritionFacts nutrition=new NutritionFacts.Builder(204, 6).calories(6).build();</div><div class="line">		nutrition.printInfo();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这样在构造时候，就可以单个赋值而且构造过程不会被拆开。但是无疑代码量加大了。而且创建Builder构造器还增加了花销，虽然增加的也不多。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##遇到多个构造器参数时考虑用构建器&lt;/p&gt;
+&lt;p&gt;####Builder模式适合类有&lt;strong&gt;很多&lt;/strong&gt;可选构造参数时。&lt;br&gt;如果类有很多参数，而且这些参数可选时，在初始化时就会比较麻烦。如果用构造函数，要写很多个，而且可能传入我们不想传入的参数。而J
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/Linux%E4%B8%8A%E7%9A%84node%E7%AB%99%E7%82%B9%E4%B9%8Bcentos%E9%85%8D%E7%BD%AEnodejs%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E7%AC%94%E8%AE%B0/"/>
+    <id>http://fr1ee.github.io/2017/03/15/Linux上的node站点之centos配置nodejs运行环境笔记/</id>
+    <published>2017-03-15T03:16:50.000Z</published>
+    <updated>2017-03-15T06:12:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="centos配置nodejs运行环境"><a href="#centos配置nodejs运行环境" class="headerlink" title="centos配置nodejs运行环境"></a>centos配置nodejs运行环境</h1><p>原来的项目放在windowsserver上了，现在换个系统要重新配置下。</p>
+<p>####先看看是不是安装python<br><figure class="highlight plain"><figcaption><span>-qa|grep python```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">一般租的云服务器会安装的，看下版本（官网这样说：Note: Python 2.6 or 2.7 is required to build from source tarballs.）</div><div class="line">```python</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>Python 2.6.6 (r266:84292, Jan 22 2014, 09:42:36) </p>
+</blockquote>
+<p><strong>退出:</strong> Use exit() or Ctrl-D (i.e. EOF) to exit</p>
+<p>####node<br>去<a href="https://nodejs.org/en/download/" target="_blank" rel="external">官网</a>看了看，F12查看了下地址。最新版为<a href="https://nodejs.org/dist/v4.5.0/node-v4.5.0-linux-x64.tar.xz" target="_blank" rel="external">https://nodejs.org/dist/v4.5.0/node-v4.5.0-linux-x64.tar.xz</a></p>
+<p>####解压下<br><figure class="highlight plain"><figcaption><span>-zvxf node-v4.5.0-linux-x64.tar.gz```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### 突然想起兼容性，又看了下自己电脑的版本，对，就是这样，决定：</div></pre></td></tr></table></figure></p>
+<p>yum -y install nodejs<br>node -v<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">####npm三句话</div></pre></td></tr></table></figure></p>
+<p>wget <a href="http://npmjs.org/install.sh" target="_blank" rel="external">http://npmjs.org/install.sh</a><br>chmod +x ./install.sh<br>./install.sh<br>npm -v<br>```</p>
+<hr>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;centos配置nodejs运行环境&quot;&gt;&lt;a href=&quot;#centos配置nodejs运行环境&quot; class=&quot;headerlink&quot; title=&quot;centos配置nodejs运行环境&quot;&gt;&lt;/a&gt;centos配置nodejs运行环境&lt;/h1&gt;&lt;p&gt;原来的项目放
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E5%89%8D%E7%AB%AF%E9%82%A3%E4%BA%9B%E5%B9%B4--npm/"/>
+    <id>http://fr1ee.github.io/2017/03/15/前端那些年--npm/</id>
+    <published>2017-03-15T03:16:41.000Z</published>
+    <updated>2017-03-15T06:09:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#NPM</p>
+<h4 id="—–前端那些年"><a href="#—–前端那些年" class="headerlink" title="—–前端那些年"></a>—–前端那些年</h4><p>######系统：windows10</p>
+<p>1.版本号<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm -v</div><div class="line">3.3.0</div></pre></td></tr></table></figure></p>
+<p>或者<code>npm --version</code></p>
+<p>2.安装npm<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install npm -g</div></pre></td></tr></table></figure></p>
+<p>linux注意用<code>sudo</code></p>
+<p>3.使用npm安装其他模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;Module Name&gt;</div></pre></td></tr></table></figure></p>
+<p><code>-g</code>为全局安装，即<code>npm install &lt;Module Name&gt; -g</code></p>
+<p>4.查看全局安装的模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm ls -g</div></pre></td></tr></table></figure></p>
+<p>查看本地用<code>npm ls</code></p>
+<p>5.卸载模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm uninstall express</div></pre></td></tr></table></figure></p>
+<p>6.更新模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm update  &lt;Module Name&gt;</div></pre></td></tr></table></figure></p>
+<p>7.搜索模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm search &lt;Module Name&gt;</div></pre></td></tr></table></figure></p>
+<p>8.创建模块</p>
+<ul>
+<li>初始化</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm init</div></pre></td></tr></table></figure>
+<p>需要package.json文件<br>同样项目中有package.json文件，可以直接<code>npm install</code>自动安装配置的文件。</p>
+<ul>
+<li><p>使用邮箱注册用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm adduser</div></pre></td></tr></table></figure>
+</li>
+<li><p>发布模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm publish</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>9.获取帮助<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm help &lt;command&gt;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#NPM&lt;/p&gt;
+&lt;h4 id=&quot;—–前端那些年&quot;&gt;&lt;a href=&quot;#—–前端那些年&quot; class=&quot;headerlink&quot; title=&quot;—–前端那些年&quot;&gt;&lt;/a&gt;—–前端那些年&lt;/h4&gt;&lt;p&gt;######系统：windows10&lt;/p&gt;
+&lt;p&gt;1.版本号&lt;br&gt;&lt;fi
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/%E5%89%8D%E7%AB%AF%E9%82%A3%E4%BA%9B%E5%B9%B4----Webstream%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%87%E5%BF%98%EF%BC%88mac%EF%BC%89/"/>
+    <id>http://fr1ee.github.io/2017/03/15/前端那些年----Webstream快捷键备忘（mac）/</id>
+    <published>2017-03-15T03:16:26.000Z</published>
+    <updated>2017-03-15T06:09:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Webstream快捷键备忘-mac"><a href="#Webstream快捷键备忘-mac" class="headerlink" title="Webstream快捷键备忘(mac)"></a>Webstream快捷键备忘(mac)</h1><p>#####友情提示：webstream内置了一个强大的插件——Emmet插件。其用法请自行搜索。</p>
+<p>###其他插件<br>Markdown——支持md，点击下面的Text/Previev可以切换代码/预览<br>Key promoter——智能提示快捷键。比如点击了工具栏上的代码优化，插件会提示其快捷键。</p>
+<ul>
+<li>centOS 下webstorm 格式化代码的快捷键 Ctrl+Shift+l </li>
+<li>windows 下 webstorm 格式化代码的快键键 Ctrl+Alt+l</li>
+<li>mac 下 webstorm 格式化代码的快捷键 Option+Command+l</li>
+</ul>
+<p>###WebStorm快捷键（Mac版）</p>
+<ul>
+<li><p>⌘——Command</p>
+</li>
+<li><p>⌃ ——Control</p>
+</li>
+<li><p>⌥——alt</p>
+</li>
+<li><p>⇧——Shift</p>
+</li>
+<li><p>⇪——Caps Lock</p>
+</li>
+<li><p>fn——功能键就是fn</p>
+</li>
+</ul>
+<p>###编辑</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command+alt+T</td>
+<td>用 (if..else, try..catch, for, etc.)包住</td>
+</tr>
+<tr>
+<td>Command+/</td>
+<td>注释/取消注释的行注释</td>
+</tr>
+<tr>
+<td>Command+alt+/</td>
+<td>注释/取消注释与块注释</td>
+</tr>
+<tr>
+<td>alt+↑</td>
+<td>向上选取代码块</td>
+</tr>
+<tr>
+<td>alt+↓</td>
+<td>向下选取代码块</td>
+</tr>
+<tr>
+<td>Command+alt+L</td>
+<td>格式化代码</td>
+</tr>
+<tr>
+<td>tab,shift+tab</td>
+<td>调整缩进</td>
+</tr>
+<tr>
+<td>Control+alt+I</td>
+<td>快速调整缩进</td>
+</tr>
+<tr>
+<td>Command+C</td>
+<td>复制</td>
+</tr>
+<tr>
+<td>Command+X</td>
+<td>剪切</td>
+</tr>
+<tr>
+<td>Command+V</td>
+<td>粘贴</td>
+</tr>
+<tr>
+<td>Command+shift+V</td>
+<td>从剪贴板里选择粘贴</td>
+</tr>
+<tr>
+<td>Command+D</td>
+<td>复制代码副本</td>
+</tr>
+<tr>
+<td>Command+delete</td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>Control+Shift+J</td>
+<td>清除缩进变成单行</td>
+</tr>
+<tr>
+<td>shift+回车</td>
+<td>快速换行</td>
+</tr>
+<tr>
+<td>Command+回车</td>
+<td>换行光标还在原先位置</td>
+</tr>
+<tr>
+<td>Command+shift+U</td>
+<td>大小写转换</td>
+</tr>
+<tr>
+<td>Command+shift+[,Command+shift+]</td>
+<td>文件选项卡快速切换</td>
+</tr>
+<tr>
+<td>Command+加号,Command+减号</td>
+<td>收缩代码块</td>
+</tr>
+<tr>
+<td>Command+shift+加号，Command+shift+减号</td>
+<td>收缩整个文档的代码块</td>
+</tr>
+<tr>
+<td>Command+W</td>
+<td>关闭当前文件选项卡</td>
+</tr>
+<tr>
+<td>alt+单击</td>
+<td>光标在多处定位</td>
+</tr>
+<tr>
+<td>Control+shift+J</td>
+<td>把下面行的缩进收上来</td>
+</tr>
+<tr>
+<td>shift + F6</td>
+<td>高级修改，可快速修改光标所在的标签、变量、函数等</td>
+</tr>
+<tr>
+<td>alt+/</td>
+<td>代码补全</td>
+</tr>
+</tbody>
+</table>
+<p>###调试</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Control+alt+R</td>
+<td>运行项目</td>
+</tr>
+<tr>
+<td>Command+Control+R</td>
+<td>运行Debug</td>
+</tr>
+<tr>
+<td>Command+F8</td>
+<td>添加断点</td>
+</tr>
+<tr>
+<td>Command+shift+F8</td>
+<td>打开断点列表</td>
+</tr>
+</tbody>
+</table>
+<p>###导航</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command+O</td>
+<td>跳转到某个类</td>
+</tr>
+<tr>
+<td>Command+shift+O</td>
+<td>跳转到某个文件</td>
+</tr>
+<tr>
+<td>Command+alt+O</td>
+<td>跳转到某个符号</td>
+</tr>
+<tr>
+<td>Control+←,Control+→</td>
+<td>转到上/下一个编辑器选项卡</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>打开之前打开的工具窗口（TODO、终端等）</td>
+</tr>
+<tr>
+<td>Command+L</td>
+<td>跳转行</td>
+</tr>
+<tr>
+<td>Command+E</td>
+<td>弹出最近文件</td>
+</tr>
+<tr>
+<td>Command+alt+←,Command+alt+→</td>
+<td>向前向后导航到代码块交接处（一般是空行处）</td>
+</tr>
+<tr>
+<td>Command+shift+delete</td>
+<td>导航到上一个编辑位置的位置</td>
+</tr>
+<tr>
+<td>Command+B</td>
+<td>跳转到变量声明处</td>
+</tr>
+<tr>
+<td>Control+J</td>
+<td>获取变量相关信息（类型、注释等，注释是拿上一行的注释）</td>
+</tr>
+<tr>
+<td>Command+Y</td>
+<td>小浮窗显示变量声明时的行</td>
+</tr>
+<tr>
+<td>Command+[,Command+]</td>
+<td>光标现在的位置和之前的位置切换</td>
+</tr>
+<tr>
+<td>Command+F12</td>
+<td>文件结构弹出式菜单</td>
+</tr>
+<tr>
+<td>alt+H</td>
+<td>类的层次结构</td>
+</tr>
+<tr>
+<td>F2,shift+F2</td>
+<td>切换到上\下一个突出错误的位置</td>
+</tr>
+<tr>
+<td>Command+↑</td>
+<td>跳转到导航栏</td>
+</tr>
+<tr>
+<td>F3</td>
+<td>添加书签</td>
+</tr>
+<tr>
+<td>alt+F3</td>
+<td>添加带助记的书签</td>
+</tr>
+<tr>
+<td>alt+1,alt+2…</td>
+<td>切换到相应助记的书签位置</td>
+</tr>
+<tr>
+<td>Command+F3</td>
+<td>打开书签列表</td>
+</tr>
+<tr>
+<td>VCS/</td>
+<td>本地历史记录</td>
+</tr>
+<tr>
+<td>control+V</td>
+<td>打开VST小浮窗</td>
+</tr>
+<tr>
+<td>Command+K</td>
+<td>提交项目</td>
+</tr>
+<tr>
+<td>Command+T</td>
+<td>更新项目</td>
+</tr>
+<tr>
+<td>alt+shift+C</td>
+<td>打开最近修改列表</td>
+</tr>
+</tbody>
+</table>
+<p>###搜索和替换</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command+F</td>
+<td>搜索</td>
+</tr>
+<tr>
+<td>Command+R</td>
+<td>替换</td>
+</tr>
+<tr>
+<td>Command+G</td>
+<td>查找下一个</td>
+</tr>
+<tr>
+<td>Command+shift+G</td>
+<td>查找下一个</td>
+</tr>
+<tr>
+<td>Command+shift+F</td>
+<td>按路径搜索</td>
+</tr>
+<tr>
+<td>Command+shift+R</td>
+<td>按路径替换</td>
+</tr>
+<tr>
+<td>选中文字的搜索</td>
+<td></td>
+</tr>
+<tr>
+<td>Command+F7</td>
+<td>向声明的地方搜索并选中</td>
+</tr>
+<tr>
+<td>Command+shift+F7</td>
+<td>打开搜索框进行搜索</td>
+</tr>
+<tr>
+<td>Command+alt+F7</td>
+<td>打开小浮窗显示搜索列表</td>
+</tr>
+</tbody>
+</table>
+<p>###对项目文件的操作（重构）</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F5</td>
+<td>复制文件到某个目录</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>移动文件到某个目录</td>
+</tr>
+<tr>
+<td>Command+delete</td>
+<td>安全删除</td>
+</tr>
+<tr>
+<td>shift+F6</td>
+<td>重命名</td>
+</tr>
+</tbody>
+</table>
+<p>###全局快捷键</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>双击shift</td>
+<td>弹出小浮窗搜索所有</td>
+</tr>
+<tr>
+<td>Command+shift+A</td>
+<td>整个工程的查找操作</td>
+</tr>
+<tr>
+<td>Command+1,Command+2…</td>
+<td>打开各种工具窗口</td>
+</tr>
+<tr>
+<td>alt+shift+F</td>
+<td>把文件添加到收藏夹</td>
+</tr>
+<tr>
+<td>alt+shift+I</td>
+<td>打开项目描述</td>
+</tr>
+<tr>
+<td>alt+~</td>
+<td>快速切换当前计划</td>
+</tr>
+<tr>
+<td>Command+,</td>
+<td>设置编辑器</td>
+</tr>
+<tr>
+<td>Control+Tab</td>
+<td>选项卡和工具窗口之间进行切换</td>
+</tr>
+<tr>
+<td>alert+回车</td>
+<td>显示npm版本升级列表</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Webstream快捷键备忘-mac&quot;&gt;&lt;a href=&quot;#Webstream快捷键备忘-mac&quot; class=&quot;headerlink&quot; title=&quot;Webstream快捷键备忘(mac)&quot;&gt;&lt;/a&gt;Webstream快捷键备忘(mac)&lt;/h1&gt;&lt;p&gt;####
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装SQL2012</title>
+    <link href="http://fr1ee.github.io/2017/03/15/mac%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%EF%BC%8C%E5%85%B3%E9%97%AD%E8%BF%9B%E7%A8%8B/"/>
+    <id>http://fr1ee.github.io/2017/03/15/mac查看端口，关闭进程/</id>
+    <published>2017-03-15T03:16:11.000Z</published>
+    <updated>2017-03-15T06:12:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>命令：<br><code>sudo lsof -i:-P</code> </p>
+<p><strong>P为端口号</strong>例如：<code>sudo lsof -i:4200</code></p>
+<p><code>sudo kill -9 [pid]</code></p>
+<p><strong><em>是否需要sudo看情况</em></strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;命令：&lt;br&gt;&lt;code&gt;sudo lsof -i:-P&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;P为端口号&lt;/strong&gt;例如：&lt;code&gt;sudo lsof -i:4200&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo kill -9 [pid]&lt;/code
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
