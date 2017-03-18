@@ -201,11 +201,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>&amp;你到底是什么？</title>
     <link href="http://fr1ee.github.io/2017/03/15/&amp;%E4%BD%A0%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/"/>
     <id>http://fr1ee.github.io/2017/03/15/&amp;你到底是什么/</id>
     <published>2017-03-15T03:22:22.000Z</published>
-    <updated>2017-03-18T05:17:41.000Z</updated>
+    <updated>2017-03-18T06:42:33.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="amp-你到底是什么？"><a href="#amp-你到底是什么？" class="headerlink" title="&amp;你到底是什么？"></a>&amp;你到底是什么？</h4><p>前两天数据结构课设，老师问了一个问题，让我再次清醒了一下，我这么渣，怎么当程序员。。。<br>问题：函数声明中参数用“&amp;”是什么用法？<br>我蒙了，我说这个函数是我copy的，我认为用&amp;和用*都可以实现功能。<br>老师告诉我他只想考我一下基础知识，这个叫“引用”。//此处前提是我们在讨论C语言的程序<br>我蒙了，引用？找找资料自己脑补吧！<br>在C语言中，&amp;有三种作用，分别如下：</p>
 <ol>
@@ -346,7 +346,7 @@
     <link href="http://fr1ee.github.io/2017/03/15/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BD%91%E9%A1%B5%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%83%BD%E5%88%87%E5%BC%80/"/>
     <id>http://fr1ee.github.io/2017/03/15/为什么网页背景图片都切开/</id>
     <published>2017-03-15T03:20:46.000Z</published>
-    <updated>2017-03-18T05:15:21.000Z</updated>
+    <updated>2017-03-18T05:52:45.000Z</updated>
     
     <content type="html"><![CDATA[<p>以下是个人观点，如有不对欢迎指正。<br>很多时候有很多专门设计界面的Ui人员，他们更熟悉的可能是PS之类，于是他们PS出一个很美观的界面，顺便用PS的切图功能转成网页格式（table，如果想用的话最好把img这种格式改成background）。就出现了大多数网站都是背景都切开的现象。<br>好处呢？是不是能加快加载我没法说，因为是理解问题，一张大图和同面积同像素很多小图哪个更快？希望对此有看法的大牛补充一下。但是有一定是可以理解的，如果网页一块一块加载，很多时候会这样，比如一些导航页，我们会等待因为我们知道他在加载中。。。但是如果一个图片要加载几十秒加载不出来，画面一片空白，估计就关网页了，当然我夸张了，大图片加载很多时候要降像素的，不至于加载很长时间，这可能就是心理上给人感觉加载快。<br>在一点，人家前段设计好了页面，比如简单的登录页面，切成表格，交给代码工人加功能，比让代码工人照着图片去找位置可容易多了，而且界面肯定和UI设计的更相似。也就是人家网站靠这种方法不止考虑用户加载了，还考虑了开发效率啊 </p>
 <hr>
@@ -359,6 +359,12 @@
     
     </summary>
     
+      <category term="C" scheme="http://fr1ee.github.io/categories/C/"/>
+    
+    
+      <category term="C" scheme="http://fr1ee.github.io/tags/C/"/>
+    
+      <category term="C++" scheme="http://fr1ee.github.io/tags/C/"/>
     
   </entry>
   
@@ -1123,6 +1129,1053 @@
       &lt;p&gt;命令：&lt;br&gt;&lt;code&gt;sudo lsof -i:-P&lt;/code&gt; &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P为端口号&lt;/strong&gt;例如：&lt;code&gt;sudo lsof -i:4200&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo kill -9 [pid]&lt;/code
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome 键盘快捷键(Mac)</title>
+    <link href="http://fr1ee.github.io/2017/03/15/Chrome%20%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE(Mac)/"/>
+    <id>http://fr1ee.github.io/2017/03/15/Chrome 键盘快捷键(Mac)/</id>
+    <published>2017-03-15T03:15:31.000Z</published>
+    <updated>2017-03-18T05:22:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Chrome-键盘快捷键-Mac"><a href="#Chrome-键盘快捷键-Mac" class="headerlink" title="Chrome 键盘快捷键(Mac)"></a>Chrome 键盘快捷键(Mac)</h1><p>转自Google官网，原文链接：<a href="https://support.google.com/chrome/answer/157179?hl=zh-Hans&amp;visit_id=0-636250978122946127-3828265132&amp;rd=1" target="_blank" rel="external">https://support.google.com/chrome/answer/157179?hl=zh-Hans&amp;visit_id=0-636250978122946127-3828265132&amp;rd=1</a></p>
+<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><h3 id="标签页和窗口快捷键"><a href="#标签页和窗口快捷键" class="headerlink" title="标签页和窗口快捷键"></a>标签页和窗口快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开新窗口</td>
+<td>⌘ + n</td>
+</tr>
+<tr>
+<td>在隐身模式下打开新窗口</td>
+<td>⌘ + Shift + n</td>
+</tr>
+<tr>
+<td>打开新的标签页，并跳转到该标签页</td>
+<td>⌘ + t</td>
+</tr>
+<tr>
+<td>重新打开最后关闭的标签页，并跳转到该标签页</td>
+<td>⌘ + Shift + t</td>
+</tr>
+<tr>
+<td>跳转到下一个打开的标签页</td>
+<td>⌘ + Option + 向右箭头键</td>
+</tr>
+<tr>
+<td>跳转到上一个打开的标签页</td>
+<td>⌘ + Option + 向左箭头键</td>
+</tr>
+<tr>
+<td>跳转到特定标签页</td>
+<td>⌘ + 1 到 ⌘ + 8</td>
+</tr>
+<tr>
+<td>跳转到最后一个标签页</td>
+<td>⌘ + 9</td>
+</tr>
+<tr>
+<td>打开当前标签页浏览记录中记录的上一个页面</td>
+<td>⌘ + [ 或 ⌘ + 向左箭头键</td>
+</tr>
+<tr>
+<td>打开当前标签页浏览记录中记录的下一个页面</td>
+<td>⌘ + ] 或 ⌘ + 向右箭头键</td>
+</tr>
+<tr>
+<td>关闭当前标签页或弹出式窗口</td>
+<td>⌘ + w</td>
+</tr>
+<tr>
+<td>关闭当前窗口</td>
+<td>⌘ + Shift + w</td>
+</tr>
+<tr>
+<td>最小化窗口</td>
+<td>⌘ + m</td>
+</tr>
+<tr>
+<td>隐藏 Google Chrome</td>
+<td>⌘ + h</td>
+</tr>
+<tr>
+<td>退出 Google Chrome</td>
+<td>⌘ + q</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Google-Chrome-功能快捷键"><a href="#Google-Chrome-功能快捷键" class="headerlink" title="Google Chrome 功能快捷键"></a>Google Chrome 功能快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>显示或隐藏书签栏</td>
+<td>⌘ + Shift + b</td>
+</tr>
+<tr>
+<td>打开书签管理器</td>
+<td>⌘ + Option + b</td>
+</tr>
+<tr>
+<td>在新标签页中打开“设置”页</td>
+<td>⌘ + ,</td>
+</tr>
+<tr>
+<td>在新标签页中打开“历史记录”页</td>
+<td>⌘ + y</td>
+</tr>
+<tr>
+<td>在新标签页中打开“下载内容”页</td>
+<td>⌘ + Shift + j</td>
+</tr>
+<tr>
+<td>打开查找栏搜索当前网页</td>
+<td>⌘ + f</td>
+</tr>
+<tr>
+<td>跳转到与查找栏中搜索字词相匹配的下一条内容</td>
+<td>⌘ + g</td>
+</tr>
+<tr>
+<td>跳转到与查找栏中搜索字词相匹配的上一条内容</td>
+<td>⌘ + Shift + g</td>
+</tr>
+<tr>
+<td>打开查找栏后，搜索选定文本</td>
+<td>⌘ + e</td>
+</tr>
+<tr>
+<td>打开“开发者工具”</td>
+<td>⌘ + Option + i</td>
+</tr>
+<tr>
+<td>打开“清除浏览数据”选项</td>
+<td>⌘ + Shift + Delete</td>
+</tr>
+<tr>
+<td>使用其他帐号登录或以访客身份浏览</td>
+<td>⌘ + Shift + m</td>
+</tr>
+</tbody>
+</table>
+<h3 id="地址栏快捷键"><a href="#地址栏快捷键" class="headerlink" title="地址栏快捷键"></a>地址栏快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>使用默认搜索引擎进行搜索</td>
+<td>输入搜索字词并按 Enter 键</td>
+</tr>
+<tr>
+<td>使用其他搜索引擎进行搜索</td>
+<td>输入搜索引擎名称并按 Tab 键</td>
+</tr>
+<tr>
+<td>为网站名称添加 www. 和 .com，并在当前标签页中打开该网站</td>
+<td>输入网站名称并按 Control + Enter 键</td>
+</tr>
+<tr>
+<td>为网站名称添加 www. 和 .com，并在新标签页中打开该网站</td>
+<td>输入网站名称并按 Control + Shift + Enter 键</td>
+</tr>
+<tr>
+<td>在新的后台标签页中打开网站</td>
+<td>输入网址并按 ⌘ + Enter 键</td>
+</tr>
+<tr>
+<td>跳转到地址栏</td>
+<td>⌘ + l</td>
+</tr>
+</tbody>
+</table>
+<h3 id="网页快捷键"><a href="#网页快捷键" class="headerlink" title="网页快捷键"></a>网页快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开选项以打印当前网页</td>
+<td>⌘ + p</td>
+</tr>
+<tr>
+<td>打开选项以保存当前网页</td>
+<td>⌘ + s</td>
+</tr>
+<tr>
+<td>打开“页面设置”对话框</td>
+<td>⌘ + Option + p</td>
+</tr>
+<tr>
+<td>通过电子邮件发送当前网页</td>
+<td>⌘ + Shift + i</td>
+</tr>
+<tr>
+<td>重新加载当前网页</td>
+<td>⌘ + r</td>
+</tr>
+<tr>
+<td>重新加载当前网页（忽略缓存的内容）</td>
+<td>⌘ + Shift + r</td>
+</tr>
+<tr>
+<td>停止加载网页</td>
+<td>Esc</td>
+</tr>
+<tr>
+<td>浏览下一个可点击项</td>
+<td>Tab</td>
+</tr>
+<tr>
+<td>浏览上一个可点击项</td>
+<td>Shift + Tab</td>
+</tr>
+<tr>
+<td>使用 Google Chrome 打开计算机中的文件</td>
+<td>按住 ⌘ + o 键并选择文件</td>
+</tr>
+<tr>
+<td>显示当前网页的 HTML 源代码（不可修改）</td>
+<td>⌘ + Option + u</td>
+</tr>
+<tr>
+<td>打开 JavaScript 控制台</td>
+<td>⌘ + Option + j</td>
+</tr>
+<tr>
+<td>将当前网页保存为书签</td>
+<td>⌘ + d</td>
+</tr>
+<tr>
+<td>将所有打开的标签页以书签的形式保存在新文件夹中</td>
+<td>⌘ + Shift + d</td>
+</tr>
+<tr>
+<td>开启或关闭全屏模式</td>
+<td>⌘ + Ctrl + f</td>
+</tr>
+<tr>
+<td>放大网页上的所有内容</td>
+<td>⌘ 和 +</td>
+</tr>
+<tr>
+<td>缩小网页上的所有内容</td>
+<td>⌘ 和 -</td>
+</tr>
+<tr>
+<td>将网页上的所有内容恢复到默认大小</td>
+<td>⌘ + 0</td>
+</tr>
+<tr>
+<td>向下滚动网页，一次一个屏幕</td>
+<td>空格键</td>
+</tr>
+<tr>
+<td>向上滚动网页，一次一个屏幕</td>
+<td>Shift + 空格键</td>
+</tr>
+<tr>
+<td>搜索网络</td>
+<td>⌘ + Option + f</td>
+</tr>
+<tr>
+<td>将光标移到文本字段中的上一个字词前面</td>
+<td>Option + 向左箭头键</td>
+</tr>
+<tr>
+<td>将光标移到文本字段中的上一个字词后面</td>
+<td>Option + 向右箭头键</td>
+</tr>
+<tr>
+<td>删除文本字段中的上一个字词</td>
+<td>Option + Delete</td>
+</tr>
+<tr>
+<td>在当前标签页中打开主页</td>
+<td>⌘ + Shift + h</td>
+</tr>
+</tbody>
+</table>
+<h3 id="鼠标快捷键"><a href="#鼠标快捷键" class="headerlink" title="鼠标快捷键"></a>鼠标快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在当前标签页中打开链接（仅限鼠标）</td>
+<td>将链接拖到标签页中</td>
+</tr>
+<tr>
+<td>在新的后台标签页中打开链接</td>
+<td>按住 ⌘ 键的同时点击链接</td>
+</tr>
+<tr>
+<td>打开链接，并跳转到该链接</td>
+<td>按住 ⌘ + Shift 键的同时点击链接</td>
+</tr>
+<tr>
+<td>打开链接，并跳转到该链接（仅使用鼠标）</td>
+<td>将链接拖到标签栏的空白区域</td>
+</tr>
+<tr>
+<td>在新窗口中打开链接</td>
+<td>按住 Shift 键的同时点击链接</td>
+</tr>
+<tr>
+<td>在新窗口中打开标签页（仅使用鼠标）</td>
+<td>将标签页拖出标签栏</td>
+</tr>
+<tr>
+<td>将标签页移至当前窗口（仅限鼠标）</td>
+<td>将标签页拖到现有窗口中</td>
+</tr>
+<tr>
+<td>将标签页移回其原始位置</td>
+<td>拖动标签页的同时按 Esc</td>
+</tr>
+<tr>
+<td>将当前网页保存为书签</td>
+<td>将相应网址拖动到书签栏中</td>
+</tr>
+<tr>
+<td>下载链接目标</td>
+<td>按住 Option 键的同时点击链接</td>
+</tr>
+<tr>
+<td>显示浏览记录</td>
+<td>右键点击“后退”箭头 返回 或“前进”箭头 下一个，或者点击并按住“后退”箭头 返回 或“前进”箭头 下一个</td>
+</tr>
+<tr>
+<td>将窗口高度最大化</td>
+<td>双击标签栏的空白区域</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>感谢此帮助页的作者Megan。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Chrome-键盘快捷键-Mac&quot;&gt;&lt;a href=&quot;#Chrome-键盘快捷键-Mac&quot; class=&quot;headerlink&quot; title=&quot;Chrome 键盘快捷键(Mac)&quot;&gt;&lt;/a&gt;Chrome 键盘快捷键(Mac)&lt;/h1&gt;&lt;p&gt;转自Google官网，原
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于angular2更新时机的一些发现</title>
+    <link href="http://fr1ee.github.io/2017/03/14/%E5%85%B3%E4%BA%8Eangular2%E6%9B%B4%E6%96%B0%E6%97%B6%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8F%91%E7%8E%B0/"/>
+    <id>http://fr1ee.github.io/2017/03/14/关于angular2更新时机的一些发现/</id>
+    <published>2017-03-14T08:34:09.000Z</published>
+    <updated>2017-03-18T05:15:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于angular2更新时机的一些发现"><a href="#关于angular2更新时机的一些发现" class="headerlink" title="关于angular2更新时机的一些发现"></a>关于angular2更新时机的一些发现</h1><h3 id="引入："><a href="#引入：" class="headerlink" title="引入："></a>引入：</h3><p>angular2官网关于管道（Pipe)的介绍中说明，angular2的管道分为pure和impure。</p>
+<ul>
+<li>非纯管道Impure pipes</li>
+</ul>
+<p>Angular会在每个组件的变更检测周期中执行非纯管道。 非纯管道可能会被调用很多次，和每个按键或每次鼠标移动一样频繁。</p>
+<p>Angular executes an impure pipe during every component change detection cycle. An impure pipe will be called a lot, as often as every keystroke or mouse-move.</p>
+<ul>
+<li>纯管道Pure pipes</li>
+</ul>
+<p>Angular只有在它检测到输入值发生了纯变更时才会执行纯管道。 纯变更是指对原始类型值(String、Number、Boolean、Symbol)的更改， 或者对对象引用(Date、Array、Function、Object)的更改。</p>
+<p>Angular executes a pure pipe only when it detects a pure change to the input value. A pure change is either a change to a primitive input value (String, Number, Boolean, Symbol) or a changed object reference (Date, Array, Function, Object).</p>
+<p>Angular会忽略(复合)对象内部的更改。 如果我们更改了输入日期(Date)中的月份、往一个输入数组(Array)中添加新值或者更新了一个输入对象(Object)的属性，Angular都不会调用纯管道。</p>
+<p>Angular ignores changes within (composite) objects. It won’t call a pure pipe if we change an input month, add to an input array, or update an input object property.</p>
+<h3 id="具体问题："><a href="#具体问题：" class="headerlink" title="具体问题："></a>具体问题：</h3><p><em>在以前的开发过程中，我们遇到过，一个双向绑定的数组，使用push或者splice函数时，画面并未发生刷新。目前看了正是由于类似的情况</em></p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h4><p>新建一个数组，重新赋值给双向绑定的变量，这样，相当于引用发生了变化，所以会更新模板。</p>
+<h4 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h4><p>使用ngIf来切换模板文件中的代码段（可能是一个组件）。</p>
+<hr>
+<p>第一种是方法性能应该更好。如果这种情况下，也有一个类似管道中pure的参数来设置就好了，目前还没发现其他方法。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;关于angular2更新时机的一些发现&quot;&gt;&lt;a href=&quot;#关于angular2更新时机的一些发现&quot; class=&quot;headerlink&quot; title=&quot;关于angular2更新时机的一些发现&quot;&gt;&lt;/a&gt;关于angular2更新时机的一些发现&lt;/h1&gt;&lt;h3 i
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开发工具链（国内项目）</title>
+    <link href="http://fr1ee.github.io/2017/03/13/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%93%BE%EF%BC%88%E5%9B%BD%E5%86%85%E9%A1%B9%E7%9B%AE%EF%BC%89%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%EF%BC%89/"/>
+    <id>http://fr1ee.github.io/2017/03/13/开发工具链（国内项目）（持续更）/</id>
+    <published>2017-03-13T12:32:51.000Z</published>
+    <updated>2017-03-18T05:55:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#开发工具链（国内项目）</p>
+<p>##前端开发工具：</p>
+<ol>
+<li>sublime(轻便)</li>
+<li>Webstorm（全面，包括各种插件，对node支持较好）</li>
+<li>git/svn（gitlab）</li>
+<li>npm</li>
+<li>对比工具：Windows：beyondcompare<pre><code>osx:Diffmerge(free or professional)
+</code></pre></li>
+<li>markdown</li>
+<li>命令行:<ul>
+<li>Windows：git bash 好处：可以在任意文件夹右键</li>
+<li>OSX：iTerm  </li>
+</ul>
+</li>
+<li>HBuilder:专为H5设计</li>
+<li>pyhton:一些重复工作</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#开发工具链（国内项目）&lt;/p&gt;
+&lt;p&gt;##前端开发工具：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sublime(轻便)&lt;/li&gt;
+&lt;li&gt;Webstorm（全面，包括各种插件，对node支持较好）&lt;/li&gt;
+&lt;li&gt;git/svn（gitlab）&lt;/li&gt;
+&lt;li&gt;npm&lt;/li&gt;
+
+    
+    </summary>
+    
+      <category term="前端" scheme="http://fr1ee.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="开发工具链" scheme="http://fr1ee.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+      <category term="前端" scheme="http://fr1ee.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>calc()的使用</title>
+    <link href="http://fr1ee.github.io/2017/03/11/CSS3%E4%B9%8B%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E5%80%BC------calc()/"/>
+    <id>http://fr1ee.github.io/2017/03/11/CSS3之计算长度值------calc()/</id>
+    <published>2017-03-11T14:57:26.000Z</published>
+    <updated>2017-03-11T15:03:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="calc-的使用"><a href="#calc-的使用" class="headerlink" title="calc()的使用"></a>calc()的使用</h1><p>平时写CSS时候可能遇到宽度或者高度需要计算的情况，简单的时候，算算padding,margin就行了，单位或是px或是%。但是有时候需要复杂一点的，比如这次我需要计算（100vh - 50px）的值，那就需要calc()了。</p>
+<h3 id="calc-的运算规则"><a href="#calc-的运算规则" class="headerlink" title="calc()的运算规则"></a>calc()的运算规则</h3><ul>
+<li>支持“+”、“-”、“*” 、“/”四则运算；</li>
+<li>可以使用百分比、px、em、rem、vh、vm等单位；</li>
+<li>可以混合使用各种单位进行计算；</li>
+</ul>
+<h3 id="书写注意"><a href="#书写注意" class="headerlink" title="书写注意"></a>书写注意</h3><ul>
+<li>表达式中有“+”和“-”时，其前后必须要有空格，如”widht: - calc(12%+5em)”这种没有空格的写法是错误的；</li>
+<li>表达式中有“*”和“/”时，其前后可以没有空格，但建议留有空格。</li>
+<li>考虑兼容性的话可以这样写：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">/*Firefox*/</div><div class="line">-moz-calc(expression);</div><div class="line">/*chrome safari*/</div><div class="line">-webkit-calc(expression);</div><div class="line">/*Standard */</div><div class="line">calc();</div></pre></td></tr></table></figure>
+<h3 id="EX"><a href="#EX" class="headerlink" title="EX"></a>EX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.tablf &#123;</div><div class="line">    padding: 0px;</div><div class="line">    height:93vh;/*如果不支持calc就用这个啦*/</div><div class="line">    overflow:auto;</div><div class="line">    height:-moz-calc(100vh - 50px);</div><div class="line">    height:-webkit-calc(100vh - 50px);</div><div class="line">    height: calc(100vh - 50px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;calc-的使用&quot;&gt;&lt;a href=&quot;#calc-的使用&quot; class=&quot;headerlink&quot; title=&quot;calc()的使用&quot;&gt;&lt;/a&gt;calc()的使用&lt;/h1&gt;&lt;p&gt;平时写CSS时候可能遇到宽度或者高度需要计算的情况，简单的时候，算算padding,ma
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Emmet使用-----HTML</title>
+    <link href="http://fr1ee.github.io/2017/03/11/Emmet%E4%BD%BF%E7%94%A8-----HTML/"/>
+    <id>http://fr1ee.github.io/2017/03/11/Emmet使用-----HTML/</id>
+    <published>2017-03-11T14:57:15.000Z</published>
+    <updated>2017-03-11T15:02:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#Emmet使用—–HTML</p>
+<p>这个插件很多地方都可以用，sublime,webstream等</p>
+<p>Emmet官网文档：<a href="http://docs.emmet.io/" target="_blank" rel="external">http://docs.emmet.io/</a></p>
+<p>###语法:</p>
+<p>1.后代：<code>&gt;</code></p>
+<p>缩写：<code>nav&gt;ul&gt;li</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;nav&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/nav&gt;</div></pre></td></tr></table></figure></p>
+<p>兄弟:<code>+</code></p>
+<p>缩写：<code>div+p+bq</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&lt;/div&gt;</div><div class="line">&lt;p&gt;&lt;/p&gt;</div><div class="line">&lt;blockquote&gt;&lt;/blockquote&gt;</div></pre></td></tr></table></figure>
+<p>上级:<code>^</code></p>
+<p>缩写：<code>div+div&gt;p&gt;span+em^bq</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">    &lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</div><div class="line">    &lt;blockquote&gt;&lt;/blockquote&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>div+div&gt;p&gt;span+em^^bq</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">    &lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;blockquote&gt;&lt;/blockquote&gt;</div></pre></td></tr></table></figure>
+<p>分组：<code>()</code></p>
+<p>缩写：<code>div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">    &lt;header&gt;</div><div class="line">        &lt;ul&gt;</div><div class="line">            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">        &lt;/ul&gt;</div><div class="line">    &lt;/header&gt;</div><div class="line">    &lt;footer&gt;</div><div class="line">        &lt;p&gt;&lt;/p&gt;</div><div class="line">    &lt;/footer&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>(div&gt;dl&gt;(dt+dd)*3)+footer&gt;p</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">    &lt;dl&gt;</div><div class="line">        &lt;dt&gt;&lt;/dt&gt;</div><div class="line">        &lt;dd&gt;&lt;/dd&gt;</div><div class="line">        &lt;dt&gt;&lt;/dt&gt;</div><div class="line">        &lt;dd&gt;&lt;/dd&gt;</div><div class="line">        &lt;dt&gt;&lt;/dt&gt;</div><div class="line">        &lt;dd&gt;&lt;/dd&gt;</div><div class="line">    &lt;/dl&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;footer&gt;</div><div class="line">    &lt;p&gt;&lt;/p&gt;</div><div class="line">&lt;/footer&gt;</div></pre></td></tr></table></figure>
+<p>乘法：<code>*</code></p>
+<p>缩写：<code>ul&gt;li*5</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>自增符号：<code>$</code></p>
+<p>缩写：<code>ul&gt;li.item$*5</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>h$[title=item$]{Header $}*3</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;h1 title=&quot;item1&quot;&gt;Header 1&lt;/h1&gt;</div><div class="line">&lt;h2 title=&quot;item2&quot;&gt;Header 2&lt;/h2&gt;</div><div class="line">&lt;h3 title=&quot;item3&quot;&gt;Header 3&lt;/h3&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>ul&gt;li.item$$$*5</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li class=&quot;item001&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item002&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item003&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item004&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item005&quot;&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>ul&gt;li.item$@-*5</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>ul&gt;li.item$@3*5</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item6&quot;&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;item7&quot;&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>ID和类属性</p>
+<p>缩写：<code>#header</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;header&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>.title</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;title&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>form#search.wide</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;form id=&quot;search&quot; class=&quot;wide&quot;&gt;&lt;/form&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>p.class1.class2.class3</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p class=&quot;class1 class2 class3&quot;&gt;&lt;/p&gt;</div></pre></td></tr></table></figure>
+<h2 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h2><p>缩写：<code>p[title=&quot;Hello world&quot;]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p title=&quot;Hello world&quot;&gt;&lt;/p&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>td[rowspan=2 colspan=3 title]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;td rowspan=&quot;2&quot; colspan=&quot;3&quot; title=&quot;&quot;&gt;&lt;/td&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>[a=&#39;value1&#39; b=&quot;value2&quot;]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div a=&quot;value1&quot; b=&quot;value2&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>文本：<code>{}</code></p>
+<p>缩写：<code>a{Click me}</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;&quot;&gt;Click me&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>p&gt;{Click }+a{here}+{ to continue}</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;Click &lt;a href=&quot;&quot;&gt;here&lt;/a&gt; to continue&lt;/p&gt;</div></pre></td></tr></table></figure>
+<h2 id="隐式标签"><a href="#隐式标签" class="headerlink" title="隐式标签"></a>隐式标签</h2><p>缩写：<code>.class</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;class&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>em&gt;.class</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;em&gt;&lt;span class=&quot;class&quot;&gt;&lt;/span&gt;&lt;/em&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>ul&gt;.class</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li class=&quot;class&quot;&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>table&gt;.row&gt;.col</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;table&gt;</div><div class="line">    &lt;tr class=&quot;row&quot;&gt;</div><div class="line">        &lt;td class=&quot;col&quot;&gt;&lt;/td&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>所有未知的缩写都会转换成标签，例如，<code>foo → &lt;foo&gt;&lt;/foo&gt;</code></p>
+<p>缩写：<code>!</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt;Document&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>a</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>a:link</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;http://&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>a:mail</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;mailto:&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>abbr</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;abbr title=&quot;&quot;&gt;&lt;/abbr&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>acronym</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;acronym title=&quot;&quot;&gt;&lt;/acronym&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>base</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;base href=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>basefont</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;basefont /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>br</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;br /&gt;</div></pre></td></tr></table></figure></p>
+<p>缩写：<code>frame</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;frame /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>hr</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;hr /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>bdo</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;bdo dir=&quot;&quot;&gt;&lt;/bdo&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>bdo:r</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;bdo dir=&quot;rtl&quot;&gt;&lt;/bdo&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>bdo:l</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;bdo dir=&quot;ltr&quot;&gt;&lt;/bdo&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>col</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;col /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link:css</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link:print</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;print.css&quot; media=&quot;print&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link:favicon</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;favicon.ico&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link:touch</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;favicon.png&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link:rss</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;RSS&quot; href=&quot;rss.xml&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>link:atom</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;alternate&quot; type=&quot;application/atom+xml&quot; title=&quot;Atom&quot; href=&quot;atom.xml&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>meta</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>meta:utf</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>meta:win</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=windows-1251&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>meta:vp</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>meta:compat</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=7&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>style</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;&lt;/style&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>script</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>script:src</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>img</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>iframe</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe src=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>embed</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;embed src=&quot;&quot; type=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>object</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;object data=&quot;&quot; type=&quot;&quot;&gt;&lt;/object&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>param</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;param name=&quot;&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>map</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;map name=&quot;&quot;&gt;&lt;/map&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>area</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;area shape=&quot;&quot; coords=&quot;&quot; href=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>area:d</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;area shape=&quot;default&quot; href=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>area:c</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;area shape=&quot;circle&quot; coords=&quot;&quot; href=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>area:r</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;area shape=&quot;rect&quot; coords=&quot;&quot; href=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>area:p</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;area shape=&quot;poly&quot; coords=&quot;&quot; href=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>form</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;form action=&quot;&quot;&gt;&lt;/form&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>form:get</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;form action=&quot;&quot; method=&quot;get&quot;&gt;&lt;/form&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>form:post</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;&lt;/form&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>label</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;label for=&quot;&quot;&gt;&lt;/label&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>inp</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:hidden</code></p>
+<p>别名：<code>input[type=hidden name]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;hidden&quot; name=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:h</code><br>别名：<code>input:hidden</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;hidden&quot; name=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:text</code>, <code>input:t</code><br>别名：<code>inp</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:search</code></p>
+<p>别名：<code>inp[type=search]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;search&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:email</code></p>
+<p>别名：<code>inp[type=email]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;email&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:url</code></p>
+<p>别名：<code>inp[type=url]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;url&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:password</code></p>
+<p>别名：<code>inp[type=password]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;password&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:p</code></p>
+<p>别名：<code>input:password</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;password&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:datetime</code></p>
+<p>别名：<code>inp[type=datetime]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;datetime&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:date</code></p>
+<p>别名：<code>inp[type=date]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;date&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:datetime-local</code></p>
+<p>别名：<code>inp[type=datetime-local]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;datetime-local&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:month</code></p>
+<p>别名：<code>inp[type=month]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;month&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:week</code></p>
+<p>别名：<code>inp[type=week]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;week&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:time</code></p>
+<p>别名：<code>inp[type=time]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;time&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:number</code></p>
+<p>别名：<code>inp[type=number]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:color</code></p>
+<p>别名：<code>inp[type=color]</code></p>
+<p><code>&lt;input type=&quot;color&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</code><br>缩写：<code>input:checkbox</code></p>
+<p>别名：<code>inp[type=checkbox]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:c</code></p>
+<p>别名：<code>input:checkbox</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:radio</code></p>
+<p>别名：<code>inp[type=radio]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;radio&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:r</code></p>
+<p>别名：<code>input:radio</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;radio&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:range</code></p>
+<p>别名：<code>inp[type=range]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;range&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:file</code></p>
+<p>别名：<code>inp[type=file]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;file&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:f</code></p>
+<p>别名：<code>input:file</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;file&quot; name=&quot;&quot; id=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:submit</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;submit&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:s</code></p>
+<p>别名：<code>input:submit</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;submit&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:image</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;image&quot; src=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:i</code></p>
+<p>别名：<code>input:image</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;image&quot; src=&quot;&quot; alt=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:button</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;button&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:b</code></p>
+<p>别名：<code>input:button</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;button&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>isindex</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;isindex /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>input:reset</code></p>
+<p>别名：<code>input:button[type=reset]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;reset&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>select</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;select name=&quot;&quot; id=&quot;&quot;&gt;&lt;/select&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>option</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;option value=&quot;&quot;&gt;&lt;/option&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>textarea</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>menu:context</code></p>
+<p>别名：<code>menu[type=context]&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;menu type=&quot;context&quot;&gt;&lt;/menu&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>menu:c</code></p>
+<p>别名：<code>menu:context</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;menu type=&quot;context&quot;&gt;&lt;/menu&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>menu:toolbar</code></p>
+<p>别名：<code>menu[type=toolbar]&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;menu type=&quot;toolbar&quot;&gt;&lt;/menu&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>menu:t</code></p>
+<p>别名：<code>menu:toolbar</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;menu type=&quot;toolbar&quot;&gt;&lt;/menu&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>video</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;video src=&quot;&quot;&gt;&lt;/video&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>audio</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;audio src=&quot;&quot;&gt;&lt;/audio&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>html:xml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>keygen</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;keygen /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>command</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;command /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>bq</code></p>
+<p>别名：<code>blockquote</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;blockquote&gt;&lt;/blockquote&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>acr</code></p>
+<p>别名：<code>acronym</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;acronym title=&quot;&quot;&gt;&lt;/acronym&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>fig</code></p>
+<p>别名：<code>figure</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;figure&gt;&lt;/figure&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>figc</code></p>
+<p>别名：<code>figcaption</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;figcaption&gt;&lt;/figcaption&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>ifr</code></p>
+<p>别名：<code>iframe</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe src=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>emb</code></p>
+<p>别名：<code>embed</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;embed src=&quot;&quot; type=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>obj</code></p>
+<p>别名：<code>object</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;object data=&quot;&quot; type=&quot;&quot;&gt;&lt;/object&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>src</code></p>
+<p>别名：<code>source</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;source&gt;&lt;/source&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>cap</code></p>
+<p>别名：<code>caption</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;caption&gt;&lt;/caption&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>colg</code></p>
+<p>别名：<code>colgroup</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;colgroup&gt;&lt;/colgroup&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>fst</code>, <code>fset</code></p>
+<p>别名：<code>fieldset</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;fieldset&gt;&lt;/fieldset&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>btn</code></p>
+<p>别名：<code>button</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;button&gt;&lt;/button&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>btn:b</code></p>
+<p>别名：<code>button[type=button]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;button type=&quot;button&quot;&gt;&lt;/button&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>btn:r</code></p>
+<p>别名：<code>button[type=reset]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;button type=&quot;reset&quot;&gt;&lt;/button&gt;</div></pre></td></tr></table></figure>
+<p>缩写：<code>btn:s</code></p>
+<p>别名：<code>button[type=submit]</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;button type=&quot;submit&quot;&gt;&lt;/button&gt;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#Emmet使用—–HTML&lt;/p&gt;
+&lt;p&gt;这个插件很多地方都可以用，sublime,webstream等&lt;/p&gt;
+&lt;p&gt;Emmet官网文档：&lt;a href=&quot;http://docs.emmet.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;htt
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Icon class生成器（Python）</title>
+    <link href="http://fr1ee.github.io/2017/03/11/Icon%20class%E7%94%9F%E6%88%90%E5%99%A8%EF%BC%88Python%EF%BC%89/"/>
+    <id>http://fr1ee.github.io/2017/03/11/Icon class生成器（Python）/</id>
+    <published>2017-03-11T14:57:03.000Z</published>
+    <updated>2017-03-11T15:01:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Icon-class生成器（Python）"><a href="#Icon-class生成器（Python）" class="headerlink" title="Icon class生成器（Python）"></a>Icon class生成器（Python）</h1><p>先说起因，项目中有很多图标，需要把美工给的三种尺寸的png加工成class来用，这样的好处就不必说了。但是图标数量比较大，以后换肤的时候，更是纯搬砖的活，写了个脚本来解放一下以后写icon的class的搬运工。</p>
+<p>搬砖步骤：</p>
+<ol>
+<li><p>所有的icon的一倍图片，与本脚本放到一起（全部英文命名）</p>
+<ul>
+<li>图片命名与class一致,对应三种尺寸标记为1,2,3号.所有图片存储位置为:src/public/assets/images.</li>
+<li>class命名: 图标名称+图标状态(N:normal;O:on;C:click;D:disable)</li>
+<li>使用者不关心图片大小.(^o^)/~</li>
+<li>注:图标最多有4种情况,个别图标可能不足4种,请勿强求.<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20161222203511625?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="文件结构" title="">
+                </div>
+                <div class="image-caption">文件结构</div>
+            </figure>
+</li>
+</ul>
+</li>
+<li><p>运行脚本</p>
+<ul>
+<li><code>python iconClass.py</code></li>
+</ul>
+</li>
+<li><p>将输出的内容copy到一个可以格式化的地方（比如webstream）</p>
+ <figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20161222204037003?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="">
+                </div>
+                <div class="image-caption">这里写图片描述</div>
+            </figure>
+</li>
+<li><p>格式化一下，然后利用全局替换，把图片路径换一下。</p>
+</li>
+<li>最后结构：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div></pre></td><td class="code"><pre><div class="line">/*以下参照UI20161220提供的图标*/</div><div class="line"></div><div class="line">@media all and (max-width: 1280px) &#123;</div><div class="line">    /*置顶*/</div><div class="line">    .putTopN &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopN1.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopN:hover &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopC1.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopC &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopC1.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopD &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopD1.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@media all and (min-width: 1280px) and (max-width: 1920px) &#123;</div><div class="line">    /*置顶*/</div><div class="line">    .putTopN &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopN2.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopN:hover &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopC2.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopC &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopC2.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopD &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopD2.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@media all and (min-width: 1920px) &#123;</div><div class="line">    /*置顶*/</div><div class="line">    .putTopN &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopN3.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopN:hover &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopC3.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopC &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopC3.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    .putTopD &#123;</div><div class="line">        display: inline-block;</div><div class="line">        width: 18px;</div><div class="line">        height: 18px;</div><div class="line">        background: url(../images/putTopD3.png) no-repeat;</div><div class="line">        background-size: 100% 100%;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="附源码"><a href="#附源码" class="headerlink" title="附源码"></a>附源码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"># coding: utf8</div><div class="line">import os</div><div class="line">from PIL import Image</div><div class="line"># 获取指定图片的长和宽</div><div class="line">def imgSize(imgPath):</div><div class="line">	img = Image.open(imgPath)</div><div class="line">	return img.size</div><div class="line"></div><div class="line"># 获得.png的图片</div><div class="line">def judjepng(filename):</div><div class="line">		if os.path.isfile( filename ):</div><div class="line">			a,b = os.path.splitext( filename )</div><div class="line">			if b == &quot;.png&quot;:</div><div class="line">				return 1;</div><div class="line">		else:</div><div class="line">			return 0;</div><div class="line"></div><div class="line">def getFileList( p ):</div><div class="line">        p = str( p )</div><div class="line">        if p==&quot;&quot;:</div><div class="line">              return [ ]</div><div class="line">        if p[ -1] != &quot;/&quot;:</div><div class="line">             p = p+&quot;/&quot;</div><div class="line">        a = os.listdir( p )</div><div class="line">        b = [ x   for x in a if judjepng( p + x )==1 ]</div><div class="line">        return b</div><div class="line"></div><div class="line">path = os.getcwd();</div><div class="line">imgPaths = getFileList( path )</div><div class="line">for imgPath1 in imgPaths:</div><div class="line">	a,b = os.path.splitext( imgPath1 )</div><div class="line">	imgsize = imgSize(imgPath1)</div><div class="line">	classname = &quot;.&quot; + a[:-1] +&quot;&#123;display: inline-block;width: &quot;+str(imgsize[0])+&quot;px;height: &quot;+str(imgsize[1])+&quot;px;background: url(../images/&quot;+ a +&quot;.png) no-repeat;background-size: 100% 100%;&#125;&quot;</div><div class="line">	print classname</div></pre></td></tr></table></figure>
+<p>补充:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">classname = &quot;.&quot; + a[:-2] +&quot;N:hover&#123;display: inline-block;width: &quot;+str(imgsize[0])+&quot;px;height: &quot;+str(imgsize[1])+&quot;px;background: url(../images/&quot;+ a +&quot;.png) no-repeat;background-size: 100% 100%;&#125;&quot;</div><div class="line">#	classname = &quot;.&quot; + a[:-1] +&quot;&#123;display: inline-block;width: &quot;+str(imgsize[0])+&quot;px;height: &quot;+str(imgsize[1])+&quot;px;background: url(../images/&quot;+ a +&quot;.png) no-repeat;background-size: 100% 100%;&#125;&quot;</div><div class="line">#	print &quot; &lt;td&gt;&lt;span class=\&quot; &quot;+ a[:-1] + &quot;\&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&quot; + a[:-1] + &quot;&lt;/td&gt;&quot;</div><div class="line">	print classname</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Icon-class生成器（Python）&quot;&gt;&lt;a href=&quot;#Icon-class生成器（Python）&quot; class=&quot;headerlink&quot; title=&quot;Icon class生成器（Python）&quot;&gt;&lt;/a&gt;Icon class生成器（Python）&lt;/
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>angularjs2--tab页调用父页面的方法</title>
+    <link href="http://fr1ee.github.io/2017/03/11/angularjs2--tab%E9%A1%B5%E8%B0%83%E7%94%A8%E7%88%B6%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://fr1ee.github.io/2017/03/11/angularjs2--tab页调用父页面的方法/</id>
+    <published>2017-03-11T14:56:48.000Z</published>
+    <updated>2017-03-18T05:18:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="angularjs2–tab页调用父页面的方法"><a href="#angularjs2–tab页调用父页面的方法" class="headerlink" title="angularjs2–tab页调用父页面的方法"></a>angularjs2–tab页调用父页面的方法</h1><p>####问题情景：页面A中使用window.open()打开新的tab页B，在页面B中想调用A中的方法。比如，在画面B中做了一些改变数据的操作，想在B关闭时候，A画面自动刷新数据（当然ts里有一个刷新的方法等着调用）。</p>
+<p>###代码：</p>
+<p>####A画面：<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;getStory&quot; id=&quot;getStory&quot; (click)=&quot;editerclose()&quot;&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>ts:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">editerclose() &#123;</div><div class="line">    this.search();//此为刷新数据方法</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>####B画面：<br>ts:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">window.opener.document.getElementById(&apos;getStory&apos;).click();</div></pre></td></tr></table></figure></p>
+<p><strong><em>原理很简单，通过window.opener获取父页面，然后获取那个隐藏的div(dom节点)，模拟点击事件，而此事件已经由angular2的事件绑定和component里的editerclose()事件绑定了</em></strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;angularjs2–tab页调用父页面的方法&quot;&gt;&lt;a href=&quot;#angularjs2–tab页调用父页面的方法&quot; class=&quot;headerlink&quot; title=&quot;angularjs2–tab页调用父页面的方法&quot;&gt;&lt;/a&gt;angularjs2–tab页调用
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>chrome timing</title>
+    <link href="http://fr1ee.github.io/2017/03/11/chrome----timing%E5%90%AB%E4%B9%89%E8%A7%A3%E9%87%8A/"/>
+    <id>http://fr1ee.github.io/2017/03/11/chrome----timing含义解释/</id>
+    <published>2017-03-11T14:56:34.000Z</published>
+    <updated>2017-03-15T06:11:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://img.blog.csdn.net/20170223215424954?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="">
+                </div>
+                <div class="image-caption">这里写图片描述</div>
+            </figure>
+<ol>
+<li><p>Queueing<br>请求文件顺序的的排序<br>什么东西？<br>浏览器有线程限制的，发请求也不能所有的请求同时发送，所以，队列喽。<br>从添加到待处理队列<br>到实际开始处理的时间间隔标示</p>
+</li>
+<li><p>Stalled<br>是浏览器得到要发出这个请求的指令到请求可以发出的等待时间，一般是代理协商、以及等待可复用的TCP连接释放的时间，不包括DNS查询、建立TCP连接等时间等</p>
+</li>
+<li><p>DNS Lookup<br>时间执行DNS查找。每个新域pagerequires DNS查找一个完整的往返。 DNS查询的时间，当本地DNS缓存没有的时候，这个时间可能是有一段长度的，但是比如你一旦在host中设置了DNS，或者第二次访问，由于浏览器的DNS缓存还在，这个时间就为0了。</p>
+</li>
+<li><p>Initial connection<br>建立TCP连接的时间，就相当于客户端从发请求开始到TCP握手结束这一段，包括DNS查询+Proxy时间+TCP握手时间。</p>
+</li>
+<li><p>Request sent<br>请求第一个字节发出前到最后一个字节发出后的时间，也就是上传时间</p>
+</li>
+<li><p>Waiting(TTFB)<br>请求发出后，到收到响应的第一个字节所花费的时间(Time To First Byte),发送请求完毕到接收请求开始的时间;这个时间段就代表服务器处理和返回数据网络延时时间了。服务器优化的目的就是要让这个时间段尽可能短。</p>
+</li>
+<li><p>Content Download<br>收到响应的第一个字节，到接受完最后一个字节的时间，就是下载时间</p>
+</li>
+</ol>
+<h3 id="官方解释"><a href="#官方解释" class="headerlink" title="官方解释"></a>官方解释</h3><p>######（免于大家翻墙了）</p>
+<p>####先说请求的生命周期：<br>The primary phases of the request lifecycle are:</p>
+<ul>
+<li>Redirect<br>Immediately begins startTime.<br>If a redirect is happening, redirectStart begins as well.<br>If a redirect is occurring at the end of this phase then redirectEnd will be taken.</li>
+<li>App Cache<br>If it’s application cache fulfilling the request, a fetchStart time will be taken.</li>
+<li>DNS<br>domainLookupStart time is taken at the beginning of the DNS request.<br>domainLookupEnd time is taken at the end of the DNS request.</li>
+<li>TCP<br>connectStart is taken when initially connecting to the server.<br>If TLS or SSL are in use then secureConnectionStart will start when the handshake begins for securing the connection.<br>connectEnd is taken when the connection to the server is complete.</li>
+<li>Request<br>requestStart is taken once the request for a resource has been sent to the server.</li>
+<li>Response<br>responseStart is the time when the server initially responds to the request.<br>responseEnd is the time when the request ends and the data is retrieved.</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170223220531041?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA4ODEwODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>####然后在理解那张timing图</p>
+<ul>
+<li>Queuing<br>A request being queued indicates that:<br>The request was postponed by the rendering engine because it’s considered lower priority than critical resources (such as scripts/styles). This often happens with images.<br>The request was put on hold to wait for an unavailable TCP socket that’s about to free up.<br>The request was put on hold because the browser only allows six TCP connections per origin on HTTP 1.<br>Time spent making disk cache entries (typically very quick.)</li>
+</ul>
+<ul>
+<li>Stalled/Blocking<br>Time the request spent waiting before it could be sent. It can be waiting for any of the reasons described for Queueing. Additionally, this time is inclusive of any time spent in proxy negotiation.<br>Proxy Negotiation<br>Time spent negotiating with a proxy server connection.</li>
+<li>DNS Lookup<br>Time spent performing the DNS lookup. Every new domain on a page requires a full roundtrip to do the DNS lookup.<br>Initial Connection / Connecting<br>Time it took to establish a connection, including TCP handshakes/retries and negotiating a SSL.</li>
+<li>SSL<br>Time spent completing a SSL handshake.<br>Request Sent / Sending<br>Time spent issuing the network request. Typically a fraction of a millisecond.</li>
+<li>Waiting (TTFB)<br>Time spent waiting for the initial response, also known as the Time To First Byte. This time captures the latency of a round trip to the server in addition to the time spent waiting for the server to deliver the response.<br>Content Download / Downloading<br>Time spent receiving the response data.</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+                   
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>angular2子组件的事件传递</title>
+    <link href="http://fr1ee.github.io/2017/03/11/angular2%E5%AD%90%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BA%8B%E4%BB%B6%E4%BC%A0%E9%80%92(%E4%BB%BB%E6%84%8F%E7%BB%84%E4%BB%B6%E4%BA%8B%E4%BB%B6%E4%BC%A0%E9%80%92)/"/>
+    <id>http://fr1ee.github.io/2017/03/11/angular2子组件的事件传递(任意组件事件传递)/</id>
+    <published>2017-03-11T14:56:20.000Z</published>
+    <updated>2017-03-15T06:10:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="angular2子组件的事件传递"><a href="#angular2子组件的事件传递" class="headerlink" title="angular2子组件的事件传递"></a>angular2子组件的事件传递</h1><p>angular2有很多组件组成，画面由很多路由，导致事件的传递很“笨拙”，本组的技术负责人发现了任意组件传递事件的这个方法，教会了我，我做个笔记。</p>
+<p>###项目情况：<br>画面结构复杂，路由数目偏多，组件数目多，嵌套复杂。业务要求：任何出现人名的地方，点击人名，直接打开和这个人的聊天画面</p>
+<p>以前用angular2官网给的烹饪技巧基本解决90%的需求，当然这个如果是用Input,Output也可以，但是那样的话，结构将是混沌状态。</p>
+<p>附：angluar2的组件通讯的<a href="https://angular.cn/docs/ts/latest/cookbook/component-communication.html" target="_blank" rel="external">传送门</a>(anglar2的官网对Safari支持可不太好，真爱生命，请用chrome)</p>
+<p>###实现</p>
+<p>service:</p>
+<p>这是重点，相当于一个事件队列，所有注入此service的组件，都可以发起事件，插入到队列中，所有订阅此事件队列的组件都会收到广播。（暂时先用广播这个词吧）</p>
+<p><code>public eventbus: EventEmitter&lt;any&gt; = new EventEmitter&lt;any&gt;();</code></p>
+<p>聊天组件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">constructor( private _workservice:WorkService) &#123;</div><div class="line">        // 订阅聊天事件</div><div class="line">        this._workservice.eventbus.subscribe(_event =&gt; &#123;</div><div class="line">                if (_event&amp;&amp;_event.name==&apos;chart&apos;) &#123;</div><div class="line">                // 所有订阅这个事件的组件都会收到eventbus上的事件触发，相当于广播。</div><div class="line">                // 所以使用在事件传递的参数中添加一个name变量来判断这个事件是不是给我的。</div><div class="line">                    // .........</div><div class="line">                    // 此处写处理就行了，通过_event取参数</div><div class="line">                    // .........</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        )</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>发起聊天的组件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> this.workService.eventbus.emit(&#123;</div><div class="line">            type:3,</div><div class="line">            voipAccount:userid</div><div class="line">        &#125;);</div><div class="line">// 注意emit()的参数是json结构。</div></pre></td></tr></table></figure>
+<h3 id="简单示意"><a href="#简单示意" class="headerlink" title="简单示意"></a>简单示意</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">任意组件（存在聊天事件的组件）-&gt;service: 我要和李四聊天</div><div class="line">service-&gt;聊天组件: 有人要和李四聊天，打开聊天画面</div><div class="line">Note right of 聊天组件: 打开与李四的聊天组件</div><div class="line">聊天组件 --&gt; 任意组件（存在聊天事件的组件）: 聊吧</div></pre></td></tr></table></figure>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;angular2子组件的事件传递&quot;&gt;&lt;a href=&quot;#angular2子组件的事件传递&quot; class=&quot;headerlink&quot; title=&quot;angular2子组件的事件传递&quot;&gt;&lt;/a&gt;angular2子组件的事件传递&lt;/h1&gt;&lt;p&gt;angular2有很多组件组
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>总结实习（20170305）</title>
+    <link href="http://fr1ee.github.io/2017/03/06/20170305%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://fr1ee.github.io/2017/03/06/20170305实习总结/</id>
+    <published>2017-03-06T12:35:59.000Z</published>
+    <updated>2017-03-18T05:17:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#总结实习</p>
+<p>实习单位：东软集团商用软件事业部</p>
+<p>实习项目：新闻类集成系统</p>
+<p>岗位：前端开发</p>
+<p>开发使用的技术栈：HTML，CSS/SCSS，JavaScript，Angualrjs2,nodejs</p>
+<p>项目相关技术及工具链：</p>
+<ul>
+<li>前端：HTML，CSS/SCSS，JavaScript，Angualrjs2,nodejs</li>
+<li>服务器端：Java，微服务架构（东软内部研发框架）</li>
+<li>项目管理工具链：redmine,禅道，Tower</li>
+</ul>
+<p>项目介绍：</p>
+<p>项目客户为新闻业内最主要的机构之一，新华社。此项目为内部稿件从采集到编辑到发布的整体流程的管理控制系统。涉及稿件的流转过程，发稿的流程控制，分社与总社的合作配合及稿件流转。</p>
+<p>总结：</p>
+<ol>
+<li>技术</li>
+</ol>
+<p>Angular2</p>
+<p>项目本身使用的前端技术比较新，2016年9月，Angular2正式发布，且与Angular1.X相差很大，也不向下兼容。这个项目前端框架就是Angular2。最近由于项目技术问题还拜访目前国内Angular2的大牛–大漠穷秋，收获颇丰，发现目前我们项目中Angular2的用法还存在很多可以精进的地方。在这个项目中，我也学到了很多有关前端开发的东西，从CSS到SCSS，从HTML5到Angular2，从原生JavaScript到jQuery。学到的技术点很多，就不一一罗列了。从技术上说，任何事情，哪怕是操作icon的使用，在真是使用，考虑性能，整体框架之后，都会变得系统化，复杂化。所以不能轻视任何技术点。</p>
+<p>chrome</p>
+<p>Google的chrome浏览器很强大。首先，对H5和CSS3的支持比较好，其实是对W3C标准比较友好，可能因为Google本身就是规范的制定者。其次，对前端开发的调试很友好，大家可能都知道控制台可以调试js，但是现在它也可以调试ts，一样的打断点，很方便。对CSS的调试也很方便，修改立即生效，使得样式调试很快。最重要的是性能分析了，通过network,timeline等工具的测试，能让我们迅速定位到性能瓶颈，前端开发，性能调优是必须的。现在，在我眼里，chrome不只是浏览器，是个开发工具。</p>
+<p>webstorm</p>
+<p>这是一个前端开发利器，以前我用HBuilder来开发H5的项目，因为快捷键和简洁的画面，当然sublime也会用一下。但是当项目比较复杂，函数很多，我需要一个更强大的IDE，能让我直接跳到函数的实现，能运行命令行，能直接操作git。webstorm的插件很多，还有对angular2的插件，快捷键更能提高效率，能更少的使用鼠标。</p>
+<ol>
+<li>项目管理</li>
+</ol>
+<ul>
+<li>交流很重要</li>
+</ul>
+<p>无论是开发人员之间，还是开发与业务之间，沟通不好可能带来很大的成本。特别是这种前后端分开开发的项目，前后台人员的沟通可以减少很多内耗。</p>
+<p>开发人员之间：勤于交流，共享技术资源，减少技术调查的成本和避免重复组件的开发。使用项目wiki这种工具来管理最好了。这样就能形成技术积累，方便分享。</p>
+<p>开发与业务：开发时一定要确认好业务的实现，清晰客户的需求，否则，劳而无功。</p>
+<p>开发与项目负责人：项目管理是一门学问，开发人员与不懂技术的人员沟通更是一种挑战,要学会用浅显易懂的比喻来使他们明白，或者用量化的词汇来表述。</p>
+<ul>
+<li>文档很重要</li>
+</ul>
+<p>开发中，项目文档的规范性、及时性很容易影响开发的效率，开发中最浪费时间和精力的地方很可能不是因为打字速度慢，也不是因为用了什么算法很复杂，而是沟通成本，特别是，前后端分开开发的项目，接口文档尤为重要，最好有一个接口管理工具。<br>另一种文档，开发规范也很重要，不然，代码将参差不齐，每一个新人进入项目必须先仔细学习编码规范，当然，前提是项目有一个完整的编码规范。这样能避免很多麻烦。这两天就就有个案例，angular2在AOT的时候报错，这个事成功引起了领导的注意，三个技术高手（有两个还是从其他项目临时叫过来的），用了两三天，终于发现，因为一个字母大小写的问题，导致AOT出错。因为很多时候，这种细节难以察觉，所以更加危险。</p>
+<ol>
+<li>知识拓展</li>
+</ol>
+<p>现在在项目中主要是前端开发，使用angular2和nodejs等新技术。</p>
+<ol>
+<li>出差</li>
+</ol>
+<p>这次项目客户在北京，所以一直在北京出差，出差的日子比较辛苦，加班很多，虽然学习的东西很多，但是出差这么辛苦还是对身体很不好。当然，有了出差小半年的经历之后，让我也学了很多编程之外的东西，比如如何报销，出差申请等。所幸出差地点是北京，离家近，还能方便回家，这是个让人欣慰的事。而且在出差中还去Google北京请教了angular2的大牛，也是一种不同的体验。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#总结实习&lt;/p&gt;
+&lt;p&gt;实习单位：东软集团商用软件事业部&lt;/p&gt;
+&lt;p&gt;实习项目：新闻类集成系统&lt;/p&gt;
+&lt;p&gt;岗位：前端开发&lt;/p&gt;
+&lt;p&gt;开发使用的技术栈：HTML，CSS/SCSS，JavaScript，Angualrjs2,nodejs&lt;/p&gt;
+&lt;p&gt;项目相关技术
     
     </summary>
     
