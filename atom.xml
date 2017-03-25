@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fr1ee.github.io/"/>
-  <updated>2017-03-25T07:25:51.000Z</updated>
+  <updated>2017-03-25T07:35:55.000Z</updated>
   <id>http://fr1ee.github.io/</id>
   
   <author>
@@ -16,13 +16,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Augury翻译---io-demo</title>
     <link href="http://fr1ee.github.io/2017/03/24/io-app/"/>
     <id>http://fr1ee.github.io/2017/03/24/io-app/</id>
     <published>2017-03-24T01:43:02.000Z</published>
-    <updated>2017-03-25T07:25:51.000Z</updated>
+    <updated>2017-03-25T07:35:55.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="images/io-app.png" style="width: 100%"></p>
+    <content type="html"><![CDATA[<hr>
+<p>原文链接：<a href="https://augury.angular.io/pages/guides/io-demo.html" target="_blank" rel="external">https://augury.angular.io/pages/guides/io-demo.html</a></p>
+<hr>
+<p><img src="images/io-app.png" style="width: 100%"></p>
 <p><a href="https://augury.angular.io/examples/input-output/app/" target="blank">Launch Demo Application 访问在线demo</a></p>
 <h2 id="Description-简介"><a href="#Description-简介" class="headerlink" title="Description 简介"></a>Description 简介</h2><p>这个 <em>Input Output Angular</em>  应用展示了在组件内部和跨组件的数据传递。这个应用使用了Angular的input和output装饰器，也使用了事件和数据绑定。</p>
 <p>The <em>Input Output Angular</em> application demonstrates passing data inside a component as well as across components. The application makes uses of Angular input and output decorators as well as event and data binding.</p>
@@ -132,11 +135,15 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;images/io-app.png&quot; style=&quot;width: 100%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://augury.angular.io/examples/input-output/app/&quot; target=&quot;blank&quot;&gt;La
+      &lt;hr&gt;
+&lt;p&gt;原文链接：&lt;a href=&quot;https://augury.angular.io/pages/guides/io-demo.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://augury.angular.io/pages/gu
     
     </summary>
     
+      <category term="翻译" scheme="http://fr1ee.github.io/categories/%E7%BF%BB%E8%AF%91/"/>
+    
+    
+      <category term="Augury" scheme="http://fr1ee.github.io/tags/Augury/"/>
     
   </entry>
   
