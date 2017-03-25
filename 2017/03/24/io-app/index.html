@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="fr1ee.github.io/2017/03/24/io-app/">
+    
+    
+    <title>No title | Keep Moving ! | 仅以此博客作为经验积累的日志</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#565656">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="Launch Demo Application 访问在线demo
+Description 简介这个 Input Output Angular  应用展示了在组件内部和跨组件的数据传递。这个应用使用了Angular的input和output装饰器，也使用了事件和数据绑定。
+The Input Output Angular application demonstrates passing data">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="http://fr1ee.github.io/2017/03/24/io-app/index.html">
+<meta property="og:site_name" content="Keep Moving !">
+<meta property="og:description" content="Launch Demo Application 访问在线demo
+Description 简介这个 Input Output Angular  应用展示了在组件内部和跨组件的数据传递。这个应用使用了Angular的input和output装饰器，也使用了事件和数据绑定。
+The Input Output Angular application demonstrates passing data">
+<meta property="og:image" content="http://fr1ee.github.io/images/io-app.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/component-tree.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/properties-app-component.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/editing-title-app.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/emitting.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/view-source.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/sources.png">
+<meta property="og:image" content="http://fr1ee.github.io/images/debugging-with-notes.png">
+<meta property="og:updated_time" content="2017-03-25T07:25:51.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="Launch Demo Application 访问在线demo
+Description 简介这个 Input Output Angular  应用展示了在组件内部和跨组件的数据传递。这个应用使用了Angular的input和output装饰器，也使用了事件和数据绑定。
+The Input Output Angular application demonstrates passing data">
+<meta name="twitter:image" content="http://fr1ee.github.io/images/io-app.png">
+    
+        <link rel="alternative" href="/atom.xml" title="Keep Moving !" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FreeMing</h5>
+          <a href="mailto:wang.6688.cool@163.com" title="wang.6688.cool@163.com" class="mail">wang.6688.cool@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                足迹
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fr1ee" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://git.oschina.net/953082389qq.com"  >
+                <i class="icon icon-lg icon-cloud"></i>
+                码云
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">No title</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">No title</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-24T01:43:02.000Z" itemprop="datePublished" class="page-time">
+  2017-03-24
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Description-简介"><span class="post-toc-text">Description 简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Components-组件"><span class="post-toc-text">Components 组件</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Architecture-结构"><span class="post-toc-text">Architecture 结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Opening-Augury-打开Augury"><span class="post-toc-text">Opening Augury 打开Augury</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Component-view-组件视图"><span class="post-toc-text">Component view 组件视图</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Editing-properties-编辑属性"><span class="post-toc-text">Editing properties 编辑属性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Firing-events-发射事件"><span class="post-toc-text">Firing events 发射事件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Viewing-source-code-阅读源码"><span class="post-toc-text">Viewing source code 阅读源码</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-io-app"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">No title</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月24日 9:43" datetime="2017-03-24T01:43:02.000Z"  itemprop="datePublished">2017-03-24</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p><img src="images/io-app.png" style="width: 100%"></p>
+<p><a href="https://augury.angular.io/examples/input-output/app/" target="blank">Launch Demo Application 访问在线demo</a></p>
+<h2 id="Description-简介"><a href="#Description-简介" class="headerlink" title="Description 简介"></a>Description 简介</h2><p>这个 <em>Input Output Angular</em>  应用展示了在组件内部和跨组件的数据传递。这个应用使用了Angular的input和output装饰器，也使用了事件和数据绑定。</p>
+<p>The <em>Input Output Angular</em> application demonstrates passing data inside a component as well as across components. The application makes uses of Angular input and output decorators as well as event and data binding.</p>
+<p>这个IO应用由以下五部分组成</p>
+<p>The IO Application is composed of 5 components that are:</p>
+<h3 id="Components-组件"><a href="#Components-组件" class="headerlink" title="Components 组件"></a>Components 组件</h3><ul>
+<li>Root Component</li>
+<li>Jumbo Message Board</li>
+<li>Message Entry</li>
+<li>Counter</li>
+<li>Toggle Button</li>
+</ul>
+<h2 id="Architecture-结构"><a href="#Architecture-结构" class="headerlink" title="Architecture 结构"></a>Architecture 结构</h2><p>这个IO应用的根组件是 <code>AppComponent</code> ，它包含了四个有各自特殊行为的组件。</p>
+<p>The IO application <em>root</em> component is <code>AppComponent</code>, it houses the other 4 components that each have a specific behaviour.</p>
+<table>
+<thead>
+<tr>
+<th>Component 组件</th>
+<th>Description 描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AppComponent</code></td>
+<td>Root Component 根组件</td>
+</tr>
+<tr>
+<td><code>MessageBoardComponent</code></td>
+<td>Large message board. 信息板块</td>
+</tr>
+<tr>
+<td><code>MessageEntryComponent</code></td>
+<td>Message entry form that emits a message. 输入一条信息的入口</td>
+</tr>
+<tr>
+<td><code>CounterComponent</code></td>
+<td>A counter that emits a count value. 计数器组件</td>
+</tr>
+<tr>
+<td><code>ToggleComponent</code></td>
+<td>Toggle button with state lights. 控制状态信号灯的开关</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Opening-Augury-打开Augury"><a href="#Opening-Augury-打开Augury" class="headerlink" title="Opening Augury 打开Augury"></a>Opening Augury 打开Augury</h2><p>使用Augury，我们要打开开发者工具</p>
+<p>To use Augury, we need to open DevTools.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Ctrl + Shift + I (Cmd + Opt + I on Mac)</div></pre></td></tr></table></figure>
+<p>打开开发者工具之后，选择最右侧的 <em>Augury</em> 选项卡。</p>
+<p>When DevTools opens, select the <em>Augury</em> tab located on the far right.</p>
+<h2 id="Component-view-组件视图"><a href="#Component-view-组件视图" class="headerlink" title="Component view 组件视图"></a>Component view 组件视图</h2><p>Augury打开之后，这个组件视图将展示组件树。它展示了应用中所有的可用组件及其父子关系。下面我们看看我们在组织结构章节中讨论过的组件列表。</p>
+<p>Once Augury is opened, the component view is presented in the <em>Component Tree</em>. It shows all the available components in the application, along with their parent-child relationship. Below we see the list of components discussed in the architecture section earlier.</p>
+<p>这个应用的根节点在列表的顶部。列在根节点下向右缩进的都是子节点。</p>
+<p>The application <em>root</em> component <code>AppComponent</code> is listed at the top. Shifted slightly to the right and appearing under the <em>root</em> component are all the children components.</p>
+<p><img src="images/component-tree.png"></p>
+<p>如果我们看一眼 <code>app.component.html</code> 文件，我们就会发现在代码中，子组件是出现在组件的 <code>template</code> 。</p>
+<p>In code, a child component is a component that appears inside a component’s <code>template</code>. If we peek at the file <code>app.component.html</code>, we will see.</p>
+<p><strong>Edited for readability 写可读性好的代码</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">    &lt;div&gt;</div><div class="line">      &lt;app-messageboard&gt;&lt;/app-messageboard&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">...</div><div class="line">    &lt;div&gt;</div><div class="line">      &lt;app-messageentry&gt;&lt;/app-messageentry&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">...</div><div class="line">    &lt;div&gt;</div><div class="line">      &lt;div&gt;</div><div class="line">        &lt;app-counter&gt;&lt;/app-counter&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">...</div><div class="line">      &lt;app-toggle&gt;&lt;/app-toggle&gt;</div><div class="line">    &lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>如果我们在组件树中选择 <code>AppComponent</code> ，右侧将出现 <em>Properties</em> 标签页，我们可在 <em>State</em> 下看见组件的属性。</p>
+<p>If we select <code>AppComponent</code> inside the <em>Component Tree</em>, to the left inside the <em>Properties</em> tab we see the component’s properties under the <em>State</em> group.</p>
+<p><img src="images/properties-app-component.png"></p>
+<p>如果您浏览下IO应用的示例代码，你会发现有一个属性丢失了，它属于 <code>count</code> 。</p>
+<p>If you have looked through the example code for IO application, you will notice there is one property missing, that being the property <code>count</code>.</p>
+<p><strong>app.component.ts</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">@Component(&#123;</div><div class="line">  <span class="attr">selector</span>: <span class="string">'app-root'</span>,</div><div class="line">  <span class="attr">templateUrl</span>: <span class="string">'./app.component.html'</span>,</div><div class="line">  <span class="attr">styleUrls</span>: [<span class="string">'./app.component.css'</span>]</div><div class="line">&#125;)</div><div class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">AppComponent</span> </span>&#123;</div><div class="line">  title = <span class="string">'Angular Input Output'</span>;</div><div class="line">  count: number;</div><div class="line"></div><div class="line">  @Input() message = <span class="string">"Jumbo Shrimp!"</span>;</div><div class="line"></div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Augury会忽略没有值的变量，因为ts会将它简单的编译出来。所以，建议您给每一个变量赋初始值。如果存在变量是 <code>undefined</code> ，那么这是一个不好的编程实践并且是个反面教材。</p>
+<p>Augury will not show properties in a component if it not assigned a value, since TypeScript will simply compile it out. It is therefore suggested you assign a default value to each property. Having a property with an <code>undefined</code> value is poor coding practice and is an anti-pattern.</p>
+<p><strong>Bad</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</div><div class="line">   name: string;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>Good</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</div><div class="line">  name: string = <span class="string">""</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>在我们的IO应用中，我们故意的声明了一个没有初始值的变量来演示您应该在Augury中注意的问题。如果您没有意识到变量未出现的原因，您会感到困惑的。</p>
+<p>In our example IO application, we have intentionally declared a property count with no assigned value to demonstrate the behaviour you would see in Augury. If you are not aware of why a property failed to appear, you might be confused.</p>
+<p>当然了，如果我们点击计数按钮，将会初始化这个计数变量。</p>
+<p>However if we click on one of the counter buttons, this will initialize the count property with a value.</p>
+<h2 id="Editing-properties-编辑属性"><a href="#Editing-properties-编辑属性" class="headerlink" title="Editing properties 编辑属性"></a>Editing properties 编辑属性</h2><p>在 <em>Properties</em> 标签页，在 <em>State</em> 下，可编辑的属性会用虚线表示。让我们来改变 <code>AppComponent</code> 的 <code>title</code> 属性。</p>
+<p>In the <em>Properties</em> tab, under <em>State</em>, an editable property will be displayed with a dashed underline. Let us change the <code>title</code> property of <code>AppComponent</code>.</p>
+<ol>
+<li>在组件树标签选择 <code>AppComponent</code> 。</li>
+<li>在右侧的 <em>Properties</em> 标签页选择 <code>title</code> 。</li>
+<li><p>输入“IO App” ，然后回车。</p>
+</li>
+<li><p>Select <code>AppComponent</code> from <em>Component Tree</em> tab.</p>
+</li>
+<li>Click on the text to the right of <code>title</code> from the <em>Properties</em> tab.</li>
+<li>Type “IO App” followed by the <em>Enter</em> key.</li>
+</ol>
+<p><img src="images/editing-title-app.png"></p>
+<h2 id="Firing-events-发射事件"><a href="#Firing-events-发射事件" class="headerlink" title="Firing events 发射事件"></a>Firing events 发射事件</h2><p>IO应用中存在两个组件有弹射事件。<code>CounterComponent</code> 和 <code>MessageEntryComponent</code> 都有一个使用 <code>@Output()</code> 装饰器的事件属性，并且有事件弹出 （<code>EventEmitter</code>）。</p>
+<p>The IO application has two components that emit an event. The <code>CounterComponent</code> and <code>MessageEntryComponent</code> have a event property decorated with <code>@Output()</code>, which has an <code>EventEmitter</code> attached to it.</p>
+<p>我们选中看看 <code>MessageEntryComponent</code> 。在属性标签页，你会注意到 <code>messageEntry</code> 画了虚线。点击它，输入信息，比如“Debugging with Augury” 并且点击发射按钮。</p>
+<p>We will look at <code>MessageEntryComponent</code>, start by selecting the component. In the Properties tab, you will notice <code>messageEntry</code> under State. Click and type a message, like “Debugging with Augury” and click on the Emit button.</p>
+<p><img src="images/emitting.png"></p>
+<p>我们注意到IO应用，在信息展示位置，新的消息已经出现了。通过点击 <em>Emit</em> 按钮，一个事件被发射。在例子中这个事件叫 <code>messageEvent</code> 。</p>
+<p>You will notice in the IO app, under <em>Message Board</em> the new message is displayed. By clicking on the <em>Emit</em> button, an event was fired, in particular an event called <code>messageEvent</code>.</p>
+<h2 id="Viewing-source-code-阅读源码"><a href="#Viewing-source-code-阅读源码" class="headerlink" title="Viewing source code 阅读源码"></a>Viewing source code 阅读源码</h2><p>Augury提供了一个快速方便的方式调到选中组件的源码。点击 <em>View Source</em> 链接，就会定位到 <em>Properties</em> 标签页。</p>
+<p>Augury provides a quick and convenient way to jump to the source code of a selected component. To do this, click on the <em>View Source</em> link, it is located in the <em>Properties</em> tab.</p>
+<p><img src="images/view-source.png"></p>
+<p>按照前边的步骤，试试 选中 <code>MessageEntryComponent</code> ，点击  <em>View Source</em> ，就会在开发者工具的 <em>Sources</em> 标签页看见源码。</p>
+<p>Following along from the previous step, with <code>MessageEntryComponent</code> selected, click on <em>View Source</em>. This will bring up the source code in DevTools by switching to the <em>Sources</em> tab.</p>
+<p>刚刚在“发射事件”部分，我们发射了一个 <code>messageEvent</code> 事件。查看源码，我们可以看见 <code>@Output()</code> 选择器定义的属性。</p>
+<p>Earlier under section <em>Firing Events</em> we emitted the <code>messageEvent</code> event. Looking at the source code, we can see this property is defined with the <code>@Output()</code> decorator.</p>
+<p><img src="images/sources.png"></p>
+<p>如果我们想确认下事件确实触发了，我们可以在事件处理函数<code>onSend()</code> 处设置断点并且发射新的事件。</p>
+<p>If we want to convince ourselves that an event is triggered, we can set a breakpoint inside the event handler <code>onSend()</code> and emit a new event.</p>
+<p><img src="images/debugging-with-notes.png" style="width: 100%"></p>
+<p>我们使用Augury分析这个IO应用的部分就到此为止。现在您应该很轻松的调试一个Angular应用的输入、输出、属性绑定和事件。</p>
+<p>This concludes our journey of looking at the IO application with Augury. You should now feel more comfortable debugging input, output, property bindings and events in an Angular app.</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-25T07:25:51.000Z" itemprop="dateUpdated">2017年3月25日 15:25</time>
+</span><br>
+
+
+        转载请说明出处
+    </div>
+    <footer>
+        <a href="http://fr1ee.github.io">
+            <img src="/img/avatar.jpg" alt="FreeMing">
+            FreeMing
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/24/io-app/&title=《No title》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/24/io-app/&title=《No title》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/24/io-app/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/24/io-app/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/24/io-app/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/23/augury/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Augury翻译---Augury</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="io-app" data-title="No title" data-url="http://fr1ee.github.io/2017/03/24/io-app/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'freeming.duoshuo.com', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.10');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        多谢，祝君好~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechatpay.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by Hexo Theme indigo</span>
+            <span>Keep Moving ! &copy; 2014 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fr1ee.github.io/2017/03/24/io-app/&title=《No title》 — Keep Moving !&pic=http://fr1ee.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fr1ee.github.io/2017/03/24/io-app/&title=《No title》 — Keep Moving !&source=前端 anguar2 全栈 web HTML CSS angularjs" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fr1ee.github.io/2017/03/24/io-app/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Keep Moving !&url=http://fr1ee.github.io/2017/03/24/io-app/&via=http://fr1ee.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fr1ee.github.io/2017/03/24/io-app/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://fr1ee.github.io/2017/03/24/io-app/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261473536&web_id=1261473536')
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.10" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>
