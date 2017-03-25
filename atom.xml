@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fr1ee.github.io/"/>
-  <updated>2017-03-23T05:54:43.000Z</updated>
+  <updated>2017-03-25T07:30:16.000Z</updated>
   <id>http://fr1ee.github.io/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://fr1ee.github.io/2017/03/23/augury/"/>
     <id>http://fr1ee.github.io/2017/03/23/augury/</id>
     <published>2017-03-23T03:19:00.000Z</published>
-    <updated>2017-03-23T05:54:43.000Z</updated>
+    <updated>2017-03-25T07:30:16.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="欢迎使用Augury"><a href="#欢迎使用Augury" class="headerlink" title="欢迎使用Augury"></a>欢迎使用Augury</h1><p>In this section you will learn about what Augury is and the features that are available. Later lessons in this guide will go into more detail, with each lesson that will have an accompanying demo Angular application.</p>
+    <content type="html"><![CDATA[<h1 id="欢迎使用Augury"><a href="#欢迎使用Augury" class="headerlink" title="欢迎使用Augury"></a>欢迎使用Augury</h1><hr>
+<h2 id="原文链接：https-augury-angular-io-pages-guides-augury-html"><a href="#原文链接：https-augury-angular-io-pages-guides-augury-html" class="headerlink" title=" 原文链接：https://augury.angular.io/pages/guides/augury.html"></a> 原文链接：<a href="https://augury.angular.io/pages/guides/augury.html" target="_blank" rel="external">https://augury.angular.io/pages/guides/augury.html</a></h2><p>In this section you will learn about what Augury is and the features that are available. Later lessons in this guide will go into more detail, with each lesson that will have an accompanying demo Angular application.</p>
 <p>在这个章节您将了解什么事Augury及其功能。本向导中的其余章节将介绍更详细的细节。并且每一个章节都有一个完成的Angular应用案例。</p>
 <p>Augury is an application inspection tool for Angular that runs in the Web browser. It runs as a Chrome browser <em>extension</em> for the Developer Tools (DevTools) panel, aiding in analysis and debugging during development.</p>
 <p>Augury 是一个浏览器上的Angular审查工具。它是Chrome浏览器的一个开发者工具区的一个拓展面板，主要是在开发中帮助分析和调试错误的。</p>
@@ -149,7 +150,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;欢迎使用Augury&quot;&gt;&lt;a href=&quot;#欢迎使用Augury&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用Augury&quot;&gt;&lt;/a&gt;欢迎使用Augury&lt;/h1&gt;&lt;p&gt;In this section you will learn about w
+      &lt;h1 id=&quot;欢迎使用Augury&quot;&gt;&lt;a href=&quot;#欢迎使用Augury&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用Augury&quot;&gt;&lt;/a&gt;欢迎使用Augury&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;原文链接：https-augury-angular-io
     
     </summary>
     
